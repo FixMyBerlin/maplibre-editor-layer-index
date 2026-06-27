@@ -27,13 +27,12 @@ function expandSwitch(url: string): string[] {
  *
  * Unknown placeholders (e.g. `{apikey}`) are left intact for the consuming app to fill.
  */
-export function convertTileUrl(
-  rawUrl: string,
-  type: EliLayerType,
-  tileSize: number,
-): ConvertedUrl {
+export function convertTileUrl(rawUrl: string, type: EliLayerType, tileSize: number): ConvertedUrl {
   let url = rawUrl
   let scheme: 'xyz' | 'tms' = 'xyz'
+
+  // ArcGIS spatial-reference id: the numeric EPSG code of Web Mercator (not a key).
+  url = url.replace(/\{wkid\}/g, '3857')
 
   if (type === 'wms') {
     url = url

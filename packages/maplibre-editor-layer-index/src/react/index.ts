@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useMap } from 'react-map-gl/maplibre'
+
 import { filterLayers, layersInViewport, type FilterOptions } from '../core/filter'
 import type { EliLayer } from '../core/types'
 
@@ -89,9 +90,15 @@ export {
   getRasterSourceSpec,
   type RasterLayerOptions,
   type RasterLayerSpec,
+  type RasterSourceOptions,
   type RasterSourceSpec,
 } from '../core/specs'
-export { filterLayers, layersInViewport, type FilterOptions, type ViewportBounds } from '../core/filter'
+export {
+  filterLayers,
+  layersInViewport,
+  type FilterOptions,
+  type ViewportBounds,
+} from '../core/filter'
 export {
   getGeometry,
   getLayer,
@@ -100,4 +107,11 @@ export {
   loadGeometries,
   type CoverageFeature,
 } from '../core/data'
+export {
+  applyApiKeys,
+  eliApiKeyNames,
+  hasRequiredKeys,
+  type EliApiKey,
+  type EliApiKeys,
+} from '../core/apiKeys'
 export type { EliCategory, EliLayer, EliLayerType } from '../core/types'

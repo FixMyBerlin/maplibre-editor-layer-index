@@ -18,20 +18,27 @@ npm i maplibre-editor-layer-index
 `useEditorLayerIndex` returns the layers covering the current viewport (recomputed on `moveend`).
 You render and style them:
 
+Keep `<Source>` and `<Layer>` **flat** (separate siblings, the layer referencing the source by
+id) — react-map-gl's recommended pattern, not nested:
+
 ```tsx
-import { Map, Source, Layer, MapProvider } from 'react-map-gl/maplibre'
+import { Fragment } from 'react'
+import { Layer, Map, MapProvider, Source } from 'react-map-gl/maplibre'
 import {
-  useEditorLayerIndex,
-  getRasterSourceSpec,
   getRasterLayerSpec,
+  getRasterSourceSpec,
+  useEditorLayerIndex,
 } from 'maplibre-editor-layer-index/react'
 
 function Layers() {
   const { layers } = useEditorLayerIndex({ mapId: 'main', filter: { categories: ['photo'] } })
   return layers.map((l) => (
-    <Source key={l.id} id={`eli-${l.id}`} {...getRasterSourceSpec(l)}>
-      <Layer {...getRasterLayerSpec(l, { paint: { 'raster-opacity': 0.8 } })} />
-    </Source>
+    <Fragment key={l.id}>
+      <Source id={`eli-${l.id}`} {...getRasterSourceSpec(l)} />
+      <Layer
+        {...getRasterLayerSpec(l, { source: `eli-${l.id}`, paint: { 'raster-opacity': 0.8 } })}
+      />
+    </Fragment>
   ))
 }
 
@@ -59,14 +66,14 @@ addEditorLayer(map, layers[0], { paint: { 'raster-opacity': 0.8 } })
 
 ## Core API (framework-agnostic)
 
-| Export | Purpose |
-| --- | --- |
-| `getLayers()` / `getLayer(id)` | All layers / one layer (metadata + bbox + countryCodes). |
-| `layersInViewport(bounds, options?)` | Layers overlapping a viewport (bbox math). Accepts `[w,s,e,n]`, `{west,…}`, or a maplibre `LngLatBounds`. |
-| `filterLayers(options)` | Predicate-only filter (category, type, best, overlays, countryCodes). |
-| `getRasterSourceSpec(layer)` / `getRasterLayerSpec(layer, opts)` | MapLibre style specs. |
-| `getGeometry(layer)` / `loadGeometries()` | Lazily load the coverage polygon(s) — only when you actually need them. |
-| `getManifest()` | Build provenance (source, version, counts). |
+| Export                                                           | Purpose                                                                                                   |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `getLayers()` / `getLayer(id)`                                   | All layers / one layer (metadata + bbox + countryCodes).                                                  |
+| `layersInViewport(bounds, options?)`                             | Layers overlapping a viewport (bbox math). Accepts `[w,s,e,n]`, `{west,…}`, or a maplibre `LngLatBounds`. |
+| `filterLayers(options)`                                          | Predicate-only filter (category, type, best, overlays, countryCodes).                                     |
+| `getRasterSourceSpec(layer)` / `getRasterLayerSpec(layer, opts)` | MapLibre style specs.                                                                                     |
+| `getGeometry(layer)` / `loadGeometries()`                        | Lazily load the coverage polygon(s) — only when you actually need them.                                   |
+| `getManifest()`                                                  | Build provenance (source, version, counts).                                                               |
 
 ## How the data is built
 
@@ -76,7 +83,23 @@ zod (refusing to publish on schema drift), rewrites tile URLs to MapLibre raster
 coverage polygons, and precomputes each layer's bbox and country codes. Unsupported source types
 (`bing`, `scanex`, `wms_endpoint`, `pmtiles`) are dropped.
 
-Some layers require an API key — their tile URL keeps the `{apikey}` placeholder for you to fill.
+## API keys
+
+A handful of layers need an API key (e.g. Mapbox, Thunderforest). Each such layer lists what it
+needs in `layer.requiresKeys` (typed via `EliApiKey`), and the full set is `eliApiKeyNames`.
+
+By default these layers are **excluded** — the list stays clean and actionable, with no broken
+tiles and no need to sniff URLs for `{apikey}`. Provide the keys to opt them in; the same keys are
+substituted into the tile URLs by the spec helpers:
+
+```ts
+// Without apiKeys: key-requiring layers are filtered out entirely.
+const layers = layersInViewport(bounds, { apiKeys: { apikey: 'pk.your-token' } })
+const source = getRasterSourceSpec(layer, { apiKeys: { apikey: 'pk.your-token' } })
+
+// react-map-gl: pass via the hook's filter
+useEditorLayerIndex({ filter: { apiKeys: { apikey: 'pk.your-token' } } })
+```
 
 ## License
 

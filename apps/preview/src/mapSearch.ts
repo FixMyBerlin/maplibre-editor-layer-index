@@ -1,4 +1,5 @@
 import type { EliCategory } from 'maplibre-editor-layer-index'
+
 import { parseList } from './searchParams'
 
 /** Category groups shown in the sidebar, in display order, with friendly labels. */

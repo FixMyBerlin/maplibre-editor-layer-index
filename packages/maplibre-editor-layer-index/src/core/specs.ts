@@ -1,3 +1,4 @@
+import { applyApiKeys, type EliApiKeys } from './apiKeys'
 import type { EliLayer } from './types'
 
 /**
@@ -30,11 +31,19 @@ export function eliSourceId(layer: EliLayer | string): string {
   return `eli-${typeof layer === 'string' ? layer : layer.id}`
 }
 
+export type RasterSourceOptions = {
+  /** API keys to substitute into the tile URL templates (e.g. `{ apikey: '…' }`). */
+  apiKeys?: EliApiKeys
+}
+
 /** Build a MapLibre `RasterSourceSpecification` for an ELI layer. */
-export function getRasterSourceSpec(layer: EliLayer): RasterSourceSpec {
+export function getRasterSourceSpec(
+  layer: EliLayer,
+  options: RasterSourceOptions = {},
+): RasterSourceSpec {
   return {
     type: 'raster',
-    tiles: layer.tiles,
+    tiles: applyApiKeys(layer.tiles, options.apiKeys),
     tileSize: layer.tileSize,
     ...(layer.scheme ? { scheme: layer.scheme } : {}),
     ...(layer.minzoom !== undefined ? { minzoom: layer.minzoom } : {}),
@@ -53,7 +62,10 @@ export type RasterLayerOptions = {
 }
 
 /** Build a MapLibre `RasterLayerSpecification` referencing an ELI raster source. */
-export function getRasterLayerSpec(layer: EliLayer, options: RasterLayerOptions = {}): RasterLayerSpec {
+export function getRasterLayerSpec(
+  layer: EliLayer,
+  options: RasterLayerOptions = {},
+): RasterLayerSpec {
   return {
     id: options.id ?? eliSourceId(layer),
     type: 'raster',

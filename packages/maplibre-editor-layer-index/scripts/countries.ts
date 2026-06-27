@@ -1,5 +1,6 @@
 import * as countryCoder from '@rapideditor/country-coder'
 import type { Geometry } from 'geojson'
+
 import type { BBox } from '../src/core/types'
 import { geometryBBox } from './geometry'
 

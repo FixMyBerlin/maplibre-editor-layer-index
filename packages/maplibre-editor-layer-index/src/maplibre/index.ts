@@ -1,3 +1,4 @@
+import type { EliApiKeys } from '../core/apiKeys'
 import {
   eliSourceId,
   getRasterLayerSpec,
@@ -25,6 +26,8 @@ export type MapLike = {
 export type AddEditorLayerOptions = RasterLayerOptions & {
   /** Insert the raster layer below this existing layer id. */
   beforeId?: string
+  /** API keys to substitute into the tile URLs (e.g. `{ apikey: '…' }`). */
+  apiKeys?: EliApiKeys
 }
 
 /**
@@ -43,8 +46,11 @@ export function addEditorLayer(
   const layerId = options.id ?? eliSourceId(layer)
 
   removeEditorLayer(map, layerId, sourceId)
-  map.addSource(sourceId, getRasterSourceSpec(layer))
-  map.addLayer(getRasterLayerSpec(layer, { ...options, id: layerId, source: sourceId }), options.beforeId)
+  map.addSource(sourceId, getRasterSourceSpec(layer, { apiKeys: options.apiKeys }))
+  map.addLayer(
+    getRasterLayerSpec(layer, { ...options, id: layerId, source: sourceId }),
+    options.beforeId,
+  )
   return layerId
 }
 

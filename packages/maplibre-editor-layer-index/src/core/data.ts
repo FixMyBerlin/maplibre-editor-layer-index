@@ -1,10 +1,11 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson'
-import type { EliGeometries, EliLayer, EliManifest } from './types'
+
 // The small index is bundled directly — it's what every consumer needs.
 import indexJson from '../data/index.json' with { type: 'json' }
 import manifestJson from '../data/manifest.json' with { type: 'json' }
+import type { EliGeometries, EliLayer, EliManifest } from './types'
 
-const index = indexJson as { layers: EliLayer[] }
+const index = indexJson as unknown as { layers: EliLayer[] }
 
 /** All published ELI layers (metadata + bbox + countryCodes, no coordinates). */
 export function getLayers(): EliLayer[] {

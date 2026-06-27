@@ -1,4 +1,5 @@
 import type { Geometry } from 'geojson'
+
 import type { EliGeometries, EliLayer, EliLayerType } from '../src/core/types'
 import { countryCodesForBBox } from './countries'
 import { geometryBBox, geometryId, WORLD_BBOX, WORLD_GEOMETRY_ID } from './geometry'
@@ -7,6 +8,21 @@ import { convertTileUrl } from './url'
 
 /** ELI types we can render as MapLibre raster sources. Others are dropped. */
 const SUPPORTED_TYPES = new Set<EliLayerType>(['tms', 'wms', 'wmts'])
+
+/** Placeholders MapLibre fills itself — anything else left in a URL is a key/param. */
+const STANDARD_TOKENS = new Set(['z', 'x', 'y', 'bbox-epsg-3857'])
+
+/** Distinct `{placeholder}` names still present in the URLs (e.g. `apikey`). */
+function extractRequiredKeys(tiles: string[]): string[] {
+  const keys = new Set<string>()
+  for (const url of tiles) {
+    for (const match of url.match(/\{([^}]+)\}/g) ?? []) {
+      const name = match.slice(1, -1)
+      if (!STANDARD_TOKENS.has(name)) keys.add(name)
+    }
+  }
+  return [...keys].sort()
+}
 
 function buildAttributionHtml(feature: EliFeature): string | undefined {
   const a = feature.properties.attribution
@@ -19,6 +35,8 @@ function buildAttributionHtml(feature: EliFeature): string | undefined {
 export type TransformResult = {
   layers: EliLayer[]
   geometries: EliGeometries
+  /** Distinct API-key placeholder names across all layers (e.g. `["apikey"]`). */
+  apiKeys: string[]
   counts: {
     upstream: number
     published: number
@@ -51,6 +69,7 @@ export function transform(raw: unknown): TransformResult {
     const layerType = type as EliLayerType
     const tileSize = feature.properties.tile_size ?? 256
     const { tiles, scheme } = convertTileUrl(feature.properties.url, layerType, tileSize)
+    const requiresKeys = extractRequiredKeys(tiles)
 
     let gid = WORLD_GEOMETRY_ID
     let bbox = WORLD_BBOX
@@ -81,15 +100,19 @@ export function transform(raw: unknown): TransformResult {
       geometryId: gid,
       bbox,
       countryCodes,
+      requiresKeys,
     })
   }
 
   // Deterministic ordering so regenerated output diffs only on real changes.
   layers.sort((a, b) => a.id.localeCompare(b.id))
 
+  const apiKeys = [...new Set(layers.flatMap((l) => l.requiresKeys))].sort()
+
   return {
     layers,
     geometries,
+    apiKeys,
     counts: {
       upstream: collection.features.length,
       published: layers.length,

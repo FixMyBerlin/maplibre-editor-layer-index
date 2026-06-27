@@ -7,10 +7,10 @@ imagery layers in **[react-map-gl](https://visgl.github.io/react-map-gl/)** (pri
 
 This is a Bun-workspaces monorepo:
 
-| Path | What |
-| --- | --- |
-| [`packages/maplibre-editor-layer-index`](packages/maplibre-editor-layer-index) | The published npm package (ESM-only). |
-| [`apps/preview`](apps/preview) | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
+| Path                                                                           | What                                                                                   |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| [`packages/maplibre-editor-layer-index`](packages/maplibre-editor-layer-index) | The published npm package (ESM-only).                                                  |
+| [`apps/preview`](apps/preview)                                                 | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
 
 ## Why it's small
 

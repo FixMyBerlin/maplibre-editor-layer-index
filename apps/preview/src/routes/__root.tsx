@@ -1,4 +1,5 @@
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+
 import { LocationBanner } from '../LocationBanner'
 import { DEFAULT_VIEW } from '../mapSearch'
 

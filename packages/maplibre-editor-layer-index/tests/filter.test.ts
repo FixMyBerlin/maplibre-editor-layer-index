@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest'
+
+import { applyApiKeys, hasRequiredKeys } from '../src/core/apiKeys'
 import { filterLayers, layersInViewport } from '../src/core/filter'
 import { getRasterLayerSpec, getRasterSourceSpec } from '../src/core/specs'
 import type { EliLayer } from '../src/core/types'
@@ -13,6 +15,7 @@ function layer(partial: Partial<EliLayer> & Pick<EliLayer, 'id' | 'bbox'>): EliL
     tileSize: 256,
     geometryId: 'g',
     countryCodes: [],
+    requiresKeys: [],
     ...partial,
   } as EliLayer
 }
@@ -59,6 +62,46 @@ describe('filterLayers', () => {
   it('filters by type/best/overlay without location', () => {
     const best = layer({ id: 'best', bbox: [0, 0, 1, 1], best: true })
     expect(filterLayers({ bestOnly: true }, [berlin, best]).map((l) => l.id)).toEqual(['best'])
+  })
+
+  it('hides key-requiring layers by default, includes them once keys are provided', () => {
+    const keyed = layer({ id: 'mapbox', bbox: [0, 0, 1, 1], requiresKeys: ['apikey'] })
+    const layers = [berlin, keyed]
+    expect(filterLayers({}, layers).map((l) => l.id)).toEqual(['berlin'])
+    expect(filterLayers({ apiKeys: { apikey: 'pk.test' } }, layers).map((l) => l.id)).toEqual([
+      'berlin',
+      'mapbox',
+    ])
+  })
+})
+
+describe('api keys', () => {
+  it('hasRequiredKeys reflects availability', () => {
+    expect(hasRequiredKeys([])).toBe(true)
+    expect(hasRequiredKeys(['apikey'])).toBe(false)
+    expect(hasRequiredKeys(['apikey'], { apikey: '' })).toBe(false)
+    expect(hasRequiredKeys(['apikey'], { apikey: 'pk' })).toBe(true)
+  })
+
+  it('applyApiKeys substitutes only matching placeholders', () => {
+    expect(applyApiKeys(['https://t/{z}/{x}/{y}?key={apikey}'], { apikey: 'pk.test' })).toEqual([
+      'https://t/{z}/{x}/{y}?key=pk.test',
+    ])
+    // Standard tokens are never touched.
+    expect(applyApiKeys(['https://t/{z}/{x}/{y}'], { apikey: 'pk' })).toEqual([
+      'https://t/{z}/{x}/{y}',
+    ])
+  })
+
+  it('getRasterSourceSpec substitutes keys into tiles', () => {
+    const keyed = layer({
+      id: 'k',
+      bbox: [0, 0, 1, 1],
+      tiles: ['https://t/{z}/{x}/{y}?key={apikey}'],
+    })
+    expect(getRasterSourceSpec(keyed, { apiKeys: { apikey: 'pk' } }).tiles).toEqual([
+      'https://t/{z}/{x}/{y}?key=pk',
+    ])
   })
 })
 

@@ -1,5 +1,6 @@
 import type { Feature, Geometry } from 'geojson'
 import { describe, expect, it } from 'vitest'
+
 import { geometryBBox, geometryId } from '../scripts/geometry'
 import { transform } from '../scripts/transform'
 
@@ -47,9 +48,7 @@ describe('transform', () => {
   })
 
   it('drops unsupported source types and records the counts', () => {
-    const result = transform(
-      collection([feature('tms-ok'), feature('bing', { type: 'bing' })]),
-    )
+    const result = transform(collection([feature('tms-ok'), feature('bing', { type: 'bing' })]))
     expect(result.layers.map((l) => l.id)).toEqual(['tms-ok'])
     expect(result.counts.dropped).toEqual({ bing: 1 })
     expect(result.counts.upstream).toBe(2)
@@ -71,6 +70,14 @@ describe('transform', () => {
     expect(layer.countryCodes).toContain('DE')
   })
 
+  it('records requiresKeys from leftover {apikey} placeholders', () => {
+    const keyed = feature('keyed', { url: 'https://t/{zoom}/{x}/{y}?token={apikey}' })
+    const result = transform(collection([feature('plain'), keyed]))
+    expect(result.layers.find((l) => l.id === 'plain')!.requiresKeys).toEqual([])
+    expect(result.layers.find((l) => l.id === 'keyed')!.requiresKeys).toEqual(['apikey'])
+    expect(result.apiKeys).toEqual(['apikey'])
+  })
+
   it('throws on structurally invalid input (refuse to publish garbage)', () => {
     expect(() => transform({ type: 'FeatureCollection' })).toThrow()
     expect(() =>
@@ -83,7 +90,14 @@ describe('geometry helpers', () => {
   it('hashes identical geometries to the same id and differs on change', () => {
     const other = {
       type: 'Polygon' as const,
-      coordinates: [[[0, 0], [1, 0], [1, 1], [0, 0]]],
+      coordinates: [
+        [
+          [0, 0],
+          [1, 0],
+          [1, 1],
+          [0, 0],
+        ],
+      ],
     }
     expect(geometryId(berlinPolygon)).toBe(geometryId(berlinPolygon))
     expect(geometryId(berlinPolygon)).not.toBe(geometryId(other))

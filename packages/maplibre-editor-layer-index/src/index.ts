@@ -9,6 +9,14 @@ export type {
 } from './core/types'
 
 export {
+  applyApiKeys,
+  eliApiKeyNames,
+  hasRequiredKeys,
+  type EliApiKey,
+  type EliApiKeys,
+} from './core/apiKeys'
+
+export {
   getGeometry,
   getLayer,
   getLayers,
@@ -31,5 +39,6 @@ export {
   getRasterSourceSpec,
   type RasterLayerOptions,
   type RasterLayerSpec,
+  type RasterSourceOptions,
   type RasterSourceSpec,
 } from './core/specs'

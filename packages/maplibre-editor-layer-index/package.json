@@ -2,27 +2,29 @@
   "name": "maplibre-editor-layer-index",
   "version": "0.0.0",
   "description": "Use the OSM Editor Layer Index as background/imagery layers in react-map-gl and maplibre-gl-js, with viewport filtering.",
+  "keywords": [
+    "basemap",
+    "editor-layer-index",
+    "eli",
+    "imagery",
+    "maplibre",
+    "maplibre-gl",
+    "openstreetmap",
+    "osm",
+    "raster",
+    "react-map-gl"
+  ],
   "license": "MIT",
   "author": "Tobias Jordans",
   "repository": {
     "type": "git",
     "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index"
   },
-  "keywords": [
-    "maplibre",
-    "maplibre-gl",
-    "react-map-gl",
-    "editor-layer-index",
-    "eli",
-    "openstreetmap",
-    "osm",
-    "imagery",
-    "raster",
-    "basemap"
+  "files": [
+    "dist"
   ],
   "type": "module",
   "sideEffects": false,
-  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -53,16 +55,6 @@
     "prepublishOnly": "bun run build"
   },
   "dependencies": {},
-  "peerDependencies": {
-    "maplibre-gl": ">=4",
-    "react": ">=18",
-    "react-map-gl": ">=7.1"
-  },
-  "peerDependenciesMeta": {
-    "maplibre-gl": { "optional": true },
-    "react": { "optional": true },
-    "react-map-gl": { "optional": true }
-  },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.4",
     "@rapideditor/country-coder": "^5.6.1",
@@ -76,5 +68,21 @@
     "typescript": "^5.7.2",
     "vitest": "^4.1.9",
     "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "maplibre-gl": ">=4",
+    "react": ">=18",
+    "react-map-gl": ">=7.1"
+  },
+  "peerDependenciesMeta": {
+    "maplibre-gl": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-map-gl": {
+      "optional": true
+    }
   }
 }

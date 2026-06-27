@@ -53,6 +53,12 @@ export type EliLayer = {
   bbox: BBox
   /** ISO-ish region codes the coverage touches (via country-coder). Empty for worldwide. */
   countryCodes: string[]
+  /**
+   * Names of API-key placeholders still present in {@link EliLayer.tiles} (e.g.
+   * `["apikey"]`). The layer only works once these are supplied. Empty for the
+   * vast majority of layers. See `EliApiKey` for the full set of known names.
+   */
+  requiresKeys: string[]
 }
 
 /** The small, always-loaded data file: every layer minus coverage coordinates. */

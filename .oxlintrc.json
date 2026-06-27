@@ -10,10 +10,5 @@
     "no-console": "off",
     "no-unused-vars": "warn"
   },
-  "ignorePatterns": [
-    "dist",
-    "node_modules",
-    "**/src/data/*.json",
-    "**/routeTree.gen.ts"
-  ]
+  "ignorePatterns": ["dist", "node_modules", "**/src/data/*.json", "**/routeTree.gen.ts"]
 }

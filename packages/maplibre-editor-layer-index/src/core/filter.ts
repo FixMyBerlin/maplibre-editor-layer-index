@@ -1,3 +1,4 @@
+import { hasRequiredKeys, type EliApiKeys } from './apiKeys'
 import { getLayers } from './data'
 import type { BBox, EliCategory, EliLayer, EliLayerType } from './types'
 
@@ -19,6 +20,12 @@ export type FilterOptions = {
   excludeOverlays?: boolean
   /** Keep only layers whose coverage touches one of these region codes. */
   countryCodes?: string[]
+  /**
+   * API keys you have available. Layers that require a key are **excluded by
+   * default** (so the list stays clean and actionable); provide the keys here to
+   * include them. The same keys are substituted into tile URLs by the spec helpers.
+   */
+  apiKeys?: EliApiKeys
 }
 
 function toBBox(bounds: ViewportBounds): BBox {
@@ -37,6 +44,8 @@ function bboxOverlaps(a: BBox, b: BBox): boolean {
 }
 
 function matchesOptions(layer: EliLayer, options: FilterOptions): boolean {
+  // Hide layers whose required API keys aren't available — keeps the default clean.
+  if (!hasRequiredKeys(layer.requiresKeys, options.apiKeys)) return false
   if (options.categories && !(layer.category && options.categories.includes(layer.category))) {
     return false
   }

@@ -1,5 +1,4 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import type { ExpressionSpecification, FilterSpecification } from 'maplibre-gl'
 import {
   getLayer,
   getRasterLayerSpec,
@@ -9,8 +8,10 @@ import {
   type EliCategory,
   type EliLayer,
 } from 'maplibre-editor-layer-index/react'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import type { ExpressionSpecification, FilterSpecification } from 'maplibre-gl'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Layer, Map, MapProvider, Source, useMap } from 'react-map-gl/maplibre'
+
 import { CATEGORY_GROUPS, mapSearchSchema, type MapSearch } from '../mapSearch'
 
 export const Route = createFileRoute('/react-map-gl')({
@@ -43,9 +44,9 @@ function ReactMapGlDemo() {
 
   const { layers } = useEditorLayerIndex({ mapId: MAP_ID })
   const [hoveredId, setHoveredId] = useState<string | null>(null)
-  const [coverage, setCoverage] = useState<Awaited<
-    ReturnType<typeof loadCoverageFeatures>
-  > | null>(null)
+  const [coverage, setCoverage] = useState<Awaited<ReturnType<typeof loadCoverageFeatures>> | null>(
+    null,
+  )
   const [loading, setLoading] = useState(false)
 
   const { open, selected } = search
@@ -66,9 +67,7 @@ function ReactMapGlDemo() {
     moveTimer.current = setTimeout(() => setSearch({ lat, lng, zoom }), 250)
   }
 
-  const selectedLayers = selected
-    .map((id) => getLayer(id))
-    .filter((l): l is EliLayer => Boolean(l))
+  const selectedLayers = selected.map((id) => getLayer(id)).filter((l): l is EliLayer => Boolean(l))
 
   // Load coverage polygons for the viewport layers (borders + hover/selected highlight).
   const viewportKey = layers.map((l) => l.id).join(',')
@@ -124,6 +123,18 @@ function ReactMapGlDemo() {
     }
   }, [hoveredId])
 
+  // Guard against a missed resize: if the map mounts before its grid cell has its
+  // final height, the canvas can stay tiny. Observe the container and keep the
+  // canvas in sync (belt-and-suspenders over maplibre's own resize handling).
+  useEffect(() => {
+    if (!map) return
+    const container = map.getContainer()
+    const ro = new ResizeObserver(() => map.resize())
+    ro.observe(container)
+    map.resize()
+    return () => ro.disconnect()
+  }, [map])
+
   // Spinner: hook into maplibre tile-loading events; defer to next frame to avoid
   // setState during react-map-gl's synchronous source commits.
   useEffect(() => {
@@ -151,7 +162,9 @@ function ReactMapGlDemo() {
   // Read current arrays from the ref (not the render snapshot) so same-tick toggles compose.
   const toggleOpen = (category: EliCategory) => {
     const cur = searchRef.current.open
-    setSearch({ open: cur.includes(category) ? cur.filter((c) => c !== category) : [...cur, category] })
+    setSearch({
+      open: cur.includes(category) ? cur.filter((c) => c !== category) : [...cur, category],
+    })
   }
   const toggleSelect = (id: string) => {
     const cur = searchRef.current.selected
@@ -175,11 +188,12 @@ function ReactMapGlDemo() {
     <>
       <aside className="sidebar">
         <p className="meta">
-          {layers.length} layers in this viewport. Open a category to see coverage; click a layer
-          to load its imagery.
+          {layers.length} layers in this viewport. Open a category to see coverage; click a layer to
+          load its imagery.
         </p>
         {groups.map((group) => {
           const isOpen = open.includes(group.key)
+          const activeCount = group.items.filter((l) => selected.includes(l.id)).length
           return (
             <div className="group" key={group.key}>
               <button
@@ -188,7 +202,14 @@ function ReactMapGlDemo() {
               >
                 <span className="caret">{isOpen ? '▾' : '▸'}</span>
                 <span className="group-title">{group.label}</span>
-                <span className="group-count">{group.items.length}</span>
+                {activeCount > 0 && (
+                  <span className="group-count active" title={`${activeCount} active`}>
+                    {activeCount}
+                  </span>
+                )}
+                <span className="group-count" title={`${group.items.length} in viewport`}>
+                  {group.items.length}
+                </span>
               </button>
               {isOpen && (
                 <div className="group-items">
@@ -207,7 +228,9 @@ function ReactMapGlDemo() {
                       </span>
                       {(() => {
                         const scope = layerScope(layer)
-                        return scope ? <span className={`badge scope ${scope}`}>{scope}</span> : null
+                        return scope ? (
+                          <span className={`badge scope ${scope}`}>{scope}</span>
+                        ) : null
                       })()}
                       {layer.best && <span className="badge">best</span>}
                       <span className="badge type">{layer.type}</span>
@@ -242,9 +265,13 @@ function ReactMapGlDemo() {
             )
           }
         >
+          {/* react-map-gl convention: keep <Source> and <Layer> FLAT (separate
+              siblings, Layer referencing the source by id) — never nested. */}
+
           {/* Imagery for selected layers — rendered first so it sits below the borders. */}
           {selectedLayers.map((layer) => (
-            <Source key={layer.id} id={`eli-raster-${layer.id}`} {...getRasterSourceSpec(layer)}>
+            <Fragment key={layer.id}>
+              <Source id={`eli-raster-${layer.id}`} {...getRasterSourceSpec(layer)} />
               <Layer
                 {...getRasterLayerSpec(layer, {
                   id: `eli-raster-${layer.id}`,
@@ -252,22 +279,24 @@ function ReactMapGlDemo() {
                   paint: { 'raster-opacity': 0.9 },
                 })}
               />
-            </Source>
+            </Fragment>
           ))}
 
           {/* Coverage borders for open categories: an inner inset band + a crisp outline,
               plus a distinct red treatment for selected layers and the name along the line. */}
           {coverage && (
             <>
-            <Source id={COVERAGE_SOURCE} type="geojson" data={coverage}>
+              <Source id={COVERAGE_SOURCE} type="geojson" data={coverage} />
               <Layer
                 id="eli-coverage-fill"
+                source={COVERAGE_SOURCE}
                 type="fill"
                 filter={openFilter}
                 paint={{ 'fill-color': '#1a73e8', 'fill-opacity': 0 }}
               />
               <Layer
                 id="eli-coverage-inner"
+                source={COVERAGE_SOURCE}
                 type="line"
                 filter={openFilter}
                 paint={{
@@ -279,12 +308,14 @@ function ReactMapGlDemo() {
               />
               <Layer
                 id="eli-coverage-outline"
+                source={COVERAGE_SOURCE}
                 type="line"
                 filter={openFilter}
                 paint={{ 'line-color': '#1a73e8', 'line-width': 1.5 }}
               />
               <Layer
                 id="eli-coverage-selected-inner"
+                source={COVERAGE_SOURCE}
                 type="line"
                 filter={selectedFilter}
                 paint={{
@@ -296,12 +327,14 @@ function ReactMapGlDemo() {
               />
               <Layer
                 id="eli-coverage-selected"
+                source={COVERAGE_SOURCE}
                 type="line"
                 filter={selectedFilter}
                 paint={{ 'line-color': '#d50000', 'line-width': 2.5 }}
               />
               <Layer
                 id="eli-coverage-label"
+                source={COVERAGE_SOURCE}
                 type="symbol"
                 filter={labelFilter}
                 layout={{
@@ -316,13 +349,13 @@ function ReactMapGlDemo() {
                   'text-halo-width': 1.5,
                 }}
               />
-            </Source>
 
-            {/* Hovered shape — declared after coverage (same commit) so its layers
-                are inserted on top and the highlight is always visible. */}
-            <Source id={HIGHLIGHT_SOURCE} type="geojson" data={highlightData}>
+              {/* Hovered shape — declared after coverage (same commit) so its layers
+                  are inserted on top and the highlight is always visible. */}
+              <Source id={HIGHLIGHT_SOURCE} type="geojson" data={highlightData} />
               <Layer
                 id="eli-highlight-inner"
+                source={HIGHLIGHT_SOURCE}
                 type="line"
                 paint={{
                   'line-color': '#ff6d00',
@@ -333,31 +366,38 @@ function ReactMapGlDemo() {
               />
               <Layer
                 id="eli-highlight-outline"
+                source={HIGHLIGHT_SOURCE}
                 type="line"
                 paint={{ 'line-color': '#ff6d00', 'line-width': 3 }}
               />
-            </Source>
 
-            {/* Temporary glow on the hovered layer's bounding box (the box used for
-                viewport filtering). For worldwide layers this whole-world box is the
-                only feedback there is — a visible cue for "no precise coverage". */}
-            <Source id="eli-bbox" type="geojson" data={bboxData}>
+              {/* Temporary glow on the hovered layer's bounding box (the box used for
+                  viewport filtering). For worldwide layers this whole-world box is the
+                  only feedback there is — a visible cue for "no precise coverage". */}
+              <Source id="eli-bbox" type="geojson" data={bboxData} />
               <Layer
                 id="eli-bbox-fill"
+                source="eli-bbox"
                 type="fill"
                 paint={{ 'fill-color': '#9c27b0', 'fill-opacity': 0.12 }}
               />
               <Layer
                 id="eli-bbox-glow"
+                source="eli-bbox"
                 type="line"
-                paint={{ 'line-color': '#9c27b0', 'line-width': 14, 'line-blur': 6, 'line-opacity': 0.5 }}
+                paint={{
+                  'line-color': '#9c27b0',
+                  'line-width': 14,
+                  'line-blur': 6,
+                  'line-opacity': 0.5,
+                }}
               />
               <Layer
                 id="eli-bbox-line"
+                source="eli-bbox"
                 type="line"
                 paint={{ 'line-color': '#9c27b0', 'line-width': 2, 'line-dasharray': [3, 2] }}
               />
-            </Source>
             </>
           )}
         </Map>
