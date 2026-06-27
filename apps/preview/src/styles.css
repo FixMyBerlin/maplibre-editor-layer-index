@@ -228,6 +228,20 @@ body,
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 1px 4px;
+  white-space: nowrap;
+}
+
+.layer .badge.scope {
+  border-color: transparent;
+  color: #fff;
+}
+
+.layer .badge.scope.worldwide {
+  background: #9c27b0;
+}
+
+.layer .badge.scope.continental {
+  background: #6a1b9a;
 }
 
 .layer.selected {

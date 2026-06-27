@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Use the OSM Editor Layer Index as background/imagery layers in react-map-gl and maplibre-gl-js, with viewport filtering.",
   "license": "MIT",
-  "author": "FixMyCity",
+  "author": "Tobias Jordans",
   "repository": {
     "type": "git",
     "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index"

@@ -90,6 +90,40 @@ function ReactMapGlDemo() {
     return feature ? { type: 'FeatureCollection' as const, features: [feature] } : EMPTY_FC
   }, [coverage, hoveredId])
 
+  // Bounding box of the hovered layer, drawn as a temporary glowing rectangle. This
+  // is what viewport filtering uses, and for worldwide layers (no coverage polygon)
+  // it's the only thing to show — making it obvious why they have no hover outline.
+  const bboxData = useMemo(() => {
+    const layer = hoveredId ? getLayer(hoveredId) : undefined
+    if (!layer) return EMPTY_FC
+    const [w, rawS, e, rawN] = layer.bbox
+    // Clamp latitude to the Web Mercator limit so a whole-world bbox still renders
+    // (a polygon reaching ±90° is invalid in Mercator and would be dropped).
+    const s = Math.max(rawS, -85.05)
+    const n = Math.min(rawN, 85.05)
+    return {
+      type: 'FeatureCollection' as const,
+      features: [
+        {
+          type: 'Feature' as const,
+          properties: { worldwide: layer.geometryId === 'world' },
+          geometry: {
+            type: 'Polygon' as const,
+            coordinates: [
+              [
+                [w, s],
+                [e, s],
+                [e, n],
+                [w, n],
+                [w, s],
+              ],
+            ],
+          },
+        },
+      ],
+    }
+  }, [hoveredId])
+
   // Spinner: hook into maplibre tile-loading events; defer to next frame to avoid
   // setState during react-map-gl's synchronous source commits.
   useEffect(() => {
@@ -171,6 +205,10 @@ function ReactMapGlDemo() {
                       <span className="name" title={layer.name}>
                         {layer.name}
                       </span>
+                      {(() => {
+                        const scope = layerScope(layer)
+                        return scope ? <span className={`badge scope ${scope}`}>{scope}</span> : null
+                      })()}
                       {layer.best && <span className="badge">best</span>}
                       <span className="badge type">{layer.type}</span>
                     </div>
@@ -299,6 +337,27 @@ function ReactMapGlDemo() {
                 paint={{ 'line-color': '#ff6d00', 'line-width': 3 }}
               />
             </Source>
+
+            {/* Temporary glow on the hovered layer's bounding box (the box used for
+                viewport filtering). For worldwide layers this whole-world box is the
+                only feedback there is — a visible cue for "no precise coverage". */}
+            <Source id="eli-bbox" type="geojson" data={bboxData}>
+              <Layer
+                id="eli-bbox-fill"
+                type="fill"
+                paint={{ 'fill-color': '#9c27b0', 'fill-opacity': 0.12 }}
+              />
+              <Layer
+                id="eli-bbox-glow"
+                type="line"
+                paint={{ 'line-color': '#9c27b0', 'line-width': 14, 'line-blur': 6, 'line-opacity': 0.5 }}
+              />
+              <Layer
+                id="eli-bbox-line"
+                type="line"
+                paint={{ 'line-color': '#9c27b0', 'line-width': 2, 'line-dasharray': [3, 2] }}
+              />
+            </Source>
             </>
           )}
         </Map>
@@ -316,4 +375,16 @@ function ReactMapGlDemo() {
 
 function round(n: number): number {
   return Math.round(n * 1e5) / 1e5
+}
+
+/**
+ * Coarse coverage scope, derived live from the index (no reprocessing needed).
+ * `worldwide` layers have no coverage polygon — which is why they show no hover
+ * outline on the map. `continental` layers span a very large bbox.
+ */
+function layerScope(layer: EliLayer): 'worldwide' | 'continental' | null {
+  if (layer.geometryId === 'world') return 'worldwide'
+  const [w, s, e, n] = layer.bbox
+  if (Math.max(e - w, n - s) >= 30) return 'continental'
+  return null
 }
