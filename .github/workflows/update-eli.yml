@@ -39,6 +39,16 @@ jobs:
             echo "ELI data changed."
           fi
 
+      # Same gates a PR gets before anything is published.
+      - name: Lint, typecheck, test, check exports
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          bun run lint
+          bun run --filter maplibre-editor-layer-index typecheck
+          bun run test
+          bun run build
+          bun run check-exports
+
       - name: Version, commit and publish
         if: steps.diff.outputs.changed == 'true'
         env:

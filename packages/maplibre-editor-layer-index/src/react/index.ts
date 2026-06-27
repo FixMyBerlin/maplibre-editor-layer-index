@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useMap } from 'react-map-gl/maplibre'
-
 import { filterLayers, layersInViewport, type FilterOptions } from '../core/filter'
 import type { EliLayer } from '../core/types'
 

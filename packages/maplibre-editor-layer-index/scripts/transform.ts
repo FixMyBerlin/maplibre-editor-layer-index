@@ -1,7 +1,6 @@
 import type { Geometry } from 'geojson'
-
 import type { EliGeometries, EliLayer, EliLayerType } from '../src/core/types'
-import { countryCodesForBBox } from './countries'
+import { countryCodesForGeometry } from './countries'
 import { geometryBBox, geometryId, WORLD_BBOX, WORLD_GEOMETRY_ID } from './geometry'
 import { eliFeatureCollectionSchema, type EliFeature } from './schema'
 import { convertTileUrl } from './url'
@@ -57,6 +56,9 @@ export function transform(raw: unknown): TransformResult {
 
   const layers: EliLayer[] = []
   const geometries: EliGeometries = {}
+  // Country codes are a property of the geometry, so compute once per unique
+  // geometry and reuse across the (often many) layers that share it.
+  const countryCache = new Map<string, string[]>()
   const dropped: Record<string, number> = {}
 
   for (const feature of collection.features) {
@@ -78,8 +80,13 @@ export function transform(raw: unknown): TransformResult {
       const geometry = feature.geometry as unknown as Geometry
       gid = geometryId(geometry)
       bbox = geometryBBox(geometry)
-      countryCodes = countryCodesForBBox(bbox)
       if (!geometries[gid]) geometries[gid] = geometry
+      let cached = countryCache.get(gid)
+      if (!cached) {
+        cached = countryCodesForGeometry(geometry)
+        countryCache.set(gid, cached)
+      }
+      countryCodes = cached
     }
 
     layers.push({

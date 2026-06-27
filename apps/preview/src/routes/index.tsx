@@ -1,5 +1,4 @@
 import { createFileRoute, redirect } from '@tanstack/react-router'
-
 import { DEFAULT_VIEW } from '../mapSearch'
 
 // No standalone landing page — the react-map-gl demo is the home.

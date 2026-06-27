@@ -1,5 +1,4 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson'
-
 // The small index is bundled directly — it's what every consumer needs.
 import indexJson from '../data/index.json' with { type: 'json' }
 import manifestJson from '../data/manifest.json' with { type: 'json' }

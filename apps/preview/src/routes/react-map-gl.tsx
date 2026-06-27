@@ -1,3 +1,4 @@
+import * as countryCoder from '@rapideditor/country-coder'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import {
   getLayer,
@@ -11,7 +12,6 @@ import {
 import type { ExpressionSpecification, FilterSpecification } from 'maplibre-gl'
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Layer, Map, MapProvider, Source, useMap } from 'react-map-gl/maplibre'
-
 import { CATEGORY_GROUPS, mapSearchSchema, type MapSearch } from '../mapSearch'
 
 export const Route = createFileRoute('/react-map-gl')({
@@ -42,7 +42,14 @@ function ReactMapGlDemo() {
   const maps = useMap()
   const map = maps[MAP_ID]?.getMap() ?? null
 
-  const { layers } = useEditorLayerIndex({ mapId: MAP_ID })
+  // Filter the list to the country under the map centre (precomputed per-layer
+  // country codes, resolved live by country-coder). This drops bbox false matches
+  // like TIGER showing up in Germany; worldwide layers still always pass.
+  const centerCountry = countryCoder.iso1A2Code([search.lng, search.lat])
+  const { layers } = useEditorLayerIndex({
+    mapId: MAP_ID,
+    filter: centerCountry ? { countryCodes: [centerCountry] } : undefined,
+  })
   const [hoveredId, setHoveredId] = useState<string | null>(null)
   const [coverage, setCoverage] = useState<Awaited<ReturnType<typeof loadCoverageFeatures>> | null>(
     null,

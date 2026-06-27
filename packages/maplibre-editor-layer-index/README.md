@@ -75,6 +75,30 @@ addEditorLayer(map, layers[0], { paint: { 'raster-opacity': 0.8 } })
 | `getGeometry(layer)` / `loadGeometries()`                        | Lazily load the coverage polygon(s) — only when you actually need them.                                   |
 | `getManifest()`                                                  | Build provenance (source, version, counts).                                                               |
 
+## Filtering by country (and the bbox caveat)
+
+Viewport filtering is **bbox overlap** — pure arithmetic, no geometry loaded. The tradeoff: a
+source whose bounding box is huge but whose real coverage is small will over-match. The classic
+case is US TIGER, whose territories straddle the antimeridian, so its bbox spans the whole globe
+and overlaps e.g. Germany.
+
+The fix is a precomputed, polygon-accurate `countryCodes` per layer (sampled from the actual
+polygon at build time, not the bbox). Pass the viewport's country to drop the false matches:
+
+```ts
+import { iso1A2Code } from '@rapideditor/country-coder' // your call, not a dependency of this pkg
+
+const country = iso1A2Code(map.getCenter().toArray()) // e.g. 'DE'
+const layers = layersInViewport(map.getBounds(), { countryCodes: country ? [country] : undefined })
+// TIGER (codes: US/CA) is dropped in DE; worldwide layers always pass.
+```
+
+Worldwide layers (`bbox: [-180,-90,180,90]`, empty `countryCodes`) match every viewport by design
+and always pass the country filter. Use `includeWorldwide: false` to drop them.
+
+> Antimeridian: bbox overlap does not wrap ±180°, so a layer crossing the antimeridian may be
+> missed at the seam. Acceptable for v1.
+
 ## How the data is built
 
 Generated at release time and committed: a weekly job fetches `imagery.geojson`, validates it with
@@ -100,6 +124,15 @@ const source = getRasterSourceSpec(layer, { apiKeys: { apikey: 'pk.your-token' }
 // react-map-gl: pass via the hook's filter
 useEditorLayerIndex({ filter: { apiKeys: { apikey: 'pk.your-token' } } })
 ```
+
+## Notes
+
+- **Attribution is upstream HTML.** `attributionHtml` is passed through from ELI and is intended for
+  MapLibre's `attribution` control (safe). If you render it yourself, sanitize it first — don't feed
+  it to `dangerouslySetInnerHTML` unchecked.
+- **`check-exports` ignores three `attw` rules** (`cjs-resolves-to-esm`, `internal-resolution-error`,
+  `no-resolution`) intentionally: this is an ESM-only package, so the CJS/resolution warnings don't
+  apply.
 
 ## License
 

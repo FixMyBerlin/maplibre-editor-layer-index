@@ -14,6 +14,10 @@
     "raster",
     "react-map-gl"
   ],
+  "homepage": "https://github.com/FixMyBerlin/maplibre-editor-layer-index#readme",
+  "bugs": {
+    "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index/issues"
+  },
   "license": "MIT",
   "author": "Tobias Jordans",
   "repository": {
@@ -38,15 +42,15 @@
       "types": "./dist/maplibre/index.d.ts",
       "import": "./dist/maplibre/index.js"
     },
-    "./data/index.json": "./dist/data/index.json",
-    "./data/geometries.json": "./dist/data/geometries.json",
-    "./data/manifest.json": "./dist/data/manifest.json",
     "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
     "eli:fetch": "bun run scripts/fetch.ts",
     "eli:build": "bun run scripts/build-data.ts",
-    "eli:check-changed": "bun run scripts/check-changed.ts",
     "build": "tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
@@ -54,11 +58,12 @@
     "check-exports": "attw --pack . --ignore-rules cjs-resolves-to-esm internal-resolution-error no-resolution --profile node16",
     "prepublishOnly": "bun run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/geojson": "^7946.0.15"
+  },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.4",
     "@rapideditor/country-coder": "^5.6.1",
-    "@types/geojson": "^7946.0.15",
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "maplibre-gl": "^5.24.0",
@@ -84,5 +89,8 @@
     "react-map-gl": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

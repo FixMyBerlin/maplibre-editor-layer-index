@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest'
-
 import { applyApiKeys, hasRequiredKeys } from '../src/core/apiKeys'
 import { filterLayers, layersInViewport } from '../src/core/filter'
 import { getRasterLayerSpec, getRasterSourceSpec } from '../src/core/specs'
@@ -50,11 +49,28 @@ describe('layersInViewport', () => {
     expect(tuple).toEqual(boundsLike)
   })
 
-  it('applies predicate filters (countryCodes)', () => {
+  it('filters region-scoped layers by countryCodes but always keeps worldwide', () => {
     const result = layersInViewport([-180, -90, 180, 90], { countryCodes: ['FR'] }, layers).map(
       (l) => l.id,
     )
-    expect(result).toEqual(['paris'])
+    // paris matches FR; world has no country list so it always passes; berlin (DE) drops.
+    expect(result).toEqual(['paris', 'world'])
+  })
+
+  it('drops a globe-spanning layer that does not cover the viewport country (TIGER case)', () => {
+    // bbox spans the world (antimeridian territories) but country codes are US/CA only.
+    const tiger = layer({ id: 'tiger', bbox: [-178, 12, 180, 71], countryCodes: ['US', 'CA'] })
+    const result = layersInViewport(berlinViewport, { countryCodes: ['DE'] }, [berlin, tiger]).map(
+      (l) => l.id,
+    )
+    expect(result).toEqual(['berlin'])
+  })
+
+  it('includeWorldwide:false drops worldwide layers', () => {
+    const result = layersInViewport(berlinViewport, { includeWorldwide: false }, layers).map(
+      (l) => l.id,
+    )
+    expect(result).toEqual(['berlin'])
   })
 })
 

@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto'
-
 import type { Geometry, Position } from 'geojson'
-
 import type { BBox } from '../src/core/types'
 
 export const WORLD_GEOMETRY_ID = 'world'

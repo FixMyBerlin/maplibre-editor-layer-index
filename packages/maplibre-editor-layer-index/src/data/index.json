@@ -653,9 +653,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AU",
-        "ID",
-        "SB"
+        "AU"
       ],
       "geometryId": "ad55458597581216",
       "id": "AGRI-black_and_white-2.5m",
@@ -709,9 +707,7 @@
       "countryCodes": [
         "AL",
         "GR",
-        "ME",
-        "MK",
-        "XK"
+        "MK"
       ],
       "geometryId": "35de4084cc7c870b",
       "id": "AL_DPGJC_ASIG_SistemiAdresave",
@@ -977,10 +973,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "AT",
-        "CH",
-        "DE",
-        "FR"
+        "DE"
       ],
       "geometryId": "7518410f3ede6e4a",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Baden-Württemberg-DOP20.png",
@@ -1032,22 +1025,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "FR",
-        "GB",
-        "IR",
-        "LY",
-        "MA",
-        "ML",
-        "OM",
-        "PY",
-        "RU",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "bd9c16c893e5200e",
       "id": "BANO",
@@ -1105,9 +1083,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CH",
-        "DE",
-        "FR"
+        "CH"
       ],
       "geometryId": "a09c984b68541146",
       "id": "Basel-Landschaft-2015",
@@ -1134,13 +1110,10 @@
       "category": "map",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
@@ -1168,13 +1141,10 @@
       "category": "photo",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
@@ -1202,13 +1172,10 @@
       "category": "map",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
@@ -1236,13 +1203,10 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
@@ -1271,13 +1235,10 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
@@ -1356,16 +1317,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AR",
-        "BO",
-        "BR",
-        "CL",
-        "CO",
-        "PE",
-        "PY",
-        "SR",
-        "UY",
-        "VE"
+        "BR"
       ],
       "geometryId": "7024be8a64286148",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Exercito.png",
@@ -1898,8 +1850,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CH",
-        "FR"
+        "CH"
       ],
       "geometryId": "1a264d43cf84e9c9",
       "id": "Bern-dsm-hillshade-2015",
@@ -1925,8 +1876,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CH",
-        "FR"
+        "CH"
       ],
       "geometryId": "1a264d43cf84e9c9",
       "id": "Bern-dtm-hillshade-2015",
@@ -1979,12 +1929,10 @@
       "category": "photo",
       "countryCodes": [
         "AT",
-        "CH",
         "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
         "SK"
       ],
       "geometryId": "e31253f2a5d0c035",
@@ -2013,7 +1961,6 @@
         "GR",
         "MK",
         "RO",
-        "RS",
         "TR"
       ],
       "geometryId": "30a45eac3e4750b1",
@@ -2095,12 +2042,9 @@
       "category": "other",
       "countryCodes": [
         "AT",
-        "CH",
         "CZ",
         "DE",
         "DK",
-        "FR",
-        "NL",
         "PL"
       ],
       "geometryId": "8420eb964d8d56ab",
@@ -3287,22 +3231,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "FR",
-        "GB",
-        "IR",
-        "LY",
-        "MA",
-        "ML",
-        "OM",
-        "PY",
-        "RU",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "bd9c16c893e5200e",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/fr/cadastre_small.png",
@@ -3516,9 +3445,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DZ",
         "ES",
-        "FR",
         "MA"
       ],
       "geometryId": "ca6532402603b912",
@@ -3649,7 +3576,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "99e4cdea7ffed433",
@@ -4162,10 +4088,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "a64db3d0d1b145f1",
       "id": "Code-Point_Open",
@@ -5151,11 +5074,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "id": "Czech_CUZK-KM",
@@ -5179,11 +5099,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "id": "Czech_pLPIS",
@@ -5208,11 +5125,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "id": "Czech_RUIAN-budovy",
@@ -5239,11 +5153,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "id": "Czech_RUIAN-parcely",
@@ -5270,11 +5181,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/cz/CzechCUZK_icon.png",
@@ -5302,11 +5210,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "AT",
         "CZ",
-        "DE",
-        "PL",
-        "SK"
+        "PL"
       ],
       "geometryId": "423f07a28e84ac77",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/cz/CzechCUZK_icon.png",
@@ -5534,13 +5439,10 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AT",
         "CH",
-        "CZ",
         "DE",
         "DK",
-        "FR",
-        "NL",
+        "LU",
         "PL"
       ],
       "geometryId": "26d3fa58067af831",
@@ -5566,13 +5468,10 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AT",
         "CH",
-        "CZ",
         "DE",
         "DK",
-        "FR",
-        "NL",
+        "LU",
         "PL"
       ],
       "geometryId": "26d3fa58067af831",
@@ -7182,13 +7081,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AL",
-        "AT",
-        "BA",
         "HR",
-        "HU",
-        "IT",
-        "RS",
         "SI"
       ],
       "geometryId": "4e32012a2cce5e8a",
@@ -7216,14 +7109,8 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "BA",
         "HR",
-        "HU",
-        "IT",
-        "ME",
-        "RS",
-        "SI"
+        "HU"
       ],
       "geometryId": "8a131a3eb3e85b9a",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
@@ -7250,12 +7137,8 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
         "BA",
         "HR",
-        "HU",
-        "IT",
-        "ME",
         "SI"
       ],
       "geometryId": "479580a39caeb7ea",
@@ -7283,12 +7166,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AL",
-        "AT",
-        "BA",
         "HR",
-        "HU",
-        "IT",
         "RS",
         "SI"
       ],
@@ -7317,12 +7195,8 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AL",
-        "AT",
         "BA",
         "HR",
-        "HU",
-        "IT",
         "RS",
         "SI"
       ],
@@ -7351,12 +7225,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "AL",
-        "AT",
         "BA",
         "HR",
-        "HU",
-        "IT",
         "RS",
         "SI"
       ],
@@ -7385,12 +7255,9 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AL",
-        "AT",
-        "BA",
         "HR",
         "HU",
-        "IT",
+        "ME",
         "RS",
         "SI"
       ],
@@ -7418,8 +7285,6 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AL",
-        "AT",
         "BA",
         "HR",
         "HU",
@@ -7452,7 +7317,6 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AL",
         "AT",
         "BA",
         "HR",
@@ -7486,12 +7350,10 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AL",
-        "AT",
         "BA",
         "HR",
         "HU",
-        "IT",
+        "ME",
         "RS",
         "SI"
       ],
@@ -7519,11 +7381,9 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AL",
         "BA",
         "HR",
         "HU",
-        "IT",
         "RS",
         "SI"
       ],
@@ -7608,7 +7468,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -7640,7 +7499,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -7672,7 +7530,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -7704,7 +7561,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -7842,7 +7698,6 @@
       "category": "map",
       "countryCodes": [
         "BE",
-        "FR",
         "NL"
       ],
       "geometryId": "d0b68588179e2a87",
@@ -8453,9 +8308,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "0e9b3837fdb6eec0",
       "id": "EA_LIDAR_DSM_1m_2022",
@@ -8480,9 +8333,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "0e9b3837fdb6eec0",
       "id": "EA_LIDAR_DTM_1m_2022",
@@ -9111,9 +8962,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -9169,7 +9018,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "be8afe03c2e1a5c7",
@@ -9225,14 +9073,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "FOMI_2000",
@@ -9258,14 +9099,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "FOMI_2005",
@@ -9291,14 +9125,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "FOMI_2007_2010",
@@ -9324,14 +9151,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "FOMI_2011_2014",
@@ -9358,14 +9178,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "FOMI_2015",
@@ -9392,8 +9205,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "HU",
-        "SK"
+        "HU"
       ],
       "geometryId": "61a82dfd78c98bef",
       "id": "FOMI_2015_leafoff_20cm",
@@ -9580,7 +9392,8 @@
       "category": "historicphoto",
       "countryCodes": [
         "FR",
-        "IT"
+        "IT",
+        "MC"
       ],
       "geometryId": "cec5b56b18ea0a87",
       "id": "fr.dpt.06.2009",
@@ -9689,19 +9502,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "CA",
-        "CL",
-        "CN",
-        "FR",
-        "GB",
-        "GT",
-        "IN",
-        "MA",
-        "MH",
-        "ML",
-        "RU",
-        "TO",
-        "US"
+        "FR"
       ],
       "geometryId": "80e873b543393712",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9729,22 +9530,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "BO",
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "FR",
-        "GB",
-        "IR",
-        "LY",
-        "MA",
-        "ML",
-        "OM",
-        "RU",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "366b2dff7422e055",
       "id": "fr.ign.bdtopo",
@@ -9773,13 +9559,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "DE",
         "ES",
-        "FR",
-        "GB",
-        "IE",
-        "IT",
-        "NL"
+        "FR"
       ],
       "geometryId": "28ce9584fada817c",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9807,13 +9588,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "DE",
         "ES",
-        "FR",
-        "GB",
-        "IE",
-        "IT",
-        "NL"
+        "FR"
       ],
       "geometryId": "28ce9584fada817c",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9841,12 +9617,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "ea441d443a142fda",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9876,10 +9647,7 @@
       "countryCodes": [
         "DE",
         "ES",
-        "FR",
-        "GB",
-        "IT",
-        "NL"
+        "FR"
       ],
       "geometryId": "679bc6139489b172",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9908,12 +9676,7 @@
       "category": "photo",
       "countryCodes": [
         "BE",
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "1adec833a551b1ff",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9941,19 +9704,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
-        "CL",
-        "CN",
-        "FR",
-        "GB",
-        "GT",
-        "IN",
-        "MA",
-        "MH",
-        "ML",
-        "RU",
-        "TO",
-        "US"
+        "FR"
       ],
       "geometryId": "80e873b543393712",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -9981,22 +9732,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BO",
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "EG",
-        "FR",
-        "GB",
-        "IR",
-        "KZ",
-        "MA",
-        "ML",
-        "OM",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "4605fa670ea29962",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10024,12 +9760,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "72187137483bb7e2",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10058,12 +9789,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "BE",
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "275c01507554c78a",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10091,26 +9817,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AO",
-        "CD",
-        "DE",
-        "FR",
-        "GB",
-        "GQ",
-        "IQ",
-        "MA",
-        "ML",
-        "MW",
-        "NE",
-        "PL",
-        "RU",
-        "SA",
-        "SD",
-        "SO",
-        "TD",
-        "TN",
-        "UA",
-        "UG"
+        "FR"
       ],
       "geometryId": "10884ec634539b04",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10138,22 +9845,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BO",
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "EG",
-        "FR",
-        "GB",
-        "IR",
-        "KZ",
-        "MA",
-        "ML",
-        "OM",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "864c65b73ae1a768",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10181,16 +9873,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CA",
-        "DE",
-        "DZ",
-        "EH",
-        "ES",
-        "FR",
-        "IE",
-        "MR",
-        "NE",
-        "TN"
+        "FR"
       ],
       "geometryId": "7c16a31255e74368",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10218,11 +9901,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "432abb512c15e5ed",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10251,11 +9930,7 @@
       "category": "photo",
       "countryCodes": [
         "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "92e62be817165027",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10283,17 +9958,8 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BR",
-        "CA",
-        "CM",
-        "CV",
-        "DE",
-        "DZ",
-        "IE",
-        "IT",
-        "MR",
-        "NE",
-        "PT"
+        "FR",
+        "SR"
       ],
       "geometryId": "bc600ffceea31bac",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10321,22 +9987,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BR",
-        "BW",
-        "CA",
-        "CD",
-        "EG",
-        "FR",
-        "GB",
-        "IR",
-        "KZ",
-        "MA",
-        "ML",
-        "OM",
-        "PY",
-        "SC",
-        "SD",
-        "UA"
+        "FR"
       ],
       "geometryId": "64cf5eebd665c2a9",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10364,26 +10015,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AO",
-        "CD",
-        "DE",
-        "FR",
-        "GB",
-        "GQ",
-        "IQ",
-        "MA",
-        "ML",
-        "MW",
-        "NE",
-        "PL",
-        "RU",
-        "SA",
-        "SD",
-        "SO",
-        "TD",
-        "TN",
-        "UA",
-        "UG"
+        "FR"
       ],
       "geometryId": "227f25f21cfbdff7",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10411,16 +10043,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
-        "CV",
-        "DE",
-        "DZ",
-        "ES",
-        "FR",
-        "MA",
-        "MR",
-        "NE",
-        "TN"
+        "FR"
       ],
       "geometryId": "531539ad62f4e016",
       "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
@@ -10448,9 +10071,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "FR",
-        "IT"
+        "FR"
       ],
       "geometryId": "f8c81c20ba87ceaf",
       "icon": "https://pcrs.beta.gouv.fr/_next/image?url=%2Fimages%2Fillustrations%2Fpcrs-beta_illustration.png&w=1080&q=75",
@@ -10768,9 +10389,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "EE",
         "FI",
-        "NO",
         "RU",
         "SE"
       ],
@@ -11446,9 +11065,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "MD",
-        "RO",
-        "UA"
+        "MD"
       ],
       "geometryId": "4ebe752192af6890",
       "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
@@ -11501,8 +11118,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "MD",
-        "RO",
-        "UA"
+        "RO"
       ],
       "geometryId": "c6180ff9e0e762c9",
       "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
@@ -11611,8 +11227,7 @@
       "category": "photo",
       "countryCodes": [
         "MD",
-        "RO",
-        "UA"
+        "RO"
       ],
       "geometryId": "7eee84e94d7dc851",
       "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
@@ -11667,7 +11282,6 @@
       "category": "map",
       "countryCodes": [
         "MD",
-        "RO",
         "UA"
       ],
       "geometryId": "233bba0781d9849b",
@@ -11695,8 +11309,7 @@
       "category": "historicmap",
       "countryCodes": [
         "MD",
-        "RO",
-        "UA"
+        "RO"
       ],
       "geometryId": "1e11e77e021fde46",
       "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
@@ -11889,9 +11502,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "MD",
-        "RO",
-        "UA"
+        "MD"
       ],
       "geometryId": "6a50f56db1cbbd56",
       "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
@@ -11918,7 +11529,6 @@
       "category": "historicmap",
       "countryCodes": [
         "MD",
-        "RO",
         "UA"
       ],
       "geometryId": "b0388201460ac2de",
@@ -11975,7 +11585,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -12005,7 +11614,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -12035,7 +11643,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -12065,7 +11672,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -12093,8 +11699,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "ES",
-        "FR"
+        "ES"
       ],
       "geometryId": "6703f32a25f1b9e2",
       "id": "geoEuskadi-basemap",
@@ -12119,8 +11724,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "FR"
+        "ES"
       ],
       "geometryId": "6703f32a25f1b9e2",
       "id": "geoEuskadi-ORTO",
@@ -12146,13 +11750,10 @@
       "category": "photo",
       "countryCodes": [
         "AT",
-        "CH",
-        "CZ",
         "DE",
         "HU",
         "IT",
-        "SI",
-        "SK"
+        "SI"
       ],
       "geometryId": "88d6f327ee92929f",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/GeoimageatMaxRes.png",
@@ -12178,10 +11779,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BE",
-        "ES",
-        "FR",
-        "GB"
+        "FR"
       ],
       "geometryId": "a2b515d5475491ea",
       "id": "Geolittoral-Orthophotos2000",
@@ -12206,13 +11804,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "BE",
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "7ea4f4888972540f",
       "id": "Geolittoral-Sentiers",
@@ -12237,13 +11829,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BE",
-        "CH",
-        "DE",
-        "ES",
-        "FR",
-        "GB",
-        "IT"
+        "FR"
       ],
       "geometryId": "7ea4f4888972540f",
       "id": "GeolittoralV2-Orthophotos",
@@ -12377,14 +11963,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12412,14 +11994,10 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12447,14 +12025,10 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12482,14 +12056,10 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12517,14 +12087,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12552,14 +12118,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12587,14 +12149,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12622,14 +12180,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12657,14 +12211,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12692,14 +12242,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12727,14 +12273,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12762,14 +12304,10 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12797,14 +12335,10 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12832,14 +12366,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12867,14 +12397,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12902,14 +12428,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12936,14 +12458,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -12971,14 +12489,10 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13006,14 +12520,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13041,14 +12551,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13076,14 +12582,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13111,14 +12613,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13146,14 +12644,10 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BY",
         "CZ",
         "DE",
-        "DK",
-        "LT",
         "PL",
         "RU",
-        "SK",
         "UA"
       ],
       "geometryId": "b6bb5bec6740da3b",
@@ -13232,8 +12726,7 @@
       "category": "elevation",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "1a0a338807db6e44",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13260,8 +12753,7 @@
       "category": "elevation",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13288,8 +12780,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13316,8 +12807,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13344,8 +12834,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13372,8 +12861,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13400,8 +12888,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13428,8 +12915,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13456,8 +12942,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13484,8 +12969,7 @@
       "category": "historicphoto",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13512,8 +12996,7 @@
       "category": "photo",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13540,8 +13023,7 @@
       "category": "photo",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13568,8 +13050,7 @@
       "category": "other",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13596,8 +13077,7 @@
       "category": "photo",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13624,8 +13104,7 @@
       "category": "map",
       "countryCodes": [
         "CZ",
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "a822858f6a763c28",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
@@ -13651,11 +13130,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "DK",
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "bfb60815bb7bc22e",
@@ -13765,7 +13241,6 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "HU",
         "SI"
       ],
       "geometryId": "84d0615d8f98ce26",
@@ -13793,7 +13268,6 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "HU",
         "SI"
       ],
       "geometryId": "84d0615d8f98ce26",
@@ -14224,8 +13698,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "MA"
+        "ES"
       ],
       "geometryId": "8e36dcd69566ba32",
       "id": "GRAFCAN_Express-Canary_Islands",
@@ -14249,8 +13722,7 @@
       "best": true,
       "category": "historicphoto",
       "countryCodes": [
-        "ES",
-        "MA"
+        "ES"
       ],
       "geometryId": "8e36dcd69566ba32",
       "id": "GRAFCAN-Canary_Islands",
@@ -14668,9 +14140,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -14755,11 +14225,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "62f7e3843cd91aa9",
       "id": "gsi.go.jp_airphoto",
@@ -14786,11 +14252,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "65611dccdae8c5c3",
       "id": "gsi.go.jp_airphoto_2019",
@@ -14817,11 +14279,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "41cc20b9f8fabddf",
       "id": "gsi.go.jp_airphoto_2020",
@@ -14848,11 +14306,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "51d81d8bbe580741",
       "id": "gsi.go.jp_airphoto_2021",
@@ -14879,11 +14333,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "62f7e3843cd91aa9",
       "id": "gsi.go.jp_seamlessphoto",
@@ -14910,11 +14360,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "62f7e3843cd91aa9",
       "id": "gsi.go.jp_std_map",
@@ -14974,7 +14420,6 @@
       "countryCodes": [
         "AT",
         "HR",
-        "HU",
         "IT",
         "SI"
       ],
@@ -15641,13 +15086,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Aglomerado_Rural",
@@ -15672,13 +15112,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Gerador_Eletrica",
@@ -15703,13 +15138,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Municipio",
@@ -15734,13 +15164,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Pista_Pouso",
@@ -15765,13 +15190,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Rios_Drenagem",
@@ -15796,13 +15216,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Rodoviario",
@@ -15827,13 +15242,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Terra_Indegina",
@@ -15858,13 +15268,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Uso_Sustentavel",
@@ -15889,13 +15294,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AR",
-        "BO",
         "BR",
-        "CL",
-        "CO",
-        "PE",
-        "VE"
+        "UY"
       ],
       "geometryId": "1aaf7b2aa39bfabf",
       "id": "IBGE_BC250_Villa",
@@ -15920,8 +15320,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "FR"
+        "AD",
+        "ES"
       ],
       "geometryId": "8d293860782710f2",
       "id": "ICGC-orto",
@@ -15946,8 +15346,8 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "FR"
+        "AD",
+        "ES"
       ],
       "geometryId": "8d293860782710f2",
       "id": "ICGC-ortofoto_color_provisional",
@@ -15972,8 +15372,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "ES",
-        "FR"
+        "AD",
+        "ES"
       ],
       "geometryId": "8d293860782710f2",
       "id": "ICGC-topo",
@@ -15998,7 +15398,6 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "DZ",
         "ES"
       ],
       "geometryId": "d1205f93286b4748",
@@ -16024,10 +15423,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DZ",
         "ES",
-        "MA",
-        "PT"
+        "MA"
       ],
       "geometryId": "cdde1e9d715b6270",
       "id": "IECA-CDAU-wms",
@@ -16052,8 +15449,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "ES",
-        "FR"
+        "ES"
       ],
       "geometryId": "d8f1504b1c2e7889",
       "id": "IGEAR-ortofoto",
@@ -16079,10 +15475,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16111,10 +15505,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16143,10 +15535,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16231,10 +15621,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16263,10 +15651,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16295,10 +15681,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16327,10 +15711,8 @@
       "category": "map",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16359,10 +15741,8 @@
       "category": "photo",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16390,9 +15770,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "DZ",
         "ES",
-        "FR",
         "MA"
       ],
       "geometryId": "ca6532402603b912",
@@ -16419,10 +15797,8 @@
       "category": "photo",
       "countryCodes": [
         "AR",
-        "BO",
-        "BR",
         "CL",
-        "PY"
+        "GB"
       ],
       "geometryId": "82e29a33b6307e83",
       "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
@@ -16534,14 +15910,9 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AF",
-        "BD",
-        "CN",
+        "BT",
         "IN",
-        "LK",
-        "MM",
-        "NP",
-        "PK"
+        "MM"
       ],
       "geometryId": "d9e7d47b3ac2af7a",
       "id": "India-PMGSY",
@@ -17054,9 +16425,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17086,9 +16455,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17117,11 +16484,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "DK",
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "bfb60815bb7bc22e",
@@ -17150,11 +16514,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "DK",
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "bfb60815bb7bc22e",
@@ -17184,9 +16545,7 @@
       "category": "elevation",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17215,10 +16574,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "1cdaf9659550be7a",
@@ -17248,9 +16604,7 @@
       "category": "historicmap",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17280,9 +16634,7 @@
       "category": "elevation",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17312,9 +16664,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17344,9 +16694,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17376,9 +16724,7 @@
       "category": "historicmap",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -17408,15 +16754,7 @@
       "category": "map",
       "countryCodes": [
         "AQ",
-        "AR",
-        "BR",
-        "CA",
-        "DK",
-        "GB",
-        "KE",
-        "RU",
-        "TR",
-        "US"
+        "NO"
       ],
       "geometryId": "ee89da8e58cc56de",
       "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
@@ -17444,11 +16782,8 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "DK",
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "bfb60815bb7bc22e",
@@ -17477,11 +16812,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "bfb60815bb7bc22e",
@@ -17509,10 +16841,7 @@
       ],
       "best": false,
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
         "RU",
         "SE"
@@ -17981,12 +17310,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "FI",
-        "LV",
         "NO",
-        "RU",
-        "SE"
+        "RU"
       ],
       "geometryId": "0a6b14f092700038",
       "icon": "https://www.kystverket.no/UI/favicon/safari-pinned-tab.svg",
@@ -18067,12 +17392,8 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -18101,10 +17422,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DK",
-        "FI",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "90a9bb5f78bed21e",
@@ -18133,12 +17451,8 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -18433,7 +17747,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "cc7018a0afd5e256",
@@ -18461,7 +17774,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "cc7018a0afd5e256",
@@ -18707,7 +18019,6 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "CL",
         "NZ"
       ],
       "geometryId": "77ab27b9262cf0e7",
@@ -18735,7 +18046,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CL",
         "NZ"
       ],
       "geometryId": "77ab27b9262cf0e7",
@@ -18763,7 +18073,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CL",
         "NZ"
       ],
       "geometryId": "77ab27b9262cf0e7",
@@ -18790,12 +18099,7 @@
       ],
       "best": false,
       "category": "map",
-      "countryCodes": [
-        "CL",
-        "FJ",
-        "NZ",
-        "TV"
-      ],
+      "countryCodes": [],
       "geometryId": "fa97cbf77a5997a4",
       "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
       "id": "LINZ_NZ_Topo50_Gridless_Maps",
@@ -18878,8 +18182,7 @@
       "category": "map",
       "countryCodes": [
         "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "74d65c3337c09349",
       "id": "LocalAuthorities_RightsOfWay",
@@ -20236,7 +19539,6 @@
       "category": "photo",
       "countryCodes": [
         "EE",
-        "FI",
         "LV",
         "RU"
       ],
@@ -20264,7 +19566,6 @@
       "category": "photo",
       "countryCodes": [
         "EE",
-        "FI",
         "LV",
         "RU"
       ],
@@ -20294,7 +19595,6 @@
       "category": "photo",
       "countryCodes": [
         "EE",
-        "FI",
         "LV",
         "RU"
       ],
@@ -20322,7 +19622,6 @@
       "category": "photo",
       "countryCodes": [
         "EE",
-        "FI",
         "LV",
         "RU"
       ],
@@ -20353,7 +19652,6 @@
       "category": "map",
       "countryCodes": [
         "EE",
-        "FI",
         "LV",
         "RU"
       ],
@@ -21703,7 +21001,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "ES",
         "PT"
       ],
       "geometryId": "e47f96fb94643c09",
@@ -22052,9 +21349,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -22082,13 +21377,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
         "FI",
-        "GB",
-        "IS",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "30046b7e666f7551",
@@ -22145,9 +21435,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "EE",
         "FI",
-        "NO",
         "RU",
         "SE"
       ],
@@ -22177,9 +21465,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "EE",
         "FI",
-        "NO",
         "RU",
         "SE"
       ],
@@ -22209,9 +21495,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "EE",
         "FI",
-        "NO",
         "RU",
         "SE"
       ],
@@ -22513,7 +21797,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "d5959162ecc66739",
@@ -22542,7 +21825,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "d5959162ecc66739",
@@ -22837,9 +22119,7 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -22895,7 +22175,6 @@
       "category": "elevation",
       "countryCodes": [
         "DE",
-        "DK",
         "PL"
       ],
       "geometryId": "e93f1d4f34efe387",
@@ -22923,7 +22202,6 @@
       "category": "photo",
       "countryCodes": [
         "DE",
-        "DK",
         "PL"
       ],
       "geometryId": "e93f1d4f34efe387",
@@ -22950,8 +22228,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DE",
-        "DK"
+        "DE"
       ],
       "geometryId": "137d0987d1d9844c",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Mecklenburg-Vorpommern-ORKa.MV.png",
@@ -23003,9 +22280,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DE",
-        "DK",
-        "PL"
+        "DE"
       ],
       "geometryId": "99372a6997600a1a",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Mecklenburg-Vorpommern-ORKa.MV.png",
@@ -23057,8 +22332,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DE",
-        "PL"
+        "DE"
       ],
       "geometryId": "57816f01dc5e19d7",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Mecklenburg-Vorpommern-ORKa.MV.png",
@@ -23084,8 +22358,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "DE",
-        "DK"
+        "DE"
       ],
       "geometryId": "a85961e32d7ae30c",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Mecklenburg-Vorpommern-ORKa.MV.png",
@@ -23112,7 +22385,6 @@
       "category": "map",
       "countryCodes": [
         "DE",
-        "DK",
         "PL"
       ],
       "geometryId": "e93f1d4f34efe387",
@@ -23140,7 +22412,6 @@
       "category": "other",
       "countryCodes": [
         "DE",
-        "DK",
         "PL"
       ],
       "geometryId": "e93f1d4f34efe387",
@@ -23219,12 +22490,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -23253,12 +22520,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -25687,10 +24950,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "22ac5f4c3fa47354",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25717,9 +24977,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "7f1109ddd0d9ad10",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25746,8 +25004,7 @@
       ],
       "best": false,
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "6408ef0ec1c62e59",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25773,8 +25030,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "6408ef0ec1c62e59",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25801,10 +25057,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "22ac5f4c3fa47354",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25832,10 +25085,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "a64db3d0d1b145f1",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25862,8 +25112,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "6408ef0ec1c62e59",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25915,8 +25164,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "6408ef0ec1c62e59",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -25942,9 +25190,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "700e45486d67b8c9",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
@@ -26001,7 +25247,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "77d1662c84a22d86",
@@ -26029,7 +25274,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "544dec219f927b70",
@@ -26057,7 +25301,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "4c420e3322d2b8cf",
@@ -26085,7 +25328,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "MX",
         "US"
       ],
       "geometryId": "82e8ab158d08f36f",
@@ -26167,7 +25409,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "MX",
         "US"
       ],
       "geometryId": "a204ed6e6a24f284",
@@ -26304,7 +25545,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BS",
         "US"
       ],
       "geometryId": "216b0a57a5425406",
@@ -26332,7 +25572,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "MX",
         "US"
       ],
       "geometryId": "ba600ba8d987f183",
@@ -26360,7 +25599,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "MX",
         "US"
       ],
       "geometryId": "3813d7b5e9065e60",
@@ -26388,13 +25626,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "FI",
-        "GB",
-        "LV",
         "NO",
-        "RU",
-        "SE"
+        "RU"
       ],
       "geometryId": "5f3a18fc2d1ac2ea",
       "icon": "https://www.sodir.no/Content/images/sodir_sq.png",
@@ -26476,8 +25709,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "NO",
-        "RU"
+        "NO"
       ],
       "geometryId": "3f6424412160e1be",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/8/85/Emblem_of_the_Norwegian_Polar_Institute.svg",
@@ -26532,8 +25764,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "NO",
-        "RU"
+        "NO"
       ],
       "geometryId": "d12626b2b8c6e9a6",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/8/85/Emblem_of_the_Norwegian_Polar_Institute.svg",
@@ -26561,7 +25792,6 @@
       "category": "elevation",
       "countryCodes": [
         "CA",
-        "DK",
         "US"
       ],
       "geometryId": "d75823da5e90be32",
@@ -26588,7 +25818,6 @@
       "category": "elevation",
       "countryCodes": [
         "CA",
-        "DK",
         "US"
       ],
       "geometryId": "d75823da5e90be32",
@@ -26613,9 +25842,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26640,9 +25867,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26667,9 +25892,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26694,9 +25917,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26721,9 +25942,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26748,9 +25967,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -26775,9 +25992,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "BE",
-        "DE",
-        "NL"
+        "DE"
       ],
       "geometryId": "d8b3ab12605c2a7b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/North_Rine-Westphalia.png",
@@ -27783,9 +26998,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -27815,9 +27028,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -27847,9 +27058,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -27879,9 +27088,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -28075,7 +27282,6 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "0dfd3c6dc8757b05",
@@ -28737,14 +27943,7 @@
       "best": false,
       "category": "osmbasedmap",
       "countryCodes": [
-        "AT",
-        "HR",
-        "HU",
-        "RO",
-        "RS",
-        "SI",
-        "SK",
-        "UA"
+        "HU"
       ],
       "geometryId": "475f6b0e9ea6d001",
       "id": "OpenStreetMap-turistautak",
@@ -28907,7 +28106,6 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "DE",
-        "DK",
         "PL"
       ],
       "geometryId": "02bd2773ca56c41f",
@@ -28938,9 +28136,7 @@
       "countryCodes": [
         "BY",
         "LT",
-        "LV",
-        "PL",
-        "RU"
+        "LV"
       ],
       "geometryId": "1036bed2af1ce69e",
       "id": "ORT10LT",
@@ -29130,7 +28326,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -29162,7 +28357,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -29194,7 +28388,6 @@
         "CZ",
         "HU",
         "PL",
-        "RO",
         "SK",
         "UA"
       ],
@@ -29250,7 +28443,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "ES",
         "PT"
       ],
       "geometryId": "e47f96fb94643c09",
@@ -29361,10 +28553,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "22ac5f4c3fa47354",
       "id": "OS-historic-25k-OSM_Limited",
@@ -29389,9 +28578,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "7edcab4f3af1b246",
       "id": "OS-New_Popular_Edition-historic",
@@ -29416,10 +28603,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "a64db3d0d1b145f1",
       "id": "OS-OpenData_StreetView_2016_04",
@@ -29447,10 +28631,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "a64db3d0d1b145f1",
       "id": "OS-OpenMap_Local_latest",
@@ -29476,8 +28657,7 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "067b8781abb52fdd",
       "id": "OS-Scottish_Popular-historic",
@@ -29530,9 +28710,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "ed470b87dbab04dd",
       "id": "OS7",
@@ -29639,7 +28817,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "c34b4425ca0d11e3",
@@ -29836,12 +29013,13 @@
       "best": false,
       "category": "osmbasedmap",
       "countryCodes": [
-        "BD",
         "CN",
         "ID",
+        "IN",
+        "KH",
         "LA",
         "MM",
-        "PH",
+        "MY",
         "TH",
         "VN"
       ],
@@ -29953,15 +29131,13 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AL",
-        "AT",
         "BA",
         "HR",
         "HU",
-        "IT",
-        "MK",
+        "ME",
         "RO",
-        "RS"
+        "RS",
+        "SI"
       ],
       "geometryId": "c0b29ebf81bdc872",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
@@ -29988,16 +29164,14 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AT",
         "BA",
         "BG",
-        "GR",
         "HR",
-        "HU",
-        "IT",
+        "ME",
         "MK",
         "RO",
         "RS",
+        "SI",
         "XK"
       ],
       "geometryId": "afcca967ba556d51",
@@ -30081,8 +29255,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "HU",
-        "SK"
+        "HU"
       ],
       "geometryId": "0fff0d771c3c5cc5",
       "id": "osm-hu-ortho",
@@ -30157,9 +29330,8 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "BE",
-        "DE",
         "FR",
-        "NL"
+        "LU"
       ],
       "geometryId": "5711e4400cbb656b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
@@ -30187,9 +29359,8 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "BE",
-        "DE",
         "FR",
-        "NL"
+        "LU"
       ],
       "geometryId": "5711e4400cbb656b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
@@ -30217,9 +29388,8 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "BE",
-        "DE",
         "FR",
-        "NL"
+        "LU"
       ],
       "geometryId": "5711e4400cbb656b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
@@ -30515,17 +29685,8 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "BR",
-        "CA",
-        "DE",
-        "DZ",
-        "GQ",
-        "IE",
-        "IT",
-        "ML",
-        "MR",
-        "NE",
-        "PT"
+        "FR",
+        "GB"
       ],
       "geometryId": "37fcda3837418582",
       "id": "osmfr_volta",
@@ -32222,7 +31383,8 @@
       "category": "historicphoto",
       "countryCodes": [
         "ID",
-        "MY"
+        "MY",
+        "SG"
       ],
       "geometryId": "3808677127d3d9b1",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
@@ -32620,7 +31782,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AR",
         "CL"
       ],
       "geometryId": "0077e359d25a825e",
@@ -33278,8 +32439,8 @@
         "AT",
         "CH",
         "DE",
-        "FR",
-        "IT"
+        "IT",
+        "LI"
       ],
       "geometryId": "5af3861a1d0ce833",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
@@ -33590,8 +32751,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "BG",
-        "MK"
+        "BG"
       ],
       "geometryId": "197d6307fdd04664",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
@@ -33877,6 +33037,7 @@
       "countryCodes": [
         "AT",
         "CH",
+        "CZ",
         "DE",
         "HR",
         "IT",
@@ -34692,8 +33853,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "NO",
-        "RU"
+        "NO"
       ],
       "geometryId": "58551381ab86b188",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
@@ -34833,7 +33993,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AT",
         "CH",
         "DE",
         "FR",
@@ -34865,12 +34024,8 @@
       "best": false,
       "category": "historicmap",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "0ba91e401b970669",
@@ -34900,11 +34055,8 @@
       "category": "historicmap",
       "countryCodes": [
         "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "a1340110debdf284",
@@ -34933,10 +34085,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "FR",
-        "GB",
-        "IE",
-        "NO"
+        "GB"
       ],
       "geometryId": "a64db3d0d1b145f1",
       "icon": "https://osmuk.org/wp-content/uploads/2017/09/icon_color_square.png",
@@ -35174,14 +34323,7 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
-        "BA",
-        "DZ",
-        "FR",
-        "HR",
-        "HU",
-        "IT",
-        "TN"
+        "IT"
       ],
       "geometryId": "26c0ef09fb0c4930",
       "id": "PCN-Italy-2006",
@@ -35206,14 +34348,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AT",
-        "BA",
-        "DZ",
-        "FR",
-        "HR",
-        "HU",
-        "IT",
-        "TN"
+        "IT"
       ],
       "geometryId": "26c0ef09fb0c4930",
       "id": "PCN-Italy-2012",
@@ -35263,7 +34398,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "8050f16005e2d7a6",
@@ -35291,7 +34425,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "8050f16005e2d7a6",
@@ -35319,7 +34452,6 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "8050f16005e2d7a6",
@@ -35610,11 +34742,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CN",
-        "JP",
-        "KP",
-        "KR",
-        "RU"
+        "JP"
       ],
       "geometryId": "5155eaf7589a6b21",
       "id": "Plateau_orthophoto_official",
@@ -35641,9 +34769,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "DZ",
         "ES",
-        "FR",
         "MA"
       ],
       "geometryId": "ca6532402603b912",
@@ -35669,9 +34795,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "DZ",
         "ES",
-        "FR",
         "MA"
       ],
       "geometryId": "ca6532402603b912",
@@ -35697,9 +34821,7 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "DZ",
         "ES",
-        "FR",
         "MA"
       ],
       "geometryId": "ca6532402603b912",
@@ -36070,10 +35192,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36100,10 +35219,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36130,10 +35246,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36161,10 +35274,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36192,10 +35302,7 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36222,10 +35329,7 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "AU",
-        "ID",
-        "PG",
-        "SB"
+        "AU"
       ],
       "geometryId": "d7776b651b834989",
       "icon": "https://www.qld.gov.au/favicon.ico",
@@ -36509,10 +35613,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "BE",
         "DE",
-        "FR",
-        "LU"
+        "FR"
       ],
       "geometryId": "3f4b9667c85a765f",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Rheinland-Pfalz-DOP20.jpg",
@@ -36668,13 +35770,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
         "FI",
-        "GB",
-        "IS",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "30046b7e666f7551",
@@ -36703,12 +35800,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -36737,12 +35830,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -36771,12 +35860,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -36805,12 +35890,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -36972,13 +36053,9 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "DE",
         "ES",
         "FR",
-        "GB",
-        "IE",
-        "IT",
-        "NL"
+        "GB"
       ],
       "geometryId": "f334a0970f78a229",
       "id": "route500",
@@ -37007,13 +36084,9 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "DE",
         "ES",
         "FR",
-        "GB",
-        "IE",
-        "IT",
-        "NL"
+        "GB"
       ],
       "geometryId": "f334a0970f78a229",
       "id": "route500hydro",
@@ -37043,13 +36116,7 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "AL",
-        "BA",
         "BG",
-        "HR",
-        "HU",
-        "ME",
-        "MK",
-        "RO",
         "RS",
         "XK"
       ],
@@ -37080,13 +36147,7 @@
       "category": "osmbasedmap",
       "countryCodes": [
         "AL",
-        "BA",
         "BG",
-        "HR",
-        "HU",
-        "ME",
-        "MK",
-        "RO",
         "RS",
         "XK"
       ],
@@ -37116,16 +36177,11 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "AL",
         "BA",
         "BG",
-        "HR",
         "HU",
-        "ME",
-        "MK",
         "RO",
-        "RS",
-        "XK"
+        "RS"
       ],
       "geometryId": "388e9a7f456f756f",
       "icon": "https://tiles.openstreetmap.rs/logo.png",
@@ -37206,8 +36262,7 @@
       "category": "photo",
       "countryCodes": [
         "DE",
-        "FR",
-        "LU"
+        "FR"
       ],
       "geometryId": "bbe4d75d817019fd",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saarland-DOP20.png",
@@ -38391,7 +37446,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "AR",
         "BR"
       ],
       "geometryId": "f29dffad235f2bcc",
@@ -38417,12 +37471,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -38451,12 +37501,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -38485,12 +37531,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -38519,12 +37561,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -38582,7 +37620,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -38612,7 +37649,6 @@
       "countryCodes": [
         "DE",
         "DK",
-        "NO",
         "SE"
       ],
       "geometryId": "df9165825ea6a33a",
@@ -38823,8 +37859,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "IT",
-        "MT"
+        "IT"
       ],
       "geometryId": "b1166c4a22a89ee7",
       "id": "Sicily-ATA2007",
@@ -39065,12 +38100,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -39099,11 +38130,7 @@
       "best": false,
       "category": "osmbasedmap",
       "countryCodes": [
-        "BY",
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
         "RU",
         "SE"
@@ -39939,7 +38966,7 @@
       "category": "photo",
       "countryCodes": [
         "BW",
-        "MZ",
+        "LS",
         "NA",
         "ZA"
       ],
@@ -39967,7 +38994,6 @@
       "category": "map",
       "countryCodes": [
         "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "b4007ccb92c2f716",
@@ -39995,7 +39021,6 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "b4007ccb92c2f716",
@@ -40021,8 +39046,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "25c4d064ec399492",
@@ -40049,7 +39072,6 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "b4007ccb92c2f716",
@@ -40075,8 +39097,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "25c4d064ec399492",
@@ -40103,7 +39123,6 @@
       "category": "historicphoto",
       "countryCodes": [
         "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "b4007ccb92c2f716",
@@ -40130,7 +39149,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CH",
         "IT"
       ],
       "geometryId": "57795c30685e9b55",
@@ -40214,7 +39232,6 @@
       "category": "historicphoto",
       "countryCodes": [
         "AT",
-        "CH",
         "IT"
       ],
       "geometryId": "b4007ccb92c2f716",
@@ -40240,7 +39257,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "AT",
         "CH",
         "IT"
       ],
@@ -40296,7 +39312,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40323,7 +39339,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40350,7 +39366,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40377,7 +39393,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40404,7 +39420,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40431,7 +39447,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40458,7 +39474,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40485,7 +39501,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40512,7 +39528,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "89f211509b8385e8",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40539,7 +39555,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "89f211509b8385e8",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40566,7 +39582,7 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "LU"
       ],
       "geometryId": "802979550af033e3",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
@@ -40619,9 +39635,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -40651,9 +39665,7 @@
       "category": "other",
       "countryCodes": [
         "FI",
-        "LV",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "f9638ce7a6176fb7",
@@ -40897,7 +39909,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "3d9a95b073d12c1e",
@@ -40926,7 +39937,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "3d9a95b073d12c1e",
@@ -40955,7 +39965,6 @@
       "best": false,
       "category": "historicphoto",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "3d9a95b073d12c1e",
@@ -40984,7 +39993,6 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "3d9a95b073d12c1e",
@@ -41013,7 +40021,6 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "3d9a95b073d12c1e",
@@ -41097,12 +40104,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -41131,11 +40134,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "AT",
         "CH",
-        "DE",
-        "FR",
-        "IT"
+        "LI"
       ],
       "geometryId": "1eae4dee239e685a",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Coat_of_Arms_of_Switzerland_%28Pantone%29.svg",
@@ -41162,11 +40162,8 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "AT",
         "CH",
-        "DE",
-        "FR",
-        "IT"
+        "LI"
       ],
       "geometryId": "1eae4dee239e685a",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Coat_of_Arms_of_Switzerland_%28Pantone%29.svg",
@@ -41192,11 +40189,8 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "AT",
         "CH",
-        "DE",
-        "FR",
-        "IT"
+        "LI"
       ],
       "geometryId": "1eae4dee239e685a",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Coat_of_Arms_of_Switzerland_%28Pantone%29.svg",
@@ -41279,7 +40273,9 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "FR",
+        "LU",
+        "NL"
       ],
       "geometryId": "14d352ab233f00a7",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/TEC.png",
@@ -41306,7 +40302,9 @@
       "countryCodes": [
         "BE",
         "DE",
-        "FR"
+        "FR",
+        "LU",
+        "NL"
       ],
       "geometryId": "14d352ab233f00a7",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/TEC.png",
@@ -41417,7 +40415,6 @@
       "best": true,
       "category": "photo",
       "countryCodes": [
-        "CZ",
         "DE"
       ],
       "geometryId": "c99b505b01ea9596",
@@ -41987,12 +40984,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -42021,12 +41014,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -42055,12 +41044,8 @@
       "best": false,
       "category": "other",
       "countryCodes": [
-        "DK",
-        "EE",
         "FI",
-        "LT",
         "NO",
-        "RU",
         "SE"
       ],
       "geometryId": "e40fe3e9ce33cfb3",
@@ -42292,9 +41277,8 @@
       "countryCodes": [
         "BY",
         "HU",
+        "MD",
         "PL",
-        "RO",
-        "RS",
         "RU",
         "UA"
       ],
@@ -42938,9 +41922,6 @@
       "category": "map",
       "countryCodes": [
         "CA",
-        "DK",
-        "MX",
-        "RU",
         "US"
       ],
       "geometryId": "44bbe88c19e33755",
@@ -42966,9 +41947,6 @@
       "category": "other",
       "countryCodes": [
         "CA",
-        "DK",
-        "MX",
-        "RU",
         "US"
       ],
       "geometryId": "44bbe88c19e33755",
@@ -43025,16 +42003,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43065,16 +42034,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43105,16 +42065,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43145,16 +42096,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43185,16 +42127,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43225,16 +42158,7 @@
       "best": false,
       "category": "qa",
       "countryCodes": [
-        "BF",
-        "BT",
         "CA",
-        "CN",
-        "DZ",
-        "ES",
-        "GB",
-        "IN",
-        "RU",
-        "SV",
         "US"
       ],
       "geometryId": "00debcda8aeb0a8d",
@@ -43266,8 +42190,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "US",
-        "WS"
+        "US"
       ],
       "geometryId": "1e70adefd5e043b8",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
@@ -43407,7 +42330,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "FM",
         "MH"
       ],
       "geometryId": "747da3eba99ee536",
@@ -43436,10 +42358,7 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "FM",
-        "ID",
-        "MH",
-        "PG"
+        "FM"
       ],
       "geometryId": "f6659738009be16b",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
@@ -43609,9 +42528,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CA",
-        "DK",
-        "MX",
         "US"
       ],
       "geometryId": "9c82a70a953dd7e0",
@@ -43639,9 +42555,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
-        "DK",
-        "MX",
         "US"
       ],
       "geometryId": "9c82a70a953dd7e0",
@@ -43671,9 +42584,6 @@
       "category": "map",
       "countryCodes": [
         "CA",
-        "DK",
-        "MX",
-        "RU",
         "US"
       ],
       "geometryId": "2fe15a8b80f14188",
@@ -43699,9 +42609,6 @@
       "best": false,
       "category": "map",
       "countryCodes": [
-        "CA",
-        "DK",
-        "MX",
         "US"
       ],
       "geometryId": "9c82a70a953dd7e0",
@@ -43840,7 +42747,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "f7b824627f1102b5",
@@ -43868,7 +42774,6 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "f7b824627f1102b5",
@@ -44138,9 +43043,7 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
-        "DE",
-        "LI"
+        "DE"
       ],
       "geometryId": "bb8ec2d72c297645",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44167,9 +43070,7 @@
       "category": "elevation",
       "countryCodes": [
         "AT",
-        "CH",
-        "DE",
-        "LI"
+        "DE"
       ],
       "geometryId": "bb8ec2d72c297645",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44197,7 +43098,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "41f65ab672d57678",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44225,7 +43127,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "41f65ab672d57678",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44253,7 +43156,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "41f65ab672d57678",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44281,7 +43185,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "41f65ab672d57678",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44309,7 +43214,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "41f65ab672d57678",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44337,7 +43243,8 @@
       "countryCodes": [
         "AT",
         "CH",
-        "DE"
+        "DE",
+        "LI"
       ],
       "geometryId": "26fe7d442816b35f",
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
@@ -44444,7 +43351,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "f7b824627f1102b5",
@@ -44472,7 +43378,6 @@
       "best": false,
       "category": "photo",
       "countryCodes": [
-        "CA",
         "US"
       ],
       "geometryId": "e564327554aef681",
@@ -44500,8 +43405,7 @@
       "best": false,
       "category": "elevation",
       "countryCodes": [
-        "GB",
-        "IE"
+        "GB"
       ],
       "geometryId": "1cba6bd564df7a7c",
       "id": "Wales_LIDAR_DSM_1m_2020_2023",
@@ -45119,12 +44023,9 @@
       "category": "other",
       "countryCodes": [
         "AO",
-        "BW",
         "CD",
         "MW",
         "MZ",
-        "NA",
-        "TZ",
         "ZM",
         "ZW"
       ],

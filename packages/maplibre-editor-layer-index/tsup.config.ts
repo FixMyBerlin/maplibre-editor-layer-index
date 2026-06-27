@@ -1,8 +1,4 @@
-import { copyFile, mkdir } from 'node:fs/promises'
-
 import { defineConfig } from 'tsup'
-
-const DATA_FILES = ['index.json', 'geometries.json', 'manifest.json']
 
 export default defineConfig({
   entry: {
@@ -15,13 +11,11 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   splitting: true,
-  sourcemap: true,
-  // Keep consumer-provided libs out of the bundle.
+  // No source maps in the published tarball — this is a data package, and the maps
+  // for the bundled ~11 MB geometries chunk would dwarf the code.
+  sourcemap: false,
+  // Keep consumer-provided libs out of the bundle. The JSON data is intentionally
+  // bundled: the small index into the entry chunks, and geometries.json into its own
+  // chunk reached via dynamic import() (so it code-splits and loads lazily).
   external: ['react', 'react-map-gl', 'maplibre-gl'],
-  async onSuccess() {
-    // Ship the generated data as static JSON assets alongside the bundle so the
-    // big geometries.json can be reached via a dynamic import() and code-split.
-    await mkdir('dist/data', { recursive: true })
-    await Promise.all(DATA_FILES.map((file) => copyFile(`src/data/${file}`, `dist/data/${file}`)))
-  },
 })

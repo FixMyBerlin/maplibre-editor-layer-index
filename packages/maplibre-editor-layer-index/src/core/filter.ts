@@ -18,8 +18,16 @@ export type FilterOptions = {
   bestOnly?: boolean
   /** Drop transparent overlay layers (keep only full base imagery). */
   excludeOverlays?: boolean
-  /** Keep only layers whose coverage touches one of these region codes. */
+  /**
+   * Keep only layers whose precomputed coverage touches one of these region codes
+   * (e.g. `['DE']`). Worldwide layers (no country list) always pass. This is the
+   * cheap fix for the bbox-vs-polygon overshoot: a US-only source whose bounding
+   * box spans the globe (e.g. TIGER) is dropped because its codes don't include the
+   * viewport's country. Country codes are precomputed from the actual polygon.
+   */
   countryCodes?: string[]
+  /** Include worldwide layers (no coverage polygon). Default `true`. */
+  includeWorldwide?: boolean
   /**
    * API keys you have available. Layers that require a key are **excluded by
    * default** (so the list stays clean and actionable); provide the keys here to
@@ -52,8 +60,12 @@ function matchesOptions(layer: EliLayer, options: FilterOptions): boolean {
   if (options.types && !options.types.includes(layer.type)) return false
   if (options.bestOnly && !layer.best) return false
   if (options.excludeOverlays && layer.overlay) return false
+  if (options.includeWorldwide === false && layer.geometryId === 'world') return false
+  // Worldwide layers (empty countryCodes) are global, so they always pass the
+  // country filter; only region-scoped layers are checked against it.
   if (
     options.countryCodes &&
+    layer.countryCodes.length > 0 &&
     !layer.countryCodes.some((code) => options.countryCodes!.includes(code))
   ) {
     return false

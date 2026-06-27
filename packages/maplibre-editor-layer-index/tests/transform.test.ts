@@ -1,6 +1,5 @@
 import type { Feature, Geometry } from 'geojson'
 import { describe, expect, it } from 'vitest'
-
 import { geometryBBox, geometryId } from '../scripts/geometry'
 import { transform } from '../scripts/transform'
 

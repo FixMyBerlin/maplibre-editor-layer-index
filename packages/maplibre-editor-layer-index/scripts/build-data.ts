@@ -1,7 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-
 import type { EliManifest } from '../src/core/types'
 import { fetchEli } from './fetch'
 import { transform } from './transform'
