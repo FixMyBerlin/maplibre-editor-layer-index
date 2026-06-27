@@ -22,11 +22,63 @@ body,
 .app {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
+    'banner banner'
     'header header'
     'sidebar map';
   height: 100vh;
+}
+
+.loco-banner {
+  grid-area: banner;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 6px 16px;
+  background: #0b3d91;
+  color: #eaf0fb;
+  font-size: 12.5px;
+}
+
+.loco-label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 10.5px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.loco-regions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.loco-flag {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.loco-primary {
+  font-weight: 700;
+}
+
+.loco-sep {
+  opacity: 0.5;
+}
+
+.loco-empty {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.loco-note {
+  margin-left: auto;
+  opacity: 0.6;
+  font-size: 11px;
 }
 
 .header {

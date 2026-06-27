@@ -1,30 +1,41 @@
-import type { EliLayerType } from 'maplibre-editor-layer-index'
+import type { EliCategory } from 'maplibre-editor-layer-index'
 import { parseList } from './searchParams'
 
-/** Source-type groups shown in the sidebar, in display order. */
-export const LAYER_TYPES: EliLayerType[] = ['tms', 'wms', 'wmts']
+/** Category groups shown in the sidebar, in display order, with friendly labels. */
+export const CATEGORY_GROUPS: { key: EliCategory; label: string }[] = [
+  { key: 'photo', label: 'Aerial / Satellite' },
+  { key: 'map', label: 'Maps' },
+  { key: 'osmbasedmap', label: 'OSM-based maps' },
+  { key: 'historicmap', label: 'Historic maps' },
+  { key: 'historicphoto', label: 'Historic aerial' },
+  { key: 'elevation', label: 'Elevation' },
+  { key: 'qa', label: 'QA' },
+  { key: 'other', label: 'Other' },
+]
+
+const CATEGORY_KEYS = CATEGORY_GROUPS.map((g) => g.key)
 
 export type MapSearch = {
   lat: number
   lng: number
   zoom: number
-  /** Type groups currently expanded in the sidebar (also: which borders to draw). */
-  open: EliLayerType[]
+  /** Category groups currently expanded (also: which coverage borders to draw). */
+  open: EliCategory[]
   /** Layers toggled on as raster overlays. */
   selected: string[]
 }
 
 /**
  * Nice, shareable URLs:
- * `?lat=52.52&lng=13.405&zoom=10&open=tms,wms&selected=Berlin-2024`.
+ * `?lat=52.52&lng=13.405&zoom=10&open=photo,historicphoto&selected=Berlin-2024`.
  */
 export function mapSearchSchema(raw: Record<string, unknown>): MapSearch {
   const num = (v: unknown, fallback: number) => {
     const n = Number(v)
     return Number.isFinite(n) ? n : fallback
   }
-  const open = parseList(raw.open).filter((t): t is EliLayerType =>
-    LAYER_TYPES.includes(t as EliLayerType),
+  const open = parseList(raw.open).filter((c): c is EliCategory =>
+    CATEGORY_KEYS.includes(c as EliCategory),
   )
   return {
     lat: num(raw.lat, 52.52),

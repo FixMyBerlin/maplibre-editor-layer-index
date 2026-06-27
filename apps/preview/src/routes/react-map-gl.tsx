@@ -6,12 +6,12 @@ import {
   getRasterSourceSpec,
   loadCoverageFeatures,
   useEditorLayerIndex,
+  type EliCategory,
   type EliLayer,
-  type EliLayerType,
 } from 'maplibre-editor-layer-index/react'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Layer, Map, MapProvider, Source, useMap } from 'react-map-gl/maplibre'
-import { LAYER_TYPES, mapSearchSchema, type MapSearch } from '../mapSearch'
+import { CATEGORY_GROUPS, mapSearchSchema, type MapSearch } from '../mapSearch'
 
 export const Route = createFileRoute('/react-map-gl')({
   validateSearch: mapSearchSchema,
@@ -25,9 +25,15 @@ export const Route = createFileRoute('/react-map-gl')({
 const MAP_ID = 'eli'
 const BASE_STYLE = 'https://tiles.openfreemap.org/styles/positron'
 const COVERAGE_SOURCE = 'eli-coverage'
+const HIGHLIGHT_SOURCE = 'eli-highlight'
+const EMPTY_FC = { type: 'FeatureCollection' as const, features: [] }
 
-// Expression: is this feature currently hovered (set via feature-state)?
-const HOVER: ExpressionSpecification = ['boolean', ['feature-state', 'hover'], false]
+// Coverage geometry of a layer falls into its category (missing → "other").
+const categoryExpr: ExpressionSpecification = ['coalesce', ['get', 'category'], 'other']
+// Inner inset band: a thick translucent line offset toward the polygon interior,
+// sitting just inside the crisp outline (no blurry glow).
+const INNER_WIDTH = 9
+const INNER_OFFSET = -INNER_WIDTH / 2
 
 function ReactMapGlDemo() {
   const search = Route.useSearch()
@@ -44,15 +50,16 @@ function ReactMapGlDemo() {
 
   const { open, selected } = search
 
-  // Always merge UI changes into the *latest* search. A ref avoids the race where a
-  // debounced map-move write clobbers a just-made open/selected change (stale prev).
   const searchRef = useRef(search)
   searchRef.current = search
-  const setSearch = (patch: Partial<MapSearch>) =>
-    navigate({ search: { ...searchRef.current, ...patch }, replace: true })
+  const setSearch = (patch: Partial<MapSearch>) => {
+    // Update the ref optimistically so rapid back-to-back changes (e.g. toggle a
+    // group then a layer in the same tick) compose instead of clobbering.
+    const next = { ...searchRef.current, ...patch }
+    searchRef.current = next
+    navigate({ search: next, replace: true })
+  }
 
-  // Persist the map view, debounced — the map emits transient moves while its grid
-  // cell is first being sized, which we don't want to capture or write to the URL.
   const moveTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
   const persistView = (lat: number, lng: number, zoom: number) => {
     clearTimeout(moveTimer.current)
@@ -73,29 +80,18 @@ function ReactMapGlDemo() {
     return () => {
       cancelled = true
     }
-    // viewportKey captures the layer set; `layers` identity changes each moveend.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [viewportKey])
 
-  // Sync hover highlight to the map via feature-state (drives both list→map and map→list).
-  const prevHover = useRef<string | null>(null)
-  useEffect(() => {
-    if (!map) return
-    const setState = (id: string, hover: boolean) => {
-      try {
-        map.setFeatureState({ source: COVERAGE_SOURCE, id }, { hover })
-      } catch {
-        // source not ready yet — ignored, re-applied when coverage updates
-      }
-    }
-    if (prevHover.current && prevHover.current !== hoveredId) setState(prevHover.current, false)
-    if (hoveredId) setState(hoveredId, true)
-    prevHover.current = hoveredId
-  }, [hoveredId, map, coverage])
+  // The single hovered feature, rendered in its own top source so the highlight is
+  // always visible — even where many layers share (and stack) the same polygon.
+  const highlightData = useMemo(() => {
+    const feature = coverage?.features.find((f) => f.properties?.id === hoveredId)
+    return feature ? { type: 'FeatureCollection' as const, features: [feature] } : EMPTY_FC
+  }, [coverage, hoveredId])
 
-  // Spinner: hook into maplibre tile-loading events to show progress for imagery.
-  // These events fire synchronously while react-map-gl commits source changes, so
-  // defer the state update to the next frame to avoid setState-during-render.
+  // Spinner: hook into maplibre tile-loading events; defer to next frame to avoid
+  // setState during react-map-gl's synchronous source commits.
   useEffect(() => {
     if (!map) return
     let raf = 0
@@ -118,45 +114,46 @@ function ReactMapGlDemo() {
     }
   }, [map, selected.length])
 
-  const toggleOpen = (type: EliLayerType) =>
-    setSearch({ open: open.includes(type) ? open.filter((t) => t !== type) : [...open, type] })
-  const toggleSelect = (id: string) =>
-    setSearch({
-      selected: selected.includes(id) ? selected.filter((s) => s !== id) : [...selected, id],
-    })
+  // Read current arrays from the ref (not the render snapshot) so same-tick toggles compose.
+  const toggleOpen = (category: EliCategory) => {
+    const cur = searchRef.current.open
+    setSearch({ open: cur.includes(category) ? cur.filter((c) => c !== category) : [...cur, category] })
+  }
+  const toggleSelect = (id: string) => {
+    const cur = searchRef.current.selected
+    setSearch({ selected: cur.includes(id) ? cur.filter((s) => s !== id) : [...cur, id] })
+  }
 
-  const openFilter = ['in', ['get', 'type'], ['literal', open]] as FilterSpecification
+  const openFilter = ['in', categoryExpr, ['literal', open]] as FilterSpecification
   const selectedFilter = ['in', ['get', 'id'], ['literal', selected]] as FilterSpecification
-  // Labels would collide across the (deduplicated, stacked) polygons, so only the
-  // hovered or selected layer shows its name along the line.
   const labelFilter = [
     'any',
     ['in', ['get', 'id'], ['literal', selected]],
     ['==', ['get', 'id'], hoveredId ?? '__none__'],
   ] as FilterSpecification
 
-  const groups = LAYER_TYPES.map((type) => ({
-    type,
-    items: layers.filter((l) => l.type === type),
+  const groups = CATEGORY_GROUPS.map((g) => ({
+    ...g,
+    items: layers.filter((l) => (l.category ?? 'other') === g.key),
   })).filter((g) => g.items.length > 0)
 
   return (
     <>
       <aside className="sidebar">
         <p className="meta">
-          {layers.length} layers in this viewport. Open a group to see coverage; click a layer to
-          load its imagery.
+          {layers.length} layers in this viewport. Open a category to see coverage; click a layer
+          to load its imagery.
         </p>
         {groups.map((group) => {
-          const isOpen = open.includes(group.type)
+          const isOpen = open.includes(group.key)
           return (
-            <div className="group" key={group.type}>
+            <div className="group" key={group.key}>
               <button
                 className={`group-header${isOpen ? ' open' : ''}`}
-                onClick={() => toggleOpen(group.type)}
+                onClick={() => toggleOpen(group.key)}
               >
                 <span className="caret">{isOpen ? '▾' : '▸'}</span>
-                <span className="group-title">{group.type.toUpperCase()}</span>
+                <span className="group-title">{group.label}</span>
                 <span className="group-count">{group.items.length}</span>
               </button>
               {isOpen && (
@@ -175,6 +172,7 @@ function ReactMapGlDemo() {
                         {layer.name}
                       </span>
                       {layer.best && <span className="badge">best</span>}
+                      <span className="badge type">{layer.type}</span>
                     </div>
                   ))}
                 </div>
@@ -192,7 +190,9 @@ function ReactMapGlDemo() {
           style={{ width: '100%', height: '100%' }}
           interactiveLayerIds={['eli-coverage-fill']}
           onMouseMove={(e) => {
-            const id = e.features?.[0]?.id
+            // Read properties.id, not feature.id: maplibre GeoJSON sources don't keep
+            // non-numeric string feature ids, so feature.id would be undefined here.
+            const id = e.features?.[0]?.properties?.id
             setHoveredId((cur) => (id != null ? String(id) : cur === null ? cur : null))
           }}
           onMouseLeave={() => setHoveredId(null)}
@@ -217,46 +217,50 @@ function ReactMapGlDemo() {
             </Source>
           ))}
 
-          {/* Coverage borders: a translucent glow, a crisp outline, the name along the line,
-              and a distinct highlight for selected layers. */}
+          {/* Coverage borders for open categories: an inner inset band + a crisp outline,
+              plus a distinct red treatment for selected layers and the name along the line. */}
           {coverage && (
+            <>
             <Source id={COVERAGE_SOURCE} type="geojson" data={coverage}>
               <Layer
                 id="eli-coverage-fill"
                 type="fill"
                 filter={openFilter}
-                paint={{
-                  'fill-color': '#1a73e8',
-                  // Invisible by default (still hoverable); tints only on hover.
-                  'fill-opacity': ['case', HOVER, 0.15, 0],
-                }}
+                paint={{ 'fill-color': '#1a73e8', 'fill-opacity': 0 }}
               />
               <Layer
-                id="eli-coverage-glow"
+                id="eli-coverage-inner"
                 type="line"
                 filter={openFilter}
-                layout={{ 'line-cap': 'round', 'line-join': 'round' }}
                 paint={{
                   'line-color': '#1a73e8',
-                  'line-width': ['case', HOVER, 12, 8],
-                  'line-opacity': 0.22,
-                  'line-blur': 3,
+                  'line-width': INNER_WIDTH,
+                  'line-offset': INNER_OFFSET,
+                  'line-opacity': 0.16,
                 }}
               />
               <Layer
-                id="eli-coverage-line"
+                id="eli-coverage-outline"
                 type="line"
                 filter={openFilter}
+                paint={{ 'line-color': '#1a73e8', 'line-width': 1.5 }}
+              />
+              <Layer
+                id="eli-coverage-selected-inner"
+                type="line"
+                filter={selectedFilter}
                 paint={{
-                  'line-color': ['case', HOVER, '#0b3d91', '#1a73e8'],
-                  'line-width': ['case', HOVER, 2.5, 1.2],
+                  'line-color': '#d50000',
+                  'line-width': INNER_WIDTH,
+                  'line-offset': INNER_OFFSET,
+                  'line-opacity': 0.18,
                 }}
               />
               <Layer
                 id="eli-coverage-selected"
                 type="line"
                 filter={selectedFilter}
-                paint={{ 'line-color': '#d50000', 'line-width': 3, 'line-dasharray': [2, 1] }}
+                paint={{ 'line-color': '#d50000', 'line-width': 2.5 }}
               />
               <Layer
                 id="eli-coverage-label"
@@ -275,6 +279,27 @@ function ReactMapGlDemo() {
                 }}
               />
             </Source>
+
+            {/* Hovered shape — declared after coverage (same commit) so its layers
+                are inserted on top and the highlight is always visible. */}
+            <Source id={HIGHLIGHT_SOURCE} type="geojson" data={highlightData}>
+              <Layer
+                id="eli-highlight-inner"
+                type="line"
+                paint={{
+                  'line-color': '#ff6d00',
+                  'line-width': INNER_WIDTH + 3,
+                  'line-offset': -(INNER_WIDTH + 3) / 2,
+                  'line-opacity': 0.28,
+                }}
+              />
+              <Layer
+                id="eli-highlight-outline"
+                type="line"
+                paint={{ 'line-color': '#ff6d00', 'line-width': 3 }}
+              />
+            </Source>
+            </>
           )}
         </Map>
 
