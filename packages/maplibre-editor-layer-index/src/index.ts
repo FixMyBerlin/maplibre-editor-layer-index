@@ -8,7 +8,15 @@ export type {
   EliManifest,
 } from './core/types'
 
-export { getGeometry, getLayer, getLayers, getManifest, loadGeometries } from './core/data'
+export {
+  getGeometry,
+  getLayer,
+  getLayers,
+  getManifest,
+  loadCoverageFeatures,
+  loadGeometries,
+  type CoverageFeature,
+} from './core/data'
 
 export {
   filterLayers,

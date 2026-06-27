@@ -1,4 +1,4 @@
-import type { Geometry } from 'geojson'
+import type { Feature, FeatureCollection, Geometry } from 'geojson'
 import type { EliGeometries, EliLayer, EliManifest } from './types'
 // The small index is bundled directly — it's what every consumer needs.
 import indexJson from '../data/index.json' with { type: 'json' }
@@ -44,4 +44,37 @@ export async function getGeometry(layerOrId: EliLayer | string): Promise<Geometr
   if (!layer || layer.geometryId === 'world') return undefined
   const geometries = await loadGeometries()
   return geometries[layer.geometryId]
+}
+
+export type CoverageFeature = Feature<
+  Geometry,
+  { id: string; name: string; type: EliLayer['type']; category?: EliLayer['category'] }
+>
+
+/**
+ * Build a GeoJSON FeatureCollection of the coverage polygons for the given layers,
+ * ready to drop into a map source for rendering coverage outlines. Lazily loads
+ * `geometries.json`. Worldwide layers (no polygon) are skipped. Each feature's
+ * `id` is the layer id, so it works directly with maplibre feature-state.
+ */
+export async function loadCoverageFeatures(layers: EliLayer[]): Promise<FeatureCollection> {
+  const geometries = await loadGeometries()
+  const features: CoverageFeature[] = []
+  for (const layer of layers) {
+    if (layer.geometryId === 'world') continue
+    const geometry = geometries[layer.geometryId]
+    if (!geometry) continue
+    features.push({
+      type: 'Feature',
+      id: layer.id,
+      properties: {
+        id: layer.id,
+        name: layer.name,
+        type: layer.type,
+        ...(layer.category ? { category: layer.category } : {}),
+      },
+      geometry,
+    })
+  }
+  return { type: 'FeatureCollection', features }
 }

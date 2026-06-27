@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ReactMapGlRouteImport } from './routes/react-map-gl'
 import { Route as MaplibreRouteImport } from './routes/maplibre'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ReactMapGlRoute = ReactMapGlRouteImport.update({
+  id: '/react-map-gl',
+  path: '/react-map-gl',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MaplibreRoute = MaplibreRouteImport.update({
   id: '/maplibre',
   path: '/maplibre',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/maplibre': typeof MaplibreRoute
+  '/react-map-gl': typeof ReactMapGlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/maplibre': typeof MaplibreRoute
+  '/react-map-gl': typeof ReactMapGlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/maplibre': typeof MaplibreRoute
+  '/react-map-gl': typeof ReactMapGlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/maplibre'
+  fullPaths: '/' | '/maplibre' | '/react-map-gl'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/maplibre'
-  id: '__root__' | '/' | '/maplibre'
+  to: '/' | '/maplibre' | '/react-map-gl'
+  id: '__root__' | '/' | '/maplibre' | '/react-map-gl'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   MaplibreRoute: typeof MaplibreRoute
+  ReactMapGlRoute: typeof ReactMapGlRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/react-map-gl': {
+      id: '/react-map-gl'
+      path: '/react-map-gl'
+      fullPath: '/react-map-gl'
+      preLoaderRoute: typeof ReactMapGlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/maplibre': {
       id: '/maplibre'
       path: '/maplibre'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   MaplibreRoute: MaplibreRoute,
+  ReactMapGlRoute: ReactMapGlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

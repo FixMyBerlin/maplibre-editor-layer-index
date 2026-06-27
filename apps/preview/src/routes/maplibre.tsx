@@ -10,7 +10,7 @@ export const Route = createFileRoute('/maplibre')({
   component: RawMaplibreDemo,
 })
 
-const BASE_STYLE = 'https://demotiles.maplibre.org/style.json'
+const BASE_STYLE = 'https://tiles.openfreemap.org/styles/positron'
 
 function RawMaplibreDemo() {
   const search = Route.useSearch()
@@ -35,7 +35,8 @@ function RawMaplibreDemo() {
     const persist = () => {
       const c = map.getCenter()
       navigate({
-        search: () => ({
+        search: (prev) => ({
+          ...prev,
           lat: round(c.lat),
           lng: round(c.lng),
           zoom: round(map.getZoom()),

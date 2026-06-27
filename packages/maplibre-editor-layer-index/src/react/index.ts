@@ -92,5 +92,12 @@ export {
   type RasterSourceSpec,
 } from '../core/specs'
 export { filterLayers, layersInViewport, type FilterOptions, type ViewportBounds } from '../core/filter'
-export { getGeometry, getLayer, getLayers, loadGeometries } from '../core/data'
+export {
+  getGeometry,
+  getLayer,
+  getLayers,
+  loadCoverageFeatures,
+  loadGeometries,
+  type CoverageFeature,
+} from '../core/data'
 export type { EliCategory, EliLayer, EliLayerType } from '../core/types'
