@@ -1,0 +1,57 @@
+import { mkdir, writeFile } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import type { EliManifest } from '../src/core/types'
+import { fetchEli } from './fetch'
+import { transform } from './transform'
+
+const DATA_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data')
+
+/** Stable JSON output: sorted keys so regenerated files diff only on real changes. */
+function stableStringify(value: unknown): string {
+  return `${JSON.stringify(value, replacer, 2)}\n`
+}
+
+function replacer(_key: string, value: unknown): unknown {
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>).sort(([a], [b]) => a.localeCompare(b)),
+    )
+  }
+  return value
+}
+
+export async function buildData(): Promise<EliManifest> {
+  console.log('Fetching Editor Layer Index…')
+  const { raw, source, sourceVersion } = await fetchEli()
+
+  console.log('Validating + transforming…')
+  const { layers, geometries, counts } = transform(raw)
+
+  const manifest: EliManifest = {
+    source,
+    sourceVersion,
+    // `new Date()` is fine here — this script runs in Bun/Node, not in a workflow sandbox.
+    generatedAt: new Date().toISOString(),
+    counts,
+  }
+
+  await mkdir(DATA_DIR, { recursive: true })
+  await Promise.all([
+    writeFile(join(DATA_DIR, 'index.json'), stableStringify({ layers })),
+    writeFile(join(DATA_DIR, 'geometries.json'), stableStringify(geometries)),
+    writeFile(join(DATA_DIR, 'manifest.json'), stableStringify(manifest)),
+  ])
+
+  console.log(
+    `Wrote ${counts.published}/${counts.upstream} layers, ${counts.geometries} unique geometries.`,
+  )
+  if (Object.keys(counts.dropped).length) {
+    console.log(`Dropped unsupported types: ${JSON.stringify(counts.dropped)}`)
+  }
+  return manifest
+}
+
+if (import.meta.main) {
+  await buildData()
+}

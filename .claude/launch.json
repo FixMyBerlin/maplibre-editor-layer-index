@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "preview",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--filter", "preview", "dev"],
+      "autoPort": true,
+      "port": 5173
+    }
+  ]
+}

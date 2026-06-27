@@ -1,0 +1,80 @@
+{
+  "name": "maplibre-editor-layer-index",
+  "version": "0.0.0",
+  "description": "Use the OSM Editor Layer Index as background/imagery layers in react-map-gl and maplibre-gl-js, with viewport filtering.",
+  "license": "MIT",
+  "author": "FixMyCity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index"
+  },
+  "keywords": [
+    "maplibre",
+    "maplibre-gl",
+    "react-map-gl",
+    "editor-layer-index",
+    "eli",
+    "openstreetmap",
+    "osm",
+    "imagery",
+    "raster",
+    "basemap"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    },
+    "./maplibre": {
+      "types": "./dist/maplibre/index.d.ts",
+      "import": "./dist/maplibre/index.js"
+    },
+    "./data/index.json": "./dist/data/index.json",
+    "./data/geometries.json": "./dist/data/geometries.json",
+    "./data/manifest.json": "./dist/data/manifest.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "eli:fetch": "bun run scripts/fetch.ts",
+    "eli:build": "bun run scripts/build-data.ts",
+    "eli:check-changed": "bun run scripts/check-changed.ts",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check-exports": "attw --pack . --ignore-rules cjs-resolves-to-esm internal-resolution-error no-resolution --profile node16",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "maplibre-gl": ">=4",
+    "react": ">=18",
+    "react-map-gl": ">=7.1"
+  },
+  "peerDependenciesMeta": {
+    "maplibre-gl": { "optional": true },
+    "react": { "optional": true },
+    "react-map-gl": { "optional": true }
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.4",
+    "@rapideditor/country-coder": "^5.6.1",
+    "@types/geojson": "^7946.0.15",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "maplibre-gl": "^5.24.0",
+    "react": "^19.0.0",
+    "react-map-gl": "^8.1.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.9",
+    "zod": "^4.4.3"
+  }
+}

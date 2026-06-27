@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "dropped": {
+      "bing": 1,
+      "wms_endpoint": 17
+    },
+    "geometries": 947,
+    "published": 1614,
+    "upstream": 1632
+  },
+  "generatedAt": "2026-06-27T08:17:38.640Z",
+  "source": "https://osmlab.github.io/editor-layer-index/imagery.geojson",
+  "sourceVersion": "W/\"6a39a72c-637457\""
+}

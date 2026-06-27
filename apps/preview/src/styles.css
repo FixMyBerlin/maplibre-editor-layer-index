@@ -1,0 +1,155 @@
+:root {
+  --sidebar-width: 360px;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  /* Keep the demo light regardless of OS dark mode so text stays legible. */
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header header'
+    'sidebar map';
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e2e2e2;
+  background: #fafafa;
+}
+
+.header h1 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.header nav {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.header nav a {
+  color: #555;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.header nav a.active {
+  background: #1a73e8;
+  color: white;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  overflow-y: auto;
+  border-right: 1px solid #e2e2e2;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.sidebar .meta {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.controls button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.controls button.active {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: white;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.layer:hover {
+  background: #f0f4ff;
+}
+
+.layer .name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layer .badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #888;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
+.layer.selected {
+  background: #e8f0fe;
+  font-weight: 600;
+}
+
+.map {
+  grid-area: map;
+  position: relative;
+}
+
+.opacity {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

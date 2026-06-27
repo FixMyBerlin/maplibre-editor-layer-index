@@ -1,0 +1,26 @@
+{
+  "name": "maplibre-editor-layer-index-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "bun run --filter maplibre-editor-layer-index build",
+    "eli:build": "bun run --filter maplibre-editor-layer-index eli:build",
+    "test": "bun run --filter maplibre-editor-layer-index test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "lint": "oxlint .",
+    "format": "oxfmt -w .",
+    "format:check": "oxfmt -c .",
+    "check-exports": "bun run --filter maplibre-editor-layer-index check-exports",
+    "dev": "bun run --filter preview dev",
+    "version-packages": "changeset version",
+    "release": "bun run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "typescript": "^5.7.2"
+  }
+}
