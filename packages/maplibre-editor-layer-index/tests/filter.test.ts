@@ -141,4 +141,14 @@ describe('specs', () => {
       source: 'eli-berlin',
     })
   })
+
+  it('puts the layer attribution on the source spec (and omits it when absent)', () => {
+    const withAttr = layer({
+      id: 'a',
+      bbox: [0, 0, 1, 1],
+      attributionHtml: '© Example provider',
+    })
+    expect(getRasterSourceSpec(withAttr).attribution).toBe('© Example provider')
+    expect(getRasterSourceSpec(berlin)).not.toHaveProperty('attribution')
+  })
 })

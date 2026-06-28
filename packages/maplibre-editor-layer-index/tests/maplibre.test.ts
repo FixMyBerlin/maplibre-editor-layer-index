@@ -25,6 +25,7 @@ const layer = {
   tiles: ['https://t/{z}/{x}/{y}?key={apikey}'],
   tileSize: 256,
   urlTemplate: 'https://t/{zoom}/{x}/{y}?key={apikey}',
+  attributionHtml: '<a href="https://example.org">© Example provider</a>',
   geometryId: 'g',
   bbox: [0, 0, 1, 1],
   countryCodes: [],
@@ -50,6 +51,14 @@ describe('addEditorLayer / removeEditorLayer', () => {
     expect((sources.get('eli-Example') as { tiles: string[] }).tiles).toEqual([
       'https://t/{z}/{x}/{y}?key=pk.test',
     ])
+  })
+
+  it('pushes the layer attribution onto the added source', () => {
+    const { map, sources } = fakeMap()
+    addEditorLayer(map, layer)
+    expect((sources.get('eli-Example') as { attribution?: string }).attribution).toBe(
+      layer.attributionHtml,
+    )
   })
 
   it('removeEditorLayer removes both layer and source', () => {
