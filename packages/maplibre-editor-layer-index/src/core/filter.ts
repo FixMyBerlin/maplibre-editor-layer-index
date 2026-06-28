@@ -1,5 +1,5 @@
 import { hasRequiredKeys, type EliApiKeys } from './apiKeys'
-import { getLayers } from './data'
+import { getLayers, loadByCountry } from './data'
 import type { BBox, EliCategory, EliLayer, EliLayerType } from './types'
 
 /** A viewport, accepted in the shapes MapLibre / react-map-gl hand you. */
@@ -95,4 +95,22 @@ export function filterLayers(
   layers: EliLayer[] = getLayers(),
 ): EliLayer[] {
   return layers.filter((layer) => matchesOptions(layer, options))
+}
+
+/**
+ * Layers available in a region, via the precomputed `byCountry` map — an O(1)
+ * lookup with no geometry or bbox math. Returns region layers covering `code`
+ * plus worldwide layers (unless `includeWorldwide: false`). `code` is an ISO
+ * 3166-1 alpha-2 code, e.g. `'DE'`.
+ */
+export async function layersForCountry(
+  code: string,
+  options: { includeWorldwide?: boolean } = {},
+): Promise<EliLayer[]> {
+  const byCountry = await loadByCountry()
+  const ids = new Set(byCountry[code] ?? [])
+  if (options.includeWorldwide !== false) {
+    for (const id of byCountry.worldwide ?? []) ids.add(id)
+  }
+  return getLayers().filter((layer) => ids.has(layer.id))
 }

@@ -1,5 +1,6 @@
 export type {
   BBox,
+  EliByCountry,
   EliCategory,
   EliGeometries,
   EliIndex,
@@ -21,6 +22,7 @@ export {
   getLayer,
   getLayers,
   getManifest,
+  loadByCountry,
   loadCoverageFeatures,
   loadGeometries,
   type CoverageFeature,
@@ -28,6 +30,7 @@ export {
 
 export {
   filterLayers,
+  layersForCountry,
   layersInViewport,
   type FilterOptions,
   type ViewportBounds,

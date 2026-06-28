@@ -24,6 +24,7 @@ const layer = {
   overlay: false,
   tiles: ['https://t/{z}/{x}/{y}?key={apikey}'],
   tileSize: 256,
+  urlTemplate: 'https://t/{zoom}/{x}/{y}?key={apikey}',
   geometryId: 'g',
   bbox: [0, 0, 1, 1],
   countryCodes: [],

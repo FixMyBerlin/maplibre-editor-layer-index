@@ -39,6 +39,14 @@ export type EliLayer = {
   tileSize: number
   /** `"tms"` when the source uses TMS (flipped-y) tile addressing. */
   scheme?: 'xyz' | 'tms'
+  /**
+   * The original, unmodified ELI URL template (e.g. `…/{zoom}/{x}/{y}` or WMS
+   * `…&CRS={proj}&BBOX={bbox}`). MapLibre users want {@link EliLayer.tiles}; this is
+   * for renderers that do their own placeholder substitution (iD, Rapid, Leaflet).
+   */
+  urlTemplate: string
+  /** WMS projections the source advertises (`available_projections`), if any. */
+  availableProjections?: string[]
   /** Ready-to-render attribution HTML, or undefined when none is provided. */
   attributionHtml?: string
   licenseUrl?: string
@@ -68,6 +76,14 @@ export type EliIndex = {
 
 /** The large, lazily-loaded data file: deduplicated coverage geometries by id. */
 export type EliGeometries = Record<string, Geometry>
+
+/**
+ * Precomputed area↔layer map: ISO region code → layer ids whose coverage touches
+ * it, plus the special `"worldwide"` bucket for layers with no coverage polygon.
+ * A ready-made spatial shortcut for consumers that don't want to build their own
+ * index (e.g. iD/Rapid).
+ */
+export type EliByCountry = Record<string, string[]>
 
 /** Build provenance, emitted next to the data. */
 export type EliManifest = {

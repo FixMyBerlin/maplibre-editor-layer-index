@@ -2,7 +2,7 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson'
 // The small index is bundled directly — it's what every consumer needs.
 import indexJson from '../data/index.json' with { type: 'json' }
 import manifestJson from '../data/manifest.json' with { type: 'json' }
-import type { EliGeometries, EliLayer, EliManifest } from './types'
+import type { EliByCountry, EliGeometries, EliLayer, EliManifest } from './types'
 
 const index = indexJson as unknown as { layers: EliLayer[] }
 
@@ -36,6 +36,22 @@ export async function loadGeometries(): Promise<EliGeometries> {
     )
   }
   return geometriesPromise
+}
+
+let byCountryPromise: Promise<EliByCountry> | undefined
+
+/**
+ * Lazily load the precomputed area↔layer map (ISO code → layer ids, plus a
+ * `"worldwide"` bucket). Code-split like the geometries, so it's only fetched when
+ * a consumer actually does country lookups.
+ */
+export async function loadByCountry(): Promise<EliByCountry> {
+  if (!byCountryPromise) {
+    byCountryPromise = import('../data/byCountry.json', { with: { type: 'json' } }).then(
+      (mod) => (mod.default ?? mod) as EliByCountry,
+    )
+  }
+  return byCountryPromise
 }
 
 /** Resolve the coverage geometry for a layer (or `undefined` for worldwide). */

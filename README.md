@@ -24,6 +24,13 @@ The data is split into two tiers, generated at release time:
 Filtering is a pure-arithmetic **bbox overlap** against the map viewport — zero runtime geo
 dependencies. `@rapideditor/country-coder` and `zod` are used at **build time only**.
 
+## Other consumers (iD / Rapid)
+
+ELI has no npm release, so editors like [iD](https://github.com/openstreetmap/iD) vendor it as a
+pinned `gh-pages` commit. This package is a governed npm release with deduplicated geometries and a
+precomputed area↔layer map — see [docs/iD-integration.md](docs/iD-integration.md) for how iD could
+adopt it with a one-file build change while keeping its own templating and spatial index.
+
 ## Develop
 
 ```bash

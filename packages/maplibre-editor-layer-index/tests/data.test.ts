@@ -7,6 +7,7 @@ import {
   loadCoverageFeatures,
   loadGeometries,
 } from '../src/core/data'
+import { layersForCountry } from '../src/core/filter'
 
 // Smoke tests against the real, committed src/data/*.json.
 describe('bundled data', () => {
@@ -54,5 +55,23 @@ describe('bundled data', () => {
     expect(fc.type).toBe('FeatureCollection')
     expect(fc.features[0]?.id).toBe(region.id)
     expect(fc.features[0]?.properties?.id).toBe(region.id)
+  })
+
+  it('every layer keeps the raw ELI url template', () => {
+    for (const layer of layers.slice(0, 50)) {
+      expect(typeof layer.urlTemplate).toBe('string')
+      expect(layer.urlTemplate.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('layersForCountry returns region layers for DE plus worldwide', async () => {
+    const de = await layersForCountry('DE')
+    expect(de.length).toBeGreaterThan(0)
+    expect(de.some((l) => l.countryCodes.includes('DE'))).toBe(true)
+    expect(de.some((l) => l.geometryId === 'world')).toBe(true)
+
+    const deOnly = await layersForCountry('DE', { includeWorldwide: false })
+    expect(deOnly.every((l) => l.geometryId !== 'world')).toBe(true)
+    expect(deOnly.length).toBeLessThan(de.length)
   })
 })

@@ -94,6 +94,7 @@ export {
 } from '../core/specs'
 export {
   filterLayers,
+  layersForCountry,
   layersInViewport,
   type FilterOptions,
   type ViewportBounds,
@@ -102,6 +103,7 @@ export {
   getGeometry,
   getLayer,
   getLayers,
+  loadByCountry,
   loadCoverageFeatures,
   loadGeometries,
   type CoverageFeature,

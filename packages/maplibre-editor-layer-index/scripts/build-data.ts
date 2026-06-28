@@ -26,7 +26,7 @@ export async function buildData(): Promise<EliManifest> {
   const { raw, source, sourceVersion } = await fetchEli()
 
   console.log('Validating + transforming…')
-  const { layers, geometries, apiKeys, counts } = transform(raw)
+  const { layers, geometries, byCountry, apiKeys, counts } = transform(raw)
 
   const manifest: EliManifest = {
     source,
@@ -46,6 +46,7 @@ export async function buildData(): Promise<EliManifest> {
   await Promise.all([
     writeFile(join(DATA_DIR, 'index.json'), stableStringify({ layers })),
     writeFile(join(DATA_DIR, 'geometries.json'), stableStringify(geometries)),
+    writeFile(join(DATA_DIR, 'byCountry.json'), stableStringify(byCountry)),
     writeFile(join(DATA_DIR, 'manifest.json'), stableStringify(manifest)),
     writeFile(join(DATA_DIR, 'apiKeys.ts'), apiKeysModule),
   ])

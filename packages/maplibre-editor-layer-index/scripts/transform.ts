@@ -1,5 +1,5 @@
 import type { Geometry } from 'geojson'
-import type { EliGeometries, EliLayer, EliLayerType } from '../src/core/types'
+import type { EliByCountry, EliGeometries, EliLayer, EliLayerType } from '../src/core/types'
 import { countryCodesForGeometry } from './countries'
 import { geometryBBox, geometryId, WORLD_BBOX, WORLD_GEOMETRY_ID } from './geometry'
 import { eliFeatureCollectionSchema, type EliFeature } from './schema'
@@ -34,6 +34,8 @@ function buildAttributionHtml(feature: EliFeature): string | undefined {
 export type TransformResult = {
   layers: EliLayer[]
   geometries: EliGeometries
+  /** ISO region code → layer ids (plus a `"worldwide"` bucket). */
+  byCountry: EliByCountry
   /** Distinct API-key placeholder names across all layers (e.g. `["apikey"]`). */
   apiKeys: string[]
   counts: {
@@ -101,6 +103,8 @@ export function transform(raw: unknown): TransformResult {
       tiles,
       tileSize,
       scheme: scheme === 'tms' ? 'tms' : undefined,
+      urlTemplate: feature.properties.url,
+      availableProjections: feature.properties.available_projections,
       attributionHtml: buildAttributionHtml(feature),
       licenseUrl: feature.properties.license_url,
       icon: feature.properties.icon,
@@ -114,11 +118,21 @@ export function transform(raw: unknown): TransformResult {
   // Deterministic ordering so regenerated output diffs only on real changes.
   layers.sort((a, b) => a.id.localeCompare(b.id))
 
+  // Inverted area↔layer map (sorted keys/values for stable output).
+  const byCountry: EliByCountry = {}
+  for (const layer of layers) {
+    const buckets = layer.countryCodes.length > 0 ? layer.countryCodes : ['worldwide']
+    for (const code of buckets) (byCountry[code] ??= []).push(layer.id)
+  }
+  const sortedByCountry: EliByCountry = {}
+  for (const code of Object.keys(byCountry).sort()) sortedByCountry[code] = byCountry[code]!
+
   const apiKeys = [...new Set(layers.flatMap((l) => l.requiresKeys))].sort()
 
   return {
     layers,
     geometries,
+    byCountry: sortedByCountry,
     apiKeys,
     counts: {
       upstream: collection.features.length,

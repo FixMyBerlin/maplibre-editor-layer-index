@@ -12,6 +12,7 @@ function layer(partial: Partial<EliLayer> & Pick<EliLayer, 'id' | 'bbox'>): EliL
     overlay: false,
     tiles: ['https://example.com/{z}/{x}/{y}.png'],
     tileSize: 256,
+    urlTemplate: 'https://example.com/{zoom}/{x}/{y}.png',
     geometryId: 'g',
     countryCodes: [],
     requiresKeys: [],
