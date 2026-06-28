@@ -52,22 +52,28 @@ So adoption is essentially: **swap the data source in `update_imagery.js`**, kee
 `update_imagery.js` builds an iD imagery source from each ELI feature. Here's the equivalent from an
 `EliLayer` (this package):
 
-| iD source field | From `EliLayer`                     | Notes                                                                                 |
-| --------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
-| `id`            | `id`                                | identical                                                                             |
-| `name`          | `name`                              | identical                                                                             |
-| `type`          | `type`                              | `tms` \| `wms` \| `wmts`. iD also has `bing` — not in this package (see gaps).        |
-| `template`      | **`urlTemplate`**                   | the **raw** ELI template — do not use `tiles`.                                        |
-| `category`      | `category`                          | identical enum                                                                        |
-| `projection`    | `availableProjections`              | iD picks one (prefers `EPSG:3857`); same input.                                       |
-| `zoomExtent`    | `[minzoom ?? 0, maxzoom ?? 22]`     | iD's default range                                                                    |
-| `polygon`       | outer rings of `getGeometry(layer)` | resolve via `geometryId` → `geometries.json` (deduped); take outer rings to match iD. |
-| `terms_html`    | `attributionHtml`                   | this package collapses ELI `attribution.{text,url,html}` into one HTML string.        |
-| `terms_url`     | `licenseUrl`                        | closest equivalent; see gaps.                                                         |
-| `best`          | `best`                              | identical                                                                             |
-| `overlay`       | `overlay`                           | identical                                                                             |
-| `icon`          | `icon`                              | identical                                                                             |
-| `tileSize`      | `tileSize`                          | identical                                                                             |
+| iD source field | From `EliLayer`                     | Notes                                                                                    |
+| --------------- | ----------------------------------- | ---------------------------------------------------------------------------------------- |
+| `id`            | `id`                                | identical                                                                                |
+| `name`          | `name`                              | identical                                                                                |
+| `type`          | `type`                              | `tms` \| `wms` \| `wmts`. iD also has `bing` — not in this package (see gaps).           |
+| `template`      | **`urlTemplate`**                   | the **raw** ELI template — do not use `tiles`.                                           |
+| `category`      | `category`                          | identical enum                                                                           |
+| `projection`    | `availableProjections`              | iD picks one (prefers `EPSG:3857`); same input.                                          |
+| `zoomExtent`    | `[minzoom ?? 0, maxzoom ?? 22]`     | iD's default range                                                                       |
+| `polygon`       | outer rings of `getGeometry(layer)` | resolve via `geometryId` → `geometries.json` (deduped); take outer rings to match iD.    |
+| `terms_text`    | `attributionText`                   | raw ELI `attribution.text`                                                               |
+| `terms_url`     | `attributionUrl`                    | raw ELI `attribution.url`                                                                |
+| `terms_html`    | `attributionHtml`                   | ELI `attribution.html`, or a `text`+`url` link this package builds when only those exist |
+| `startDate`     | `startDate`                         | ELI `start_date`                                                                         |
+| `endDate`       | `endDate`                           | ELI `end_date`                                                                           |
+| `best`          | `best`                              | identical                                                                                |
+| `overlay`       | `overlay`                           | identical                                                                                |
+| `icon`          | `icon`                              | identical                                                                                |
+| `tileSize`      | `tileSize`                          | identical                                                                                |
+
+The mapping is now **lossless** for the fields iD uses (the only ELI types this package omits are
+non-MapLibre ones — see [gaps](#gaps--mitigations)).
 
 ## Build-time adapter sketch
 
@@ -98,8 +104,11 @@ const idImagery = layers.map((layer) => ({
     : layer.availableProjections?.[0],
   zoomExtent: [layer.minzoom ?? 0, layer.maxzoom ?? 22],
   polygon: layer.geometryId === 'world' ? undefined : outerRings(geometries[layer.geometryId]),
+  terms_text: layer.attributionText,
+  terms_url: layer.attributionUrl,
   terms_html: layer.attributionHtml,
-  terms_url: layer.licenseUrl,
+  startDate: layer.startDate,
+  endDate: layer.endDate,
   best: layer.best || undefined,
   overlay: layer.overlay || undefined,
   icon: layer.icon,
@@ -141,16 +150,29 @@ ready-made fast path. `which-polygon` is still the right tool for precise viewpo
 
 ## Gaps & mitigations
 
-| Gap                                                              | Why                                                                                                | Mitigation                                                                                                            |
-| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **`bing`** sources are dropped                                   | This package only ships MapLibre-renderable raster types (`tms`/`wms`/`wmts`); Bing uses quadkeys. | Keep Bing in iD's `manual_imagery.json` (it already lives there).                                                     |
-| **`start_date` / `end_date`** not exposed                        | Not needed for MapLibre rendering.                                                                 | Add as fields if iD wants them — cheap; open an issue.                                                                |
-| **`terms_text` / `terms_url`** are merged into `attributionHtml` | This package targets MapLibre's single `attribution` string.                                       | Use `attributionHtml` as `terms_html`; `licenseUrl` as `terms_url`. Structured attribution can be re-added if needed. |
-| **Polygon holes**                                                | iD keeps only outer rings; this package keeps full geometry.                                       | `outerRings()` above discards holes to match iD exactly.                                                              |
-| **`encrypted` / `overzoom`**                                     | iD-specific, not ELI.                                                                              | Continue handling in iD (`manual_imagery.json` / special cases).                                                      |
+| Gap                            | Why                                                                                                | Mitigation                                                        |
+| ------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **`bing`** sources are dropped | This package only ships MapLibre-renderable raster types (`tms`/`wms`/`wmts`); Bing uses quadkeys. | Keep Bing in iD's `manual_imagery.json` (it already lives there). |
+| **`encrypted` / `overzoom`**   | iD-specific, not ELI.                                                                              | Continue handling in iD (`manual_imagery.json` / special cases).  |
 
-Most of these are a few extra build-time fields away — if iD wants to adopt this, the maintainers
-here are happy to add `startDate`/`endDate` and structured `attribution` so the mapping is lossless.
+(`start_date`/`end_date` and structured `attribution.text`/`url` used to be gaps; they're now
+shipped, so the mapping above is lossless for iD's fields.)
+
+### A note on polygon holes
+
+iD's `update_imagery.js` keeps only **outer rings** today (`coordinates[0]` for `Polygon`, the first
+ring of each part for `MultiPolygon`), so the `outerRings()` helper above reproduces iD's **current**
+behavior exactly — adopting this package changes nothing there.
+
+It's worth knowing the holes are real, though: in the current data **20 of 947 unique geometries
+(~2%, ≈32 layers)** have interior rings — e.g. _Digitaal Vlaanderen GRB_, whose Flanders coverage
+excludes the Brussels-Capital enclave, or several Danish SDFI layers. Dropping a hole makes the layer
+appear to cover the excluded area.
+
+This package **keeps full geometry** in `geometries.json`, and its build-time `countryCodes` precompute
+**respects holes** (a point inside a hole isn't attributed to the layer) — so the bundled metadata is
+hole-accurate. If iD ever wants hole-accurate coverage too, pass the full rings (not just the outer
+ring) into `which-polygon`; it indexes inner rings as holes correctly.
 
 ## Summary
 

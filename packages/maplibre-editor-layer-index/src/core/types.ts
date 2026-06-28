@@ -49,8 +49,16 @@ export type EliLayer = {
   availableProjections?: string[]
   /** Ready-to-render attribution HTML, or undefined when none is provided. */
   attributionHtml?: string
+  /** Raw ELI `attribution.text` (e.g. iD's `terms_text`), if provided. */
+  attributionText?: string
+  /** Raw ELI `attribution.url` (e.g. iD's `terms_url`), if provided. */
+  attributionUrl?: string
   licenseUrl?: string
   icon?: string
+  /** Imagery capture start date (`start_date`, RFC3339-ish: `YYYY`/`YYYY-MM`/`YYYY-MM-DD`). */
+  startDate?: string
+  /** Imagery capture end date (`end_date`, RFC3339-ish). */
+  endDate?: string
   /**
    * Hash of the coverage geometry, key into `geometries.json`. `"world"` means the
    * layer has worldwide coverage (no polygon). Layers that share an identical

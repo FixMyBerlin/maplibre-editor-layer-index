@@ -64,6 +64,12 @@ describe('bundled data', () => {
     }
   })
 
+  it('preserves lossless interop fields (dates + structured attribution) where ELI has them', () => {
+    expect(layers.some((l) => l.startDate)).toBe(true)
+    expect(layers.some((l) => l.attributionText)).toBe(true)
+    expect(layers.some((l) => l.attributionUrl)).toBe(true)
+  })
+
   it('layersForCountry returns region layers for DE plus worldwide', async () => {
     const de = await layersForCountry('DE')
     expect(de.length).toBeGreaterThan(0)
