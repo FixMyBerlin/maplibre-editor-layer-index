@@ -30,6 +30,7 @@ const layer = {
   bbox: [0, 0, 1, 1],
   countryCodes: [],
   requiresKeys: ['apikey'],
+  continents: ['world'],
 } as EliLayer
 
 describe('addEditorLayer / removeEditorLayer', () => {

@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { layersInViewport, type EliLayer } from 'maplibre-editor-layer-index'
+import { loadLayersInViewport, type EliLayer } from 'maplibre-editor-layer-index'
 import { addEditorLayer, removeEditorLayer } from 'maplibre-editor-layer-index/maplibre'
 import maplibregl from 'maplibre-gl'
 import { useEffect, useRef, useState } from 'react'
@@ -31,7 +31,9 @@ function RawMaplibreDemo() {
     })
     mapRef.current = map
 
-    const refresh = () => setLayers(layersInViewport(map.getBounds()))
+    const refresh = () => {
+      void loadLayersInViewport(map.getBounds()).then(setLayers)
+    }
     const persist = () => {
       const c = map.getCenter()
       navigate({

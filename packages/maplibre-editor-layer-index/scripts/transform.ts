@@ -1,5 +1,16 @@
 import type { Geometry } from 'geojson'
-import type { EliByCountry, EliGeometries, EliLayer, EliLayerType } from '../src/core/types'
+import type {
+  EliByCountry,
+  EliContinent,
+  EliDetailsShard,
+  EliGeometries,
+  EliLayer,
+  EliLayerDetails,
+  EliLayerType,
+  EliLocatorLayer,
+  EliShardsMeta,
+} from '../src/core/types'
+import { CONTINENTS, continentsForCountryCodes, countryToContinent } from './continents'
 import { countryCodesForGeometry } from './countries'
 import { geometryBBox, geometryId, WORLD_BBOX, WORLD_GEOMETRY_ID } from './geometry'
 import { eliFeatureCollectionSchema, type EliFeature } from './schema'
@@ -31,9 +42,105 @@ function buildAttributionHtml(feature: EliFeature): string | undefined {
   return a.text ?? undefined
 }
 
+function emptyContinentRecord<T>(): Record<EliContinent, T> {
+  return Object.fromEntries(CONTINENTS.map((c) => [c, {}])) as Record<EliContinent, T>
+}
+
+function toLayerDetails(layer: EliLayer): EliLayerDetails {
+  return {
+    tiles: layer.tiles,
+    urlTemplate: layer.urlTemplate,
+    availableProjections: layer.availableProjections,
+    attributionHtml: layer.attributionHtml,
+    attributionText: layer.attributionText,
+    attributionUrl: layer.attributionUrl,
+    licenseUrl: layer.licenseUrl,
+    icon: layer.icon,
+    startDate: layer.startDate,
+    endDate: layer.endDate,
+  }
+}
+
+function toLocatorLayer(layer: EliLayer, continents: EliContinent[]): EliLocatorLayer {
+  return {
+    id: layer.id,
+    name: layer.name,
+    type: layer.type,
+    category: layer.category,
+    best: layer.best,
+    overlay: layer.overlay,
+    minzoom: layer.minzoom,
+    maxzoom: layer.maxzoom,
+    tileSize: layer.tileSize,
+    scheme: layer.scheme,
+    geometryId: layer.geometryId,
+    bbox: layer.bbox,
+    countryCodes: layer.countryCodes,
+    requiresKeys: layer.requiresKeys,
+    continents,
+  }
+}
+
+function shardLayers(
+  layers: EliLayer[],
+  geometries: EliGeometries,
+): {
+  locatorLayers: EliLocatorLayer[]
+  detailsByContinent: Record<EliContinent, EliDetailsShard>
+  geometriesByContinent: Record<EliContinent, EliGeometries>
+  shardsMeta: EliShardsMeta
+} {
+  const locatorLayers: EliLocatorLayer[] = []
+  const detailsByContinent = emptyContinentRecord<EliDetailsShard>()
+  const geometriesByContinent = emptyContinentRecord<EliGeometries>()
+  const geometryContinents = new Map<string, Set<EliContinent>>()
+
+  for (const layer of layers) {
+    const continents = continentsForCountryCodes(layer.countryCodes)
+    locatorLayers.push(toLocatorLayer(layer, continents))
+
+    const details = toLayerDetails(layer)
+    for (const continent of continents) {
+      detailsByContinent[continent][layer.id] = details
+    }
+
+    if (layer.geometryId === WORLD_GEOMETRY_ID) continue
+    let set = geometryContinents.get(layer.geometryId)
+    if (!set) {
+      set = new Set()
+      geometryContinents.set(layer.geometryId, set)
+    }
+    for (const continent of continents) {
+      if (continent !== 'world') set.add(continent)
+    }
+  }
+
+  for (const [gid, continents] of geometryContinents) {
+    const geometry = geometries[gid]
+    if (!geometry) continue
+    for (const continent of continents) {
+      geometriesByContinent[continent][gid] = geometry
+    }
+  }
+
+  return {
+    locatorLayers,
+    detailsByContinent,
+    geometriesByContinent,
+    shardsMeta: {
+      continents: [...CONTINENTS],
+      countryToContinent: { ...countryToContinent },
+    },
+  }
+}
+
 export type TransformResult = {
   layers: EliLayer[]
   geometries: EliGeometries
+  locatorLayers: EliLocatorLayer[]
+  detailsByContinent: Record<EliContinent, EliDetailsShard>
+  geometriesByContinent: Record<EliContinent, EliGeometries>
+  shardsMeta: EliShardsMeta
   /** ISO region code → layer ids (plus a `"worldwide"` bucket). */
   byCountry: EliByCountry
   /** Distinct API-key placeholder names across all layers (e.g. `["apikey"]`). */
@@ -48,7 +155,7 @@ export type TransformResult = {
 
 /**
  * Validate a raw ELI FeatureCollection and transform it into the published shape:
- * MapLibre-ready layer records + a deduplicated geometry table.
+ * MapLibre-ready layer records + a deduplicated geometry table + continent shards.
  *
  * Throws (failing the build) if the FeatureCollection doesn't match the schema —
  * we never publish data we can't trust.
@@ -116,11 +223,22 @@ export function transform(raw: unknown): TransformResult {
       bbox,
       countryCodes,
       requiresKeys,
+      continents: [],
     })
   }
 
   // Deterministic ordering so regenerated output diffs only on real changes.
   layers.sort((a, b) => a.id.localeCompare(b.id))
+
+  const { locatorLayers, detailsByContinent, geometriesByContinent, shardsMeta } = shardLayers(
+    layers,
+    geometries,
+  )
+
+  // Sync continents onto full layers (locator is authoritative after sharding).
+  for (let i = 0; i < layers.length; i++) {
+    layers[i]!.continents = locatorLayers[i]!.continents
+  }
 
   // Inverted area↔layer map (sorted keys/values for stable output).
   const byCountry: EliByCountry = {}
@@ -136,6 +254,10 @@ export function transform(raw: unknown): TransformResult {
   return {
     layers,
     geometries,
+    locatorLayers,
+    detailsByContinent,
+    geometriesByContinent,
+    shardsMeta,
     byCountry: sortedByCountry,
     apiKeys,
     counts: {

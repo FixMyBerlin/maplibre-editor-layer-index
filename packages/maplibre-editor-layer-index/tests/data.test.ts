@@ -1,34 +1,48 @@
 import { describe, expect, it } from 'vitest'
 import {
+  ensureDetailsForViewport,
   getGeometry,
   getLayer,
+  getLayerHydrated,
   getLayers,
   getManifest,
+  hydrateLayer,
   loadCoverageFeatures,
   loadGeometries,
 } from '../src/core/data'
-import { layersForCountry } from '../src/core/filter'
+import { layersForCountry, loadLayersInViewport } from '../src/core/filter'
 
 // Smoke tests against the real, committed src/data/*.json.
 describe('bundled data', () => {
   const layers = getLayers()
 
-  it('exposes a non-empty index with the expected shape (no coordinates)', () => {
+  it('exposes a non-empty locator index with the expected shape (no tile URLs)', () => {
     expect(layers.length).toBeGreaterThan(1000)
     for (const layer of layers.slice(0, 50)) {
       expect(typeof layer.id).toBe('string')
-      expect(layer.tiles.length).toBeGreaterThan(0)
       expect(layer.bbox).toHaveLength(4)
       expect(Array.isArray(layer.countryCodes)).toBe(true)
       expect(Array.isArray(layer.requiresKeys)).toBe(true)
+      expect(Array.isArray(layer.continents)).toBe(true)
+      expect(layer.continents.length).toBeGreaterThan(0)
+      expect(layer).not.toHaveProperty('tiles')
       expect(layer).not.toHaveProperty('coordinates')
     }
   })
 
-  it('getLayer resolves by id', () => {
+  it('getLayer resolves locator rows by id', () => {
     const first = layers[0]!
     expect(getLayer(first.id)?.id).toBe(first.id)
     expect(getLayer('definitely-not-a-real-id')).toBeUndefined()
+  })
+
+  it('hydrates layer details on demand', async () => {
+    const first = layers[0]!
+    expect(hydrateLayer(first)).toBeUndefined()
+    const hydrated = await getLayerHydrated(first.id)
+    expect(hydrated?.tiles.length).toBeGreaterThan(0)
+    expect(typeof hydrated?.urlTemplate).toBe('string')
+    expect(hydrated?.urlTemplate.length).toBeGreaterThan(0)
   })
 
   it('manifest reports sane counts', () => {
@@ -51,30 +65,28 @@ describe('bundled data', () => {
 
   it('builds coverage features with the layer id as feature id', async () => {
     const region = layers.find((l) => l.geometryId !== 'world')!
-    const fc = await loadCoverageFeatures([region])
+    const hydrated = await getLayerHydrated(region.id)
+    expect(hydrated).toBeDefined()
+    const fc = await loadCoverageFeatures([hydrated!])
     expect(fc.type).toBe('FeatureCollection')
     expect(fc.features[0]?.id).toBe(region.id)
     expect(fc.features[0]?.properties?.id).toBe(region.id)
   })
 
-  it('every layer keeps the raw ELI url template', () => {
-    for (const layer of layers.slice(0, 50)) {
-      expect(typeof layer.urlTemplate).toBe('string')
-      expect(layer.urlTemplate.length).toBeGreaterThan(0)
-    }
+  it('loadLayersInViewport returns hydrated layers for Berlin', async () => {
+    const berlinViewport = { west: 13.2, south: 52.4, east: 13.6, north: 52.6 }
+    await ensureDetailsForViewport(berlinViewport)
+    const inViewport = await loadLayersInViewport(berlinViewport)
+    expect(inViewport.length).toBeGreaterThan(0)
+    expect(inViewport.every((l) => l.tiles.length > 0)).toBe(true)
   })
 
-  it('preserves lossless interop fields (dates + structured attribution) where ELI has them', () => {
-    expect(layers.some((l) => l.startDate)).toBe(true)
-    expect(layers.some((l) => l.attributionText)).toBe(true)
-    expect(layers.some((l) => l.attributionUrl)).toBe(true)
-  })
-
-  it('layersForCountry returns region layers for DE plus worldwide', async () => {
+  it('layersForCountry returns locator rows for DE plus worldwide', async () => {
     const de = await layersForCountry('DE')
     expect(de.length).toBeGreaterThan(0)
     expect(de.some((l) => l.countryCodes.includes('DE'))).toBe(true)
     expect(de.some((l) => l.geometryId === 'world')).toBe(true)
+    expect(de.every((l) => !('tiles' in l))).toBe(true)
 
     const deOnly = await layersForCountry('DE', { includeWorldwide: false })
     expect(deOnly.every((l) => l.geometryId !== 'world')).toBe(true)

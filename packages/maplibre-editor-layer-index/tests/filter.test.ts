@@ -2,27 +2,47 @@ import { describe, expect, it } from 'vitest'
 import { applyApiKeys, hasRequiredKeys } from '../src/core/apiKeys'
 import { filterLayers, layersInViewport } from '../src/core/filter'
 import { getRasterLayerSpec, getRasterSourceSpec } from '../src/core/specs'
-import type { EliLayer } from '../src/core/types'
+import type { EliLayer, EliLocatorLayer } from '../src/core/types'
 
-function layer(partial: Partial<EliLayer> & Pick<EliLayer, 'id' | 'bbox'>): EliLayer {
+function locator(
+  partial: Partial<EliLocatorLayer> & Pick<EliLocatorLayer, 'id' | 'bbox'>,
+): EliLocatorLayer {
   return {
     name: partial.id,
     type: 'tms',
     best: false,
     overlay: false,
-    tiles: ['https://example.com/{z}/{x}/{y}.png'],
     tileSize: 256,
-    urlTemplate: 'https://example.com/{zoom}/{x}/{y}.png',
     geometryId: 'g',
     countryCodes: [],
     requiresKeys: [],
+    continents: ['world'],
+    ...partial,
+  }
+}
+
+function layer(partial: Partial<EliLayer> & Pick<EliLayer, 'id' | 'bbox'>): EliLayer {
+  return {
+    ...locator(partial),
+    tiles: ['https://example.com/{z}/{x}/{y}.png'],
+    urlTemplate: 'https://example.com/{zoom}/{x}/{y}.png',
     ...partial,
   } as EliLayer
 }
 
-const berlin = layer({ id: 'berlin', bbox: [13.0, 52.3, 13.8, 52.7], countryCodes: ['DE'] })
-const paris = layer({ id: 'paris', bbox: [2.2, 48.8, 2.5, 49.0], countryCodes: ['FR'] })
-const world = layer({ id: 'world', bbox: [-180, -90, 180, 90], geometryId: 'world' })
+const berlin = locator({
+  id: 'berlin',
+  bbox: [13.0, 52.3, 13.8, 52.7],
+  countryCodes: ['DE'],
+  continents: ['europe'],
+})
+const paris = locator({
+  id: 'paris',
+  bbox: [2.2, 48.8, 2.5, 49.0],
+  countryCodes: ['FR'],
+  continents: ['europe'],
+})
+const world = locator({ id: 'world', bbox: [-180, -90, 180, 90], geometryId: 'world' })
 const layers = [berlin, paris, world]
 
 const berlinViewport = { west: 13.2, south: 52.4, east: 13.6, north: 52.6 }
@@ -60,7 +80,12 @@ describe('layersInViewport', () => {
 
   it('drops a globe-spanning layer that does not cover the viewport country (TIGER case)', () => {
     // bbox spans the world (antimeridian territories) but country codes are US/CA only.
-    const tiger = layer({ id: 'tiger', bbox: [-178, 12, 180, 71], countryCodes: ['US', 'CA'] })
+    const tiger = locator({
+      id: 'tiger',
+      bbox: [-178, 12, 180, 71],
+      countryCodes: ['US', 'CA'],
+      continents: ['north-america'],
+    })
     const result = layersInViewport(berlinViewport, { countryCodes: ['DE'] }, [berlin, tiger]).map(
       (l) => l.id,
     )
@@ -77,12 +102,12 @@ describe('layersInViewport', () => {
 
 describe('filterLayers', () => {
   it('filters by type/best/overlay without location', () => {
-    const best = layer({ id: 'best', bbox: [0, 0, 1, 1], best: true })
+    const best = locator({ id: 'best', bbox: [0, 0, 1, 1], best: true })
     expect(filterLayers({ bestOnly: true }, [berlin, best]).map((l) => l.id)).toEqual(['best'])
   })
 
   it('hides key-requiring layers by default, includes them once keys are provided', () => {
-    const keyed = layer({ id: 'mapbox', bbox: [0, 0, 1, 1], requiresKeys: ['apikey'] })
+    const keyed = locator({ id: 'mapbox', bbox: [0, 0, 1, 1], requiresKeys: ['apikey'] })
     const layers = [berlin, keyed]
     expect(filterLayers({}, layers).map((l) => l.id)).toEqual(['berlin'])
     expect(filterLayers({ apiKeys: { apikey: 'pk.test' } }, layers).map((l) => l.id)).toEqual([
@@ -135,7 +160,7 @@ describe('specs', () => {
   })
 
   it('builds a raster layer spec with a derived id', () => {
-    expect(getRasterLayerSpec(berlin)).toMatchObject({
+    expect(getRasterLayerSpec(layer({ id: 'berlin', bbox: berlin.bbox }))).toMatchObject({
       id: 'eli-berlin',
       type: 'raster',
       source: 'eli-berlin',
@@ -149,6 +174,8 @@ describe('specs', () => {
       attributionHtml: '© Example provider',
     })
     expect(getRasterSourceSpec(withAttr).attribution).toBe('© Example provider')
-    expect(getRasterSourceSpec(berlin)).not.toHaveProperty('attribution')
+    expect(getRasterSourceSpec(layer({ id: 'berlin', bbox: berlin.bbox }))).not.toHaveProperty(
+      'attribution',
+    )
   })
 })

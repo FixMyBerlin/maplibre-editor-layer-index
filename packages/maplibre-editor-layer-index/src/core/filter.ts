@@ -1,13 +1,10 @@
 import { hasRequiredKeys, type EliApiKeys } from './apiKeys'
-import { getLayers, loadByCountry } from './data'
-import type { BBox, EliCategory, EliLayer, EliLayerType } from './types'
+import type { ViewportBounds } from './bounds'
+import { toBBox } from './bounds'
+import { ensureDetailsForViewport, getLayers, hydrateLayers, loadByCountry } from './data'
+import type { BBox, EliCategory, EliLayer, EliLayerType, EliLocatorLayer } from './types'
 
-/** A viewport, accepted in the shapes MapLibre / react-map-gl hand you. */
-export type ViewportBounds =
-  | BBox
-  | { west: number; south: number; east: number; north: number }
-  // maplibre-gl LngLatBounds-like
-  | { getWest(): number; getSouth(): number; getEast(): number; getNorth(): number }
+export type { ViewportBounds } from './bounds'
 
 export type FilterOptions = {
   /** Keep only these categories. */
@@ -36,14 +33,6 @@ export type FilterOptions = {
   apiKeys?: EliApiKeys
 }
 
-function toBBox(bounds: ViewportBounds): BBox {
-  if (Array.isArray(bounds)) return bounds
-  if ('getWest' in bounds) {
-    return [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()]
-  }
-  return [bounds.west, bounds.south, bounds.east, bounds.north]
-}
-
 /** Do two axis-aligned boxes overlap? (Longitude antimeridian wrap is not handled.) */
 function bboxOverlaps(a: BBox, b: BBox): boolean {
   const [aw, as, ae, an] = a
@@ -51,7 +40,7 @@ function bboxOverlaps(a: BBox, b: BBox): boolean {
   return aw <= be && bw <= ae && as <= bn && bs <= an
 }
 
-function matchesOptions(layer: EliLayer, options: FilterOptions): boolean {
+function matchesOptions(layer: EliLocatorLayer, options: FilterOptions): boolean {
   // Hide layers whose required API keys aren't available — keeps the default clean.
   if (!hasRequiredKeys(layer.requiresKeys, options.apiKeys)) return false
   if (options.categories && !(layer.category && options.categories.includes(layer.category))) {
@@ -75,14 +64,14 @@ function matchesOptions(layer: EliLayer, options: FilterOptions): boolean {
 
 /**
  * Layers whose coverage bounding box overlaps the given viewport. Pure arithmetic
- * against the precomputed `bbox` in the index — no geometry is loaded. Worldwide
+ * against the precomputed `bbox` in the locator — no geometry is loaded. Worldwide
  * layers always match. Results keep the index order (id-sorted).
  */
 export function layersInViewport(
   bounds: ViewportBounds,
   options: FilterOptions = {},
-  layers: EliLayer[] = getLayers(),
-): EliLayer[] {
+  layers: EliLocatorLayer[] = getLayers(),
+): EliLocatorLayer[] {
   const viewport = toBBox(bounds)
   return layers.filter(
     (layer) => bboxOverlaps(layer.bbox, viewport) && matchesOptions(layer, options),
@@ -92,25 +81,36 @@ export function layersInViewport(
 /** Apply only the predicate filters (category/type/best/…), ignoring location. */
 export function filterLayers(
   options: FilterOptions = {},
-  layers: EliLayer[] = getLayers(),
-): EliLayer[] {
+  layers: EliLocatorLayer[] = getLayers(),
+): EliLocatorLayer[] {
   return layers.filter((layer) => matchesOptions(layer, options))
 }
 
 /**
  * Layers available in a region, via the precomputed `byCountry` map — an O(1)
- * lookup with no geometry or bbox math. Returns region layers covering `code`
- * plus worldwide layers (unless `includeWorldwide: false`). `code` is an ISO
- * 3166-1 alpha-2 code, e.g. `'DE'`.
+ * lookup with no geometry or bbox math. Returns locator rows for region layers
+ * covering `code` plus worldwide layers (unless `includeWorldwide: false`). `code`
+ * is an ISO 3166-1 alpha-2 code, e.g. `'DE'`. Callers needing tile URLs should
+ * hydrate via {@link hydrateLayer} or {@link getLayerHydrated}.
  */
 export async function layersForCountry(
   code: string,
   options: { includeWorldwide?: boolean } = {},
-): Promise<EliLayer[]> {
+): Promise<EliLocatorLayer[]> {
   const byCountry = await loadByCountry()
   const ids = new Set(byCountry[code] ?? [])
   if (options.includeWorldwide !== false) {
     for (const id of byCountry.worldwide ?? []) ids.add(id)
   }
   return getLayers().filter((layer) => ids.has(layer.id))
+}
+
+/** Viewport-filter synchronously, load regional detail shards, then hydrate matches. */
+export async function loadLayersInViewport(
+  bounds: ViewportBounds,
+  options: FilterOptions = {},
+): Promise<EliLayer[]> {
+  const matched = layersInViewport(bounds, options)
+  await ensureDetailsForViewport(bounds)
+  return hydrateLayers(matched)
 }

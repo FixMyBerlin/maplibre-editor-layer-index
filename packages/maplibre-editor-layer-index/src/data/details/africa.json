@@ -1,0 +1,359 @@
+{
+  "Catastro-Spain": {
+    "availableProjections": [
+      "EPSG:4230",
+      "EPSG:4326",
+      "EPSG:4258",
+      "EPSG:32627",
+      "EPSG:32628",
+      "EPSG:23029",
+      "EPSG:23030",
+      "EPSG:23031",
+      "EPSG:32629",
+      "EPSG:32630",
+      "EPSG:32631",
+      "EPSG:25829",
+      "EPSG:25830",
+      "EPSG:25831",
+      "EPSG:3857"
+    ],
+    "tiles": [
+      "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IECA-CDAU-wms": {
+    "attributionHtml": "Instituto de Estadística y Cartografía de Andalucía - Junta de Andalucía",
+    "attributionText": "Instituto de Estadística y Cartografía de Andalucía - Junta de Andalucía",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4258",
+      "EPSG:4326",
+      "EPSG:23029",
+      "EPSG:23030",
+      "EPSG:23031",
+      "EPSG:25829",
+      "EPSG:25830",
+      "EPSG:25831",
+      "EPSG:32629",
+      "EPSG:32630",
+      "EPSG:32631",
+      "EPSG:900913"
+    ],
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "tiles": [
+      "https://www.callejerodeandalucia.es/servicios/cdau/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image/png&STYLES=&TRANSPARENT=true&LAYERS=CDAU_wms&TILED=false&WIDTH=256&HEIGHT=256&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&_=0"
+    ],
+    "urlTemplate": "https://www.callejerodeandalucia.es/servicios/cdau/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image/png&STYLES=&TRANSPARENT=true&LAYERS=CDAU_wms&TILED=false&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}&_=0"
+  },
+  "IGN-raster": {
+    "attributionHtml": "IGN raster",
+    "attributionText": "IGN raster",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4230",
+      "EPSG:4258",
+      "EPSG:4326",
+      "EPSG:23029",
+      "EPSG:23030",
+      "EPSG:23031",
+      "EPSG:25829",
+      "EPSG:25830",
+      "EPSG:25831",
+      "EPSG:32628",
+      "EPSG:32629",
+      "EPSG:32630",
+      "EPSG:32631"
+    ],
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "tiles": [
+      "http://www.ign.es/wms-inspire/mapa-raster?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=mtn_rasterizado&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "http://www.ign.es/wms-inspire/mapa-raster?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=mtn_rasterizado&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "osmim-imagicode-LC81730602015040LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015-02-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015-02-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81730602015040LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81730602015040LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC82100502015347LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015-12-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015-12-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R022_N06_20151221T103009": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015-12-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015-12-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R078_N01_20160702T082522": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-07-02",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-07-02",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R078_N01_20160702T082522&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R078_N01_20160702T082522&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R092_S02_20160613T075613": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-06-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-06-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S02_20160613T075613&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S02_20160613T075613&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R092_S05_20160802T075556": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-08-02",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-08-02",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S05_20160802T075556&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S05_20160802T075556&z={zoom}&x={x}&y={-y}"
+  },
+  "PNOA-rapida": {
+    "attributionHtml": "PNOA",
+    "attributionText": "PNOA",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4080",
+      "EPSG:4081",
+      "EPSG:4082",
+      "EPSG:4083",
+      "EPSG:4230",
+      "EPSG:4258",
+      "EPSG:4326",
+      "EPSG:25828",
+      "EPSG:25829",
+      "EPSG:25830",
+      "EPSG:25831",
+      "EPSG:32628",
+      "EPSG:32629",
+      "EPSG:32630",
+      "EPSG:32631"
+    ],
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "tiles": [
+      "https://wms-pnoa.idee.es/pnoa-provisionales?LAYERS=OrtoimagenRapida&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/png&WIDTH=256&HEIGHT=256&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://wms-pnoa.idee.es/pnoa-provisionales?LAYERS=OrtoimagenRapida&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "PNOA-Spain": {
+    "attributionHtml": "PNOA",
+    "attributionText": "PNOA",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4230",
+      "EPSG:4258",
+      "EPSG:4326",
+      "EPSG:23029",
+      "EPSG:23030",
+      "EPSG:23031",
+      "EPSG:25829",
+      "EPSG:25830",
+      "EPSG:25831",
+      "EPSG:32628",
+      "EPSG:32629",
+      "EPSG:32630",
+      "EPSG:32631"
+    ],
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "tiles": [
+      "http://www.ign.es/wms-inspire/pnoa-ma?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.OrthoimageCoverage&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "http://www.ign.es/wms-inspire/pnoa-ma?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.OrthoimageCoverage&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "PNOA-Spain-TMS": {
+    "attributionHtml": "PNOA",
+    "attributionText": "PNOA",
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "tiles": [
+      "https://tms-pnoa-ma.idee.es/1.0.0/pnoa-ma/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://tms-pnoa-ma.idee.es/1.0.0/pnoa-ma/{zoom}/{x}/{-y}.jpeg"
+  },
+  "South_Africa-CapeTown-Aerial": {
+    "attributionHtml": "<a href=\"https://www.capetown.gov.za\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial - OPENSTREETMAP USE ONLY</a>",
+    "attributionText": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
+    "attributionUrl": "https://www.capetown.gov.za",
+    "endDate": "2016",
+    "startDate": "2015",
+    "tiles": [
+      "https://a.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{z}/{x}/{y}.jpg",
+      "https://b.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{z}/{x}/{y}.jpg",
+      "https://c.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg"
+  },
+  "South_Africa-CapeTown-Aerial-2013": {
+    "attributionHtml": "<a href=\"https://www.capetown.gov.za\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial - OPENSTREETMAP USE ONLY</a>",
+    "attributionText": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
+    "attributionUrl": "https://www.capetown.gov.za",
+    "endDate": "2015",
+    "startDate": "2013",
+    "tiles": [
+      "https://a.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{z}/{x}/{y}.jpg",
+      "https://b.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{z}/{x}/{y}.jpg",
+      "https://c.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg"
+  },
+  "South_Africa-CapeTown-Aerial-2017": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4148",
+      "EPSG:4326",
+      "EPSG:32734"
+    ],
+    "endDate": "2017-01",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2017-01",
+    "tiles": [
+      "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202017Jan&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202017Jan&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "South_Africa-CapeTown-Aerial-2018": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4148",
+      "EPSG:4326",
+      "EPSG:32734"
+    ],
+    "endDate": "2018-02",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2018-02",
+    "tiles": [
+      "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202018Feb&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202018Feb&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "South_Africa-CapeTown-Aerial-2021": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "endDate": "2021-03",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://cityimg.capetown.gov.za/erdas-iws/esri/GeoSpatial%20Datasets/rest/services/Aerial%20Imagery_Aerial%20Imagery%202021Mar%20Cache/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za/erdas-iws/esri/GeoSpatial%20Datasets/rest/services/Aerial%20Imagery_Aerial%20Imagery%202021Mar%20Cache/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "South_Africa-CapeTown-Aerial-2023": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4148",
+      "EPSG:4326",
+      "EPSG:32734"
+    ],
+    "endDate": "2023-01",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2023-01",
+    "tiles": [
+      "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202023Jan&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202023Jan&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "South_Africa-CapeTown-Aerial-2024": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4148",
+      "EPSG:4326",
+      "EPSG:32734"
+    ],
+    "endDate": "2024-01",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2024-01",
+    "tiles": [
+      "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202024&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202024&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "South_Africa-CapeTown-Aerial-2025": {
+    "attributionHtml": "<a href=\"https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html\" target=\"_blank\" rel=\"noopener\">City of Cape Town Aerial</a>",
+    "attributionText": "City of Cape Town Aerial",
+    "attributionUrl": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4148",
+      "EPSG:4326",
+      "EPSG:32734"
+    ],
+    "endDate": "2025-01",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+    "startDate": "2025-01",
+    "tiles": [
+      "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202025Jan&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://cityimg.capetown.gov.za:443/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202025Jan&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "South_Africa-CD_NGI-Aerial": {
+    "tiles": [
+      "https://aerial.openstreetmap.org.za/ngi-aerial/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg"
+  },
+  "zm-medium-voltage-overhead-gridlines": {
+    "icon": "https://www.zesco.co.zm/assets/img/logo/new_logo_v2.png",
+    "licenseUrl": "https://energydata.info/dataset/zambia-overhead-mv-distribution-lines",
+    "tiles": [
+      "https://zmbgrid.zabop.workers.dev/{z}/{x}/{y}"
+    ],
+    "urlTemplate": "https://zmbgrid.zabop.workers.dev/{zoom}/{x}/{y}"
+  }
+}

@@ -17,72 +17,80 @@ export type EliCategory =
 /** `[west, south, east, north]` in WGS84 degrees. */
 export type BBox = [number, number, number, number]
 
-/**
- * One ELI layer, ready for MapLibre. Everything needed to render the imagery and
- * to filter by viewport is here — except the coverage polygon coordinates, which
- * live in `geometries.json` and are referenced by {@link EliLayer.geometryId}.
- */
-export type EliLayer = {
-  /** Stable ELI id (e.g. `"Mapbox"`). */
+export type EliContinent =
+  | 'africa'
+  | 'antarctica'
+  | 'asia'
+  | 'europe'
+  | 'north-america'
+  | 'oceania'
+  | 'south-america'
+  | 'world'
+
+/** Slim always-loaded row used for viewport/country filtering. */
+export type EliLocatorLayer = {
   id: string
   name: string
   type: EliLayerType
   category?: EliCategory
-  /** ELI marks this as the best source for its region. */
   best: boolean
-  /** Transparent overlay tiles meant to sit on top of a base map. */
   overlay: boolean
   minzoom?: number
   maxzoom?: number
-  /** MapLibre raster tile URL templates (`{z}/{x}/{y}` or WMS `{bbox-epsg-3857}`). */
-  tiles: string[]
   tileSize: number
-  /** `"tms"` when the source uses TMS (flipped-y) tile addressing. */
   scheme?: 'xyz' | 'tms'
-  /**
-   * The original, unmodified ELI URL template (e.g. `…/{zoom}/{x}/{y}` or WMS
-   * `…&CRS={proj}&BBOX={bbox}`). MapLibre users want {@link EliLayer.tiles}; this is
-   * for renderers that do their own placeholder substitution (iD, Rapid, Leaflet).
-   */
+  geometryId: string
+  bbox: BBox
+  countryCodes: string[]
+  requiresKeys: string[]
+  /** Continents this layer is filed under (derived from countryCodes). Worldwide → ['world']. */
+  continents: EliContinent[]
+}
+
+/** Lazy detail fields merged onto a locator row to form a full EliLayer. */
+export type EliLayerDetails = {
+  tiles: string[]
   urlTemplate: string
-  /** WMS projections the source advertises (`available_projections`), if any. */
   availableProjections?: string[]
-  /** Ready-to-render attribution HTML, or undefined when none is provided. */
   attributionHtml?: string
-  /** Raw ELI `attribution.text` (e.g. iD's `terms_text`), if provided. */
   attributionText?: string
-  /** Raw ELI `attribution.url` (e.g. iD's `terms_url`), if provided. */
   attributionUrl?: string
   licenseUrl?: string
   icon?: string
-  /** Imagery capture start date (`start_date`, RFC3339-ish: `YYYY`/`YYYY-MM`/`YYYY-MM-DD`). */
   startDate?: string
-  /** Imagery capture end date (`end_date`, RFC3339-ish). */
   endDate?: string
-  /**
-   * Hash of the coverage geometry, key into `geometries.json`. `"world"` means the
-   * layer has worldwide coverage (no polygon). Layers that share an identical
-   * polygon share a `geometryId` (deduplication).
-   */
-  geometryId: string
-  /** Coverage bounding box. Worldwide layers use `[-180, -90, 180, 90]`. */
-  bbox: BBox
-  /** ISO-ish region codes the coverage touches (via country-coder). Empty for worldwide. */
-  countryCodes: string[]
-  /**
-   * Names of API-key placeholders still present in {@link EliLayer.tiles} (e.g.
-   * `["apikey"]`). The layer only works once these are supplied. Empty for the
-   * vast majority of layers. See `EliApiKey` for the full set of known names.
-   */
-  requiresKeys: string[]
 }
 
-/** The small, always-loaded data file: every layer minus coverage coordinates. */
+/**
+ * One ELI layer, ready for MapLibre. Everything needed to render the imagery and
+ * to filter by viewport is here — except the coverage polygon coordinates, which
+ * live in continent-sharded `geometries/<continent>.json` (referenced by
+ * {@link EliLocatorLayer.geometryId}).
+ */
+export type EliLayer = EliLocatorLayer & EliLayerDetails
+
+/** The slim, always-loaded locator file: filter fields only, no tile URLs. */
+export type EliLocatorIndex = { layers: EliLocatorLayer[] }
+
+/** Per-continent lazy detail shard: layer id → tile URLs, attribution, etc. */
+export type EliDetailsShard = Record<string, EliLayerDetails>
+
+/** Router metadata for continent-sharded lazy loads. */
+export type EliShardsMeta = {
+  continents: EliContinent[]
+  /** ISO alpha-2 → continent (no 'world'). */
+  countryToContinent: Record<string, Exclude<EliContinent, 'world'>>
+}
+
+/**
+ * Legacy monolithic index shape ({@link EliLayer}[] with details inline). Prefer
+ * {@link EliLocatorIndex} + continent detail shards for new consumers.
+ */
 export type EliIndex = {
   layers: EliLayer[]
 }
 
-/** The large, lazily-loaded data file: deduplicated coverage geometries by id. */
+/** Deduplicated coverage geometries by id (continent-sharded at rest). */
 export type EliGeometries = Record<string, Geometry>
 
 /**
@@ -109,5 +117,9 @@ export type EliManifest = {
     /** Unique geometries after deduplication. */
     geometries: number
     dropped: Record<string, number>
+    /** Non-empty `details/<continent>.json` shards written. */
+    detailShards?: number
+    /** Non-empty `geometries/<continent>.json` shards written. */
+    geometryShards?: number
   }
 }

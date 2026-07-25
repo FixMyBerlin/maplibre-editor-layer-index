@@ -1,14 +1,16 @@
 {
   "counts": {
+    "detailShards": 8,
     "dropped": {
       "bing": 1,
       "wms_endpoint": 17
     },
-    "geometries": 947,
-    "published": 1614,
-    "upstream": 1632
+    "geometries": 952,
+    "geometryShards": 7,
+    "published": 1637,
+    "upstream": 1655
   },
-  "generatedAt": "2026-06-28T05:19:00.613Z",
+  "generatedAt": "2026-07-25T04:19:22.386Z",
   "source": "https://osmlab.github.io/editor-layer-index/imagery.geojson",
-  "sourceVersion": "W/\"6a39a72c-637457\""
+  "sourceVersion": "W/\"6a63d981-656912\""
 }

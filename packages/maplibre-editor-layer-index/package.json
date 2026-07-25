@@ -55,6 +55,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "check-size": "bun run scripts/check-size.ts",
     "check-exports": "attw --pack . --ignore-rules cjs-resolves-to-esm internal-resolution-error no-resolution --profile node16",
     "prepublishOnly": "bun run build"
   },

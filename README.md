@@ -12,24 +12,31 @@ This is a Bun-workspaces monorepo:
 | [`packages/maplibre-editor-layer-index`](packages/maplibre-editor-layer-index) | The published npm package (ESM-only).                                                  |
 | [`apps/preview`](apps/preview)                                                 | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
 
-## Why it's small
+## Why it's small (at runtime)
 
-The data is split into two tiers, generated at release time:
+Data is generated at release time into three tiers:
 
-- **`index.json`** — one compact record per layer (metadata + precomputed `bbox` + `countryCodes`,
-  **no coordinates**). Always loaded. This alone answers "which layers cover the current viewport?".
-- **`geometries.json`** — full coverage polygons, deduplicated by hash. Loaded **lazily** via
-  dynamic `import()` only when an app actually needs a coverage outline. Most apps never load it.
+- **`locator.json` (~820 KB)** — always loaded. Filter fields only (`bbox`, `countryCodes`,
+  `continents`, zooms, …). No tile URLs, attribution, or polygon coordinates. Enough for
+  sync `layersInViewport()`.
+- **`details/<continent>.json`** — lazy. Tile URLs, `urlTemplate`, attribution, icons. Loaded for
+  `world` plus the continent under the map center (via a tiny shard router).
+- **`geometries/<continent>.json`** — lazy. Deduplicated coverage polygons. Only loaded when you
+  draw coverage outlines.
 
-Filtering is a pure-arithmetic **bbox overlap** against the map viewport — zero runtime geo
-dependencies. `@rapideditor/country-coder` and `zod` are used at **build time only**.
+The npm package still ships **all** shards (install size is not per-region). Source maps are not
+published. JSON is inlined into ESM chunks by the build — not duplicated under `dist/data/`.
 
-## Other consumers (iD / Rapid)
+Filtering is pure-arithmetic **bbox overlap** — zero runtime geo dependencies.
+`@rapideditor/country-coder` and `zod` are **build time only**.
+
+## Other consumers (iD / Rapid / Leaflet)
 
 ELI has no npm release, so editors like [iD](https://github.com/openstreetmap/iD) vendor it as a
-pinned `gh-pages` commit. This package is a governed npm release with deduplicated geometries and a
-precomputed area↔layer map — see [docs/iD-integration.md](docs/iD-integration.md) for how iD could
-adopt it with a one-file build change while keeping its own templating and spatial index.
+pinned `gh-pages` commit. This package is still the MapLibre-branded npm release, but non-MapLibre
+renderers use the **root entry** (`maplibre-editor-layer-index`, not `/maplibre` or `/react`) and
+each layer's raw **`urlTemplate`** (not MapLibre `tiles`) after hydrating details. See
+[docs/iD-integration.md](docs/iD-integration.md) for the iD adapter sketch.
 
 ## Develop
 

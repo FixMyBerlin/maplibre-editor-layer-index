@@ -1,0 +1,936 @@
+{
+  "kartverket-sjokart": {
+    "attributionHtml": "<a href=\"https://www.kartverket.no/\" target=\"_blank\" rel=\"noopener\">© Kartverket</a>",
+    "attributionText": "© Kartverket",
+    "attributionUrl": "https://www.kartverket.no/",
+    "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+    "licenseUrl": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+    "tiles": [
+      "https://cache.kartverket.no/v1/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=sjokartraster&STYLE=default&FORMAT=image/png&tileMatrixSet=webmercator&tileMatrix={z}&tileRow={y}&tileCol={x}"
+    ],
+    "urlTemplate": "https://cache.kartverket.no/v1/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=sjokartraster&STYLE=default&FORMAT=image/png&tileMatrixSet=webmercator&tileMatrix={zoom}&tileRow={y}&tileCol={x}"
+  },
+  "osmim-imagicode-aster_anti_east": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2009",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2001",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_east&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_east&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-aster_anti_west": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2009",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2001",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_west&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_west&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-aster_anti2": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2009",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2001",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aster_anti2&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti2&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-aster_anti3": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2009",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2001",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aster_anti3&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti3&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-enderby": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-03-27",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-01-25",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=enderby&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=enderby&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-larsen_2018": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2018-01-06",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2018-01-06",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=larsen_2018&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=larsen_2018&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80281222016035LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-02-04",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-02-04",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80611072014036LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2014-02-05",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2014-02-05",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80651332014352LGN01": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2014-12-18",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2014-12-18",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80651332014352LGN01&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80651332014352LGN01&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80651332016358LGN02": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-12-23",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-12-23",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80651332016358LGN02&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80651332016358LGN02&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80661332021346LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-12-17",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-12-17",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80661332021346LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80661332021346LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80691332019346LGN01": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80691332019346LGN01&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80691332019346LGN01&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80691332021351LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-12-17",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-12-17",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80691332021351LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80691332021351LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80701332017363LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-29",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-29",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80701332017363LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80701332017363LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80711332020363LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-12-28",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-12-28",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80711332020363LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80711332020363LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80741332021354LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-12-20",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-12-20",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80741332021354LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80741332021354LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80781332017355LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80781332017355LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80781332017355LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80791332016360LGN01": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-12-25",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-12-25",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80791332016360LGN01&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80791332016360LGN01&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80791332020355LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-12-20",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-12-20",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80791332020355LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80791332020355LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80801332017353LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-19",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-19",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80801332017353LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80801332017353LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80801332021348LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-12-14",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-12-14",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80801332021348LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80801332021348LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80821332017351LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-17",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-17",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80821332017351LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80821332017351LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80821332021346LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-12-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-12-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80821332021346LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80821332021346LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80861332016361LGN01": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-12-26",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-12-26",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80861332016361LGN01&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80861332016361LGN01&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80871332017354LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-20",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-20",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80871332017354LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80871332017354LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80881332017345LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-12-11",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-12-11",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80881332017345LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80881332017345LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80891322019359LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-25",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-25",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80891322019359LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80891322019359LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80891332019359LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-25",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-25",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80891332019359LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80891332019359LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80901322020001LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-01-01",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-01-01",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80901322020001LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80901322020001LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80901332019350LGN01": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80901332019350LGN01&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80901332019350LGN01&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80921322019364LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80921322019364LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80921322019364LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80921332019364LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80921332019364LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80921332019364LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81511242016033LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-02-02",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-02-02",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LO80771332019354LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-20",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-20",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LO80771332019354LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LO80771332019354LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LO80841332019355LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-12-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-12-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LO80841332019355LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LO80841332019355LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R009_S61_20160109": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-01-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-01-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R017_S67_20170223T022551": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-02-23",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-02-23",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R017_S67_20170223T022551&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R017_S67_20170223T022551&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R042_S78_20170214T202521": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-02-14",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-02-14",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R042_S78_20170214T202521&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R042_S78_20170214T202521&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R005_S69_20180222T061749": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2018-02-22",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2018-02-22",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R005_S69_20180222T061749&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R005_S69_20180222T061749&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R005_S7X_20200303T061749": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-03-03",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-03-03",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R005_S7X_20200303T061749&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R005_S7X_20200303T061749&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R009_S64_20230216T125859": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-02-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-02-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R009_S64_20230216T125859&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R009_S64_20230216T125859&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R035_SXX_20220124T083939": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-01-24",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-01-24",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R035_SXX_20220124T083939&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R035_SXX_20220124T083939&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R037_S8X_20230129T120239": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-29",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-29",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R037_S8X_20230129T120239&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R037_S8X_20230129T120239&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R043_S67_20190301T220359": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-03-01",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-03-01",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R043_S67_20190301T220359&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R043_S67_20190301T220359&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R049_S8X_20210209T080929": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-02-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-02-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R049_S8X_20210209T080929&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R049_S8X_20210209T080929&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R049_SXX_20220316T080929": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-03-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-03-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R049_SXX_20220316T080929&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R049_SXX_20220316T080929&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R052_SXX_20230130T130859": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-30",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-30",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R052_SXX_20230130T130859&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R052_SXX_20230130T130859&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R057_S7X_20190210T213409": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-02-10",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-02-10",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R057_S7X_20190210T213409&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R057_S7X_20190210T213409&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R061_S7X_20200226T041719": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-02-26",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-02-26",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R061_S7X_20200226T041719&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R061_S7X_20200226T041719&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R063_SXX_20220317T073919": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-03-17",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-03-17",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R063_SXX_20220317T073919&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R063_SXX_20220317T073919&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R069_S83_20230111T174429": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-11",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-11",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R069_S83_20230111T174429&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R069_S83_20230111T174429&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R071_S72_20200216T210519": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-02-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-02-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R071_S72_20200216T210519&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R071_S72_20200216T210519&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R075_S7X_20190113T034629": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2019-01-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2019-01-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R075_S7X_20190113T034629&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R075_S7X_20190113T034629&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R077_S7X_20220226T070839": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-02-26",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-02-26",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R077_S7X_20220226T070839&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R077_S7X_20220226T070839&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R091_S7X_20210324T063829": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2021-03-24",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2021-03-24",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R091_S7X_20210324T063829&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R091_S7X_20210324T063829&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R095_S6X_20200119T131859": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-01-19",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-01-19",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R095_S6X_20200119T131859&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R095_S6X_20200119T131859&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R095_S6X_20220128T131859": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-01-28",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-01-28",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R095_S6X_20220128T131859&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R095_S6X_20220128T131859&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R098_S83_20230113T182459": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R098_S83_20230113T182459&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R098_S83_20230113T182459&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R099_SXX_20230212T200529": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-02-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-02-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R099_SXX_20230212T200529&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R099_SXX_20230212T200529&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R109_SXX_20230124T124909": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-24",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-24",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R109_SXX_20230124T124909&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R109_SXX_20230124T124909&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R121_S7X_20220301T085959": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-02-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-02-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R121_S7X_20220301T085959&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R121_S7X_20220301T085959&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R121_SXX_20220209T085949": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-02-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-02-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R121_SXX_20220209T085949&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R121_SXX_20220209T085949&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R127_S83_20230115T190459": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-01-15",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-01-15",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R127_S83_20230115T190459&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R127_S83_20230115T190459&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R128_SXX_20230214T204609": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2023-02-14",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2023-02-14",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R128_SXX_20230214T204609&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R128_SXX_20230214T204609&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R129_S67_20200121T222409": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-01-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-01-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R129_S67_20200121T222409&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R129_S67_20200121T222409&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R129_S67_20200301T222409": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-03-01",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-03-01",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R129_S67_20200301T222409&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R129_S67_20200301T222409&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R138_S6X_20220302T132919": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2022-03-02",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2022-03-02",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R138_S6X_20220302T132919&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R138_S6X_20220302T132919&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R143_S7X_20200302T215359": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-03-02",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-03-02",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R143_S7X_20200302T215359&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R143_S7X_20200302T215359&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-usgs_250k_ant": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "1979",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "1950",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=usgs_250k_ant&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=usgs_250k_ant&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-usgs_500k_ant": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "1959",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "1950",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=usgs_500k_ant&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=usgs_500k_ant&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-usgs_50k_ant": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "1989",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "1980",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=usgs_50k_ant&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=usgs_50k_ant&z={zoom}&x={x}&y={-y}"
+  }
+}

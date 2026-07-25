@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useMap } from 'react-map-gl/maplibre'
+import {
+  ensureDetailsForContinents,
+  ensureDetailsForViewport,
+  getShardsMeta,
+  hydrateLayers,
+} from '../core/data'
 import { filterLayers, layersInViewport, type FilterOptions } from '../core/filter'
 import type { EliLayer } from '../core/types'
 
@@ -29,6 +35,8 @@ export type UseEditorLayerIndexOptions = {
 export type UseEditorLayerIndexResult = {
   /** ELI layers covering the current viewport (or all, when `viewportFilter` is false). */
   layers: EliLayer[]
+  /** `loading` while detail shards are being fetched; `ready` once hydrated. */
+  status: 'loading' | 'ready'
 }
 
 /**
@@ -52,19 +60,39 @@ export function useEditorLayerIndex(
   // Re-run filtering when the filter object content changes, not its identity.
   const filterKey = JSON.stringify(filter ?? {})
 
-  const [layers, setLayers] = useState<EliLayer[]>(() =>
-    viewportFilter ? [] : filterLayers(filter),
-  )
+  const [layers, setLayers] = useState<EliLayer[]>([])
+  const [status, setStatus] = useState<'loading' | 'ready'>('loading')
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined)
+  const generation = useRef(0)
 
   useEffect(() => {
+    setStatus('loading')
+
     if (!viewportFilter) {
-      setLayers(filterLayers(filter))
+      const gen = ++generation.current
+      const locators = filterLayers(filter)
+      void ensureDetailsForContinents(getShardsMeta().continents).then(() => {
+        if (gen !== generation.current) return
+        setLayers(hydrateLayers(locators))
+        setStatus('ready')
+      })
       return
     }
+
     if (!map) return
 
-    const recompute = () => setLayers(layersInViewport(map.getBounds(), filter))
+    const recompute = () => {
+      const gen = ++generation.current
+      setStatus('loading')
+      const bounds = map.getBounds()
+      const locators = layersInViewport(bounds, filter)
+      void ensureDetailsForViewport(bounds).then(() => {
+        if (gen !== generation.current) return
+        setLayers(hydrateLayers(locators))
+        setStatus('ready')
+      })
+    }
+
     const onMoveEnd = () => {
       clearTimeout(timer.current)
       timer.current = setTimeout(recompute, debounceMs)
@@ -80,7 +108,7 @@ export function useEditorLayerIndex(
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, viewportFilter, debounceMs, filterKey])
 
-  return { layers }
+  return { layers, status }
 }
 
 export {
@@ -92,17 +120,28 @@ export {
   type RasterSourceOptions,
   type RasterSourceSpec,
 } from '../core/specs'
+export { continentForLngLat } from '../core/continents'
 export {
   filterLayers,
   layersForCountry,
   layersInViewport,
+  loadLayersInViewport,
   type FilterOptions,
   type ViewportBounds,
 } from '../core/filter'
 export {
+  continentsForCenter,
+  continentsForViewport,
+  ensureDetailsForContinents,
+  ensureDetailsForViewport,
   getGeometry,
   getLayer,
+  getLayerHydrated,
   getLayers,
+  getManifest,
+  getShardsMeta,
+  hydrateLayer,
+  hydrateLayers,
   loadByCountry,
   loadCoverageFeatures,
   loadGeometries,
@@ -115,4 +154,12 @@ export {
   type EliApiKey,
   type EliApiKeys,
 } from '../core/apiKeys'
-export type { EliCategory, EliLayer, EliLayerType } from '../core/types'
+export type {
+  EliCategory,
+  EliContinent,
+  EliLayer,
+  EliLayerDetails,
+  EliLayerType,
+  EliLocatorLayer,
+  EliShardsMeta,
+} from '../core/types'

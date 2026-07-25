@@ -2,6 +2,7 @@ import * as countryCoder from '@rapideditor/country-coder'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import {
   getLayer,
+  getLayerHydrated,
   getRasterLayerSpec,
   getRasterSourceSpec,
   loadCoverageFeatures,
@@ -82,7 +83,20 @@ function ReactMapGlDemo() {
     moveTimer.current = setTimeout(() => setSearch({ lat, lng, zoom }), 250)
   }
 
-  const selectedLayers = selected.map((id) => getLayer(id)).filter((l): l is EliLayer => Boolean(l))
+  const selectedLayersKey = selected.join(',')
+  const [selectedLayers, setSelectedLayers] = useState<EliLayer[]>([])
+
+  useEffect(() => {
+    let cancelled = false
+    Promise.all(selected.map((id) => getLayerHydrated(id))).then((results) => {
+      if (!cancelled) {
+        setSelectedLayers(results.filter((l): l is EliLayer => Boolean(l)))
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [selectedLayersKey])
 
   // Load coverage polygons for the viewport layers (borders + hover/selected highlight).
   const viewportKey = layers.map((l) => l.id).join(',')
@@ -438,7 +452,7 @@ function round(n: number): number {
  * outline on the map. `continental` layers span a very large bbox.
  */
 function layerScope(layer: EliLayer): 'worldwide' | 'continental' | null {
-  if (layer.geometryId === 'world') return 'worldwide'
+  if (layer.geometryId === 'world' || layer.continents.includes('world')) return 'worldwide'
   const [w, s, e, n] = layer.bbox
   if (Math.max(e - w, n - s) >= 30) return 'continental'
   return null

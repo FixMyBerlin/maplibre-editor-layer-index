@@ -1,0 +1,1882 @@
+{
+  "ACT202305": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2023-05-12",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2022-12-27",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202305/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202305/{zoom}/{x}/{y}.jpeg"
+  },
+  "ACT202309": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "availableProjections": [
+      "EPSG:7855"
+    ],
+    "endDate": "2023-09",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2023-09",
+    "tiles": [
+      "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202309/MapServer/WMTS/1.0.0/WMTSCapabilities.xml"
+    ],
+    "urlTemplate": "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202309/MapServer/WMTS/1.0.0/WMTSCapabilities.xml"
+  },
+  "ACT202311": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2023-11",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2023-11",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202311/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202311/{zoom}/{x}/{y}.jpeg"
+  },
+  "ACT202402": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2024-02",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2024-02",
+    "tiles": [
+      "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202402_AGOL_Compatible/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202402_AGOL_Compatible/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "ACT202409": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2024-09",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2024-09",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202409/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202409/{zoom}/{x}/{y}.jpeg"
+  },
+  "ACT202503": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and Aerometrex</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and Aerometrex",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2025-03",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2025-03",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202503/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202503/{zoom}/{x}/{y}.jpeg"
+  },
+  "ACT202505": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTMapi ©ACT Government and MetroMap</a>",
+    "attributionText": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2025-05",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2025-05",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202505/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202505/{zoom}/{x}/{y}.jpeg"
+  },
+  "AGRI-black_and_white-2.5m": {
+    "attributionHtml": "<a href=\"https://knowledge.dea.ga.gov.au/data/product/australian-geographic-reference-image/\" target=\"_blank\" rel=\"noopener\">© Commonwealth of Australia (Geoscience Australia)</a>",
+    "attributionText": "© Commonwealth of Australia (Geoscience Australia)",
+    "attributionUrl": "https://knowledge.dea.ga.gov.au/data/product/australian-geographic-reference-image/",
+    "endDate": "2011",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Attribution/Geoscience_Australia",
+    "startDate": "2006",
+    "tiles": [
+      "https://agri.openstreetmap.org/layer/au_ga_agri/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://agri.openstreetmap.org/layer/au_ga_agri/{zoom}/{x}/{y}.png"
+  },
+  "ARA_Bushfires_2020": {
+    "attributionHtml": "<a href=\"https://www.airborneresearch.org.au/\" target=\"_blank\" rel=\"noopener\">ARA - Airborne Research Australia</a>",
+    "attributionText": "ARA - Airborne Research Australia",
+    "attributionUrl": "https://www.airborneresearch.org.au/",
+    "endDate": "2020-02-06",
+    "icon": "https://static.wixstatic.com/media/a40742_9e0c1ee9ed0743a8bbf73b2fe6613802.gif",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:OSM_waiver_AirborneResearchSouthAustralia.pdf",
+    "startDate": "2020-01-08",
+    "tiles": [
+      "https://cogeoxyz.b-cdn.net/46b53084a82973a36c0f57a1d5446c605d00ed851f11a6f5ca7c75db/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://cogeoxyz.b-cdn.net/46b53084a82973a36c0f57a1d5446c605d00ed851f11a6f5ca7c75db/{zoom}/{x}/{y}.jpg"
+  },
+  "City_of_Melbourne_Feb_2019": {
+    "attributionHtml": "<a href=\"https://data.melbourne.vic.gov.au/explore/dataset/2019-aerial-imagery/information/\" target=\"_blank\" rel=\"noopener\">City of Melbourne</a>",
+    "attributionText": "City of Melbourne",
+    "attributionUrl": "https://data.melbourne.vic.gov.au/explore/dataset/2019-aerial-imagery/information/",
+    "endDate": "2019-02-03",
+    "icon": "https://www.melbourne.vic.gov.au/themes/custom/com/images/logo.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:City_of_Melbourne_OSMF_CCBY_waiver.pdf",
+    "startDate": "2019-02-02",
+    "tiles": [
+      "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2019/{z}/{x}/{y}.webp"
+    ],
+    "urlTemplate": "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2019/{zoom}/{x}/{y}.webp"
+  },
+  "City_of_Melbourne_May_2018": {
+    "attributionHtml": "<a href=\"https://data.melbourne.vic.gov.au/explore/dataset/2018-aerial-imagery-true-ortho/information/\" target=\"_blank\" rel=\"noopener\">City of Melbourne</a>",
+    "attributionText": "City of Melbourne",
+    "attributionUrl": "https://data.melbourne.vic.gov.au/explore/dataset/2018-aerial-imagery-true-ortho/information/",
+    "endDate": "2018-05",
+    "icon": "https://www.melbourne.vic.gov.au/themes/custom/com/images/logo.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:City_of_Melbourne_OSMF_CCBY_waiver.pdf",
+    "startDate": "2018-05",
+    "tiles": [
+      "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2018/{z}/{x}/{y}.webp"
+    ],
+    "urlTemplate": "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2018/{zoom}/{x}/{y}.webp"
+  },
+  "City_of_Melbourne_May_2020": {
+    "attributionHtml": "<a href=\"https://data.melbourne.vic.gov.au/explore/dataset/2020-aerial-imagery-true-ortho/information/\" target=\"_blank\" rel=\"noopener\">City of Melbourne</a>",
+    "attributionText": "City of Melbourne",
+    "attributionUrl": "https://data.melbourne.vic.gov.au/explore/dataset/2020-aerial-imagery-true-ortho/information/",
+    "endDate": "2020-05",
+    "icon": "https://www.melbourne.vic.gov.au/themes/custom/com/images/logo.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:City_of_Melbourne_OSMF_CCBY_waiver.pdf",
+    "startDate": "2020-05",
+    "tiles": [
+      "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2020/{z}/{x}/{y}.webp"
+    ],
+    "urlTemplate": "https://au-vic-melbourne-imagery.openstreetmap.org/layer/melbourne-2020/{zoom}/{x}/{y}.webp"
+  },
+  "CityOfLaunceston_2011": {
+    "attributionHtml": "© City of Launceston",
+    "attributionText": "© City of Launceston",
+    "endDate": "2011-12",
+    "icon": "https://www.launceston.tas.gov.au/files/assets/public/templateimages/favicons/favicon-196x196.png",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/tas/Launceston_OrthoPhoto.pdf",
+    "startDate": "2011-12",
+    "tiles": [
+      "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Dec2011_10cm/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Dec2011_10cm/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "CityOfLaunceston_2013": {
+    "attributionHtml": "© City of Launceston",
+    "attributionText": "© City of Launceston",
+    "endDate": "2013-02-15",
+    "icon": "https://www.launceston.tas.gov.au/files/assets/public/templateimages/favicons/favicon-196x196.png",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/tas/Launceston_OrthoPhoto.pdf",
+    "startDate": "2013-02-15",
+    "tiles": [
+      "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Feb2013_10cm/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Feb2013_10cm/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "DCS_NSW_Floods_2021_Bourke_flood_2021_04_15cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-04",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-04",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "DCS_NSW_Floods_2021_Brewarrina_flood_2021_04_14_15cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-04-14",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-04-14",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:2"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:2"
+  },
+  "DCS_NSW_Floods_2021_Hawkesbury-Nepean_Floods_Central_Sector_2021_03_15cm_RGB": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:6"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:6"
+  },
+  "DCS_NSW_Floods_2021_Hawkesbury-nepean_floods_eastern_sector_2021_03_25cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:8"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:8"
+  },
+  "DCS_NSW_Floods_2021_Hawkesbury-nepean_floods_southern_sector_2021_03_16cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:9"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:9"
+  },
+  "DCS_NSW_Floods_2021_Hawkesbury-Nepean_Floods_West_Sector_2021_03_15cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:7"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:7"
+  },
+  "DCS_NSW_Floods_2021_Lower_clarence_flood_2021_03_16cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:5"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:5"
+  },
+  "DCS_NSW_Floods_2021_Mogil_Mogil_RGB_2021_04_10_Flood_15cm_Rapid_ortho": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-04-10",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-04-10",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:3"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3"
+  },
+  "DCS_NSW_Floods_2021_Mungindi_RGB_2021_04_10_Flood_15cm_Rapid_ortho": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-04-10",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-04-10",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:4"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4"
+  },
+  "DCS_NSW_Floods_2021_Walgett_flood_2021_04_14_15cm": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-04-14",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-04-14",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:1"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1"
+  },
+  "DCS_NSW_Floods_Historical_Forbes_flood_2012_03_20cm_bgrn": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2012-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2012-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Historical/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Historical/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "DCS_NSW_Floods_Historical_forbesflood_2016_10_20cm_bgrn": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2016-10",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2016-10",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Historical/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:1"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Historical/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1"
+  },
+  "DCS_NSW_Floods_Mar_2022_Grafton_Flood_2022_03_02_10cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03-02",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03-02",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:4"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4"
+  },
+  "DCS_NSW_Floods_Mar_2022_Hawkesbury-Nepean_Flood_2022_03_09_13cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03-09",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03-09",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:2"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:2"
+  },
+  "DCS_NSW_Floods_Mar_2022_Lismore_Flood_2022_03_02_8cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03-02",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03-02",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:5"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:5"
+  },
+  "DCS_NSW_Floods_Mar_2022_singleton_flood_2022_03_10_10cm_p3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03-10",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03-10",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:1"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1"
+  },
+  "DCS_NSW_Floods_Mar_2022_Ulmarra_Flood_2022_03_03_8cm_p3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:3"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3"
+  },
+  "DCS_NSW_Floods_Mar_2022_Wisemans_Ferry_2022_03_13cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "DCS_NSW_Floods_Nov_2021_Condobolin_Flood_2021_11_13cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:3"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3"
+  },
+  "DCS_NSW_Floods_Nov_2021_Forbes_Flood_East_2021_11_16_15cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11-16",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11-16",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:5"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:5"
+  },
+  "DCS_NSW_Floods_Nov_2021_Forbes_Flood_West_2021_11_17_15cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11-17",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11-17",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:4"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4"
+  },
+  "DCS_NSW_Floods_Nov_2021_humbug_creek_flood_2021_12_16cm_p3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-12",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-12",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "DCS_NSW_Floods_Nov_2021_Lake_Cowal_North_Flood_2021_12_36cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-12",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-12",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:1"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1"
+  },
+  "DCS_NSW_Floods_Nov_2021_mirrool_creek_flood_2021_11_16cm_p3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:2"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:2"
+  },
+  "DCS_NSW_Floods_Nov_2021_Nanami_Flood_East_2021_11_15_9cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11-15",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11-15",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:7"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:7"
+  },
+  "DCS_NSW_Floods_Nov_2021_Nanami_Flood_West_2021_11_15_9cm_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021-11-15",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2021-11-15",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:6"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:6"
+  },
+  "DCS_NSW_Floods_Nov_2022_Balranald_Flood_02122022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-12-02",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-12-02",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:2"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:2"
+  },
+  "DCS_NSW_Floods_Nov_2022_Bathurst_Flood_14112022_10cm_BGRN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-14",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-14",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:11"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:11"
+  },
+  "DCS_NSW_Floods_Nov_2022_Billabong_Creek_Flood_26112022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-26",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-26",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:3"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3"
+  },
+  "DCS_NSW_Floods_Nov_2022_Condobolin_Flood_22112022_10cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-22",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-22",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:8"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:8"
+  },
+  "DCS_NSW_Floods_Nov_2022_Coreen_Flood_17112022_10cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-17",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-17",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:10"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:10"
+  },
+  "DCS_NSW_Floods_Nov_2022_Corowa_Yarrawonga_Flood_25112022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-25",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-25",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:5"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:5"
+  },
+  "DCS_NSW_Floods_Nov_2022_Derriwong_Flood_22112022_10cm_P3_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-22",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-22",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:9"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:9"
+  },
+  "DCS_NSW_Floods_Nov_2022_Forbes_Flood_05112022_10cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-05",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-05",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:12"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:12"
+  },
+  "DCS_NSW_Floods_Nov_2022_Lake-Cargelligo_Euabolong_Flood_04122022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-12-04",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-12-04",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:6"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:6"
+  },
+  "DCS_NSW_Floods_Nov_2022_Murray_Wakool_Flood_01122022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-12-01",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-12-01",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:4"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4"
+  },
+  "DCS_NSW_Floods_Nov_2022_Swan_Hill_Flood_25112022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-11-25",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-11-25",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:7"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:7"
+  },
+  "DCS_NSW_Floods_Nov_2022_Tooleybuc_Flood_01122022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-12-01",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-12-01",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:1"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1"
+  },
+  "DCS_NSW_Floods_Nov_2022_Wentworth_Flood_03122022_15cm_RGBN_P3": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022-12-03",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "startDate": "2022-12-03",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "Environment_Canterbury_Imagery": {
+    "attributionHtml": "<a href=\"http://data.ecan.govt.nz/Catalogue/Method?MethodId=48\" target=\"_blank\" rel=\"noopener\">Environment Canterbury</a>",
+    "attributionText": "Environment Canterbury",
+    "attributionUrl": "http://data.ecan.govt.nz/Catalogue/Method?MethodId=48",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "icon": "https://ecan.govt.nz/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:EnvironmentCanterbury_AerialimagerywaiversfortracingforOpenStreetMap.pdf",
+    "tiles": [
+      "https://gisbasemap.ecan.govt.nz/arcgis/rest/services/Imagery/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256"
+    ],
+    "urlTemplate": "https://gisbasemap.ecan.govt.nz/arcgis/rest/services/Imagery/MapServer/export?f=image&format=jpeg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}"
+  },
+  "LINZ_Auckland_2017": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2017",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2016",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/auckland-urban-2017-0.075m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/auckland-urban-2017-0.075m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Auckland_2023": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2023-05-10",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2023-03-19",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/auckland-central-2023-0.06m/EPSG:3857/{z}/{x}/{y}.jpg?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/auckland-central-2023-0.06m/EPSG:3857/{zoom}/{x}/{y}.jpg?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Bay_of_Plenty_2014": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2015",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2014",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/bay-of-plenty-urban-2014-2015-0.125m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/bay-of-plenty-urban-2014-2015-0.125m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Christchurch_2015": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2016",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2015",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/christchurch-urban-2015-2016-0.075m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/christchurch-urban-2015-2016-0.075m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Cyclone_Gabrielle_Hawkes_Bay": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2023-02-21",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2023-02-19",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/hawkes-bay-cyclone-gabrielle-2023-0.1m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/hawkes-bay-cyclone-gabrielle-2023-0.1m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Hamilton_2016": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2017",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2016",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/hamilton-urban-2016-2017-0.1m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/hamilton-urban-2016-2017-0.1m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_NZ_Aerial_Imagery": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/aerial/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/aerial/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_NZ_DSM_Hillshade": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/hillshade-dsm/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/hillshade-dsm/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_NZ_Hillshade": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/hillshade/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/hillshade/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LINZ_Wellington_2017": {
+    "attributionHtml": "<a href=\"https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data\" target=\"_blank\" rel=\"noopener\">Sourced from LINZ CC-BY 4.0</a>",
+    "attributionText": "Sourced from LINZ CC-BY 4.0",
+    "attributionUrl": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
+    "endDate": "2017",
+    "icon": "https://basemaps.linz.govt.nz/assets/logo-linz.svg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#New_Zealand",
+    "startDate": "2017",
+    "tiles": [
+      "https://basemaps.linz.govt.nz/v1/tiles/wellington-urban-2017-0.1m/WebMercatorQuad/{z}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+    ],
+    "urlTemplate": "https://basemaps.linz.govt.nz/v1/tiles/wellington-urban-2017-0.1m/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3"
+  },
+  "LIST_Topographic": {
+    "attributionHtml": "<a href=\"http://www.thelist.tas.gov.au\" target=\"_blank\" rel=\"noopener\">the LIST © State of Tasmania</a>",
+    "attributionText": "the LIST © State of Tasmania",
+    "attributionUrl": "http://www.thelist.tas.gov.au",
+    "icon": "https://listdata.thelist.tas.gov.au/images/header-list-logo.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Land_Tasmania_Signed_Waivers.pdf",
+    "tiles": [
+      "https://services.thelist.tas.gov.au/arcgis/rest/services/Basemaps/Topographic/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://services.thelist.tas.gov.au/arcgis/rest/services/Basemaps/Topographic/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "LPI_NSW_Administrative_Boundaries_County": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=4&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/png32&WIDTH=256&HEIGHT=256&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=4&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png32&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "LPI_NSW_Administrative_Boundaries_LGA": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=6&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/png32&WIDTH=256&HEIGHT=256&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=6&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png32&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "LPI_NSW_Administrative_Boundaries_NPWS_Reserve": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&WIDTH=256&HEIGHT=256&LAYERS=1&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=1&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE"
+  },
+  "LPI_NSW_Administrative_Boundaries_Parish": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=3&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/png32&WIDTH=256&HEIGHT=256&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=3&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png32&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "LPI_NSW_Administrative_Boundaries_StateForest": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&WIDTH=256&HEIGHT=256&LAYERS=2&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=2&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE"
+  },
+  "LPI_NSW_Administrative_Boundaries_Suburb": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=7&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/png32&WIDTH=256&HEIGHT=256&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?LAYERS=7&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png32&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "LPI_NSW_GeocodedAddressing": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Geocoded_Addressing_Theme/MapServer/export?layers=&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&format=png32&size=256,256&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A1%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSMS%22%2C%22style%22%3A%22esriSMSCircle%22%2C%22color%22%3A%5B50%2C147%2C77%2C255%5D%2C%22size%22%3A4%2C%22outline%22%3A%7B%22color%22%3A%5B0%2C0%2C0%2C255%5D%2C%22width%22%3A1.5%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22marker%22%3Anull%7D%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3A%22%5Bhousenumber%5D%22%2C%22useCodedValues%22%3Afalse%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPointLabelPlacementAboveCenter%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriTS%22%2C%22horizontalAlignment%22%3A%22left%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22haloColor%22%3A%5B0%2C0%2C0%2C255%5D%2C%22haloSize%22%3A1%2C%22font%22%3A%7B%22size%22%3A12%2C%22style%22%3A%22normal%22%2C%22variant%22%3A%22normal%22%2C%22decoration%22%3A%22normal%22%2C%22weight%22%3A%22bold%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%7D%2C%7B%22id%22%3A2%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A2%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22color%22%3A%5B48%2C142%2C108%2C255%5D%2C%22width%22%3A1%7D%7D%7D%7D%5D"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Geocoded_Addressing_Theme/MapServer/export?layers=&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A1%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSMS%22%2C%22style%22%3A%22esriSMSCircle%22%2C%22color%22%3A%5B50%2C147%2C77%2C255%5D%2C%22size%22%3A4%2C%22outline%22%3A%7B%22color%22%3A%5B0%2C0%2C0%2C255%5D%2C%22width%22%3A1.5%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22marker%22%3Anull%7D%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3A%22%5Bhousenumber%5D%22%2C%22useCodedValues%22%3Afalse%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPointLabelPlacementAboveCenter%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriTS%22%2C%22horizontalAlignment%22%3A%22left%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22haloColor%22%3A%5B0%2C0%2C0%2C255%5D%2C%22haloSize%22%3A1%2C%22font%22%3A%7B%22size%22%3A12%2C%22style%22%3A%22normal%22%2C%22variant%22%3A%22normal%22%2C%22decoration%22%3A%22normal%22%2C%22weight%22%3A%22bold%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%7D%2C%7B%22id%22%3A2%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A2%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22color%22%3A%5B48%2C142%2C108%2C255%5D%2C%22width%22%3A1%7D%7D%7D%7D%5D"
+  },
+  "LPI_NSW_LandParcelLot": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Land_Parcel_Property_Theme/MapServer/export?layers=show%3A8&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&format=png32&size=256,256&transparent=true&f=image&dynamicLayers=%5B%0D%0A%7B%0D%0A%22id%22%3A8%2C%0D%0A%22source%22%3A%7B%0D%0A%22type%22%3A%22mapLayer%22%2C%0D%0A%22mapLayerId%22%3A8%0D%0A%7D%2C%0D%0A%22drawingInfo%22%3A%7B%0D%0A%22renderer%22%3A%7B%0D%0A%22type%22%3A%22simple%22%2C%0D%0A%22symbol%22%3A%7B%0D%0A%22type%22%3A%22esriSFS%22%2C%0D%0A%22style%22%3A%22esriSFSSolid%22%2C%0D%0A%22color%22%3A%5B0%2C0%2C0%2C0%5D%2C%0D%0A%22outline%22%3A%7B%0D%0A%22type%22%3A%22esriSLS%22%2C%0D%0A%22style%22%3A%22esriSLSolid%22%2C%0D%0A%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%0D%0A%22width%22%3A1%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%5D"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Land_Parcel_Property_Theme/MapServer/export?layers=show%3A8&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%0D%0A%7B%0D%0A%22id%22%3A8%2C%0D%0A%22source%22%3A%7B%0D%0A%22type%22%3A%22mapLayer%22%2C%0D%0A%22mapLayerId%22%3A8%0D%0A%7D%2C%0D%0A%22drawingInfo%22%3A%7B%0D%0A%22renderer%22%3A%7B%0D%0A%22type%22%3A%22simple%22%2C%0D%0A%22symbol%22%3A%7B%0D%0A%22type%22%3A%22esriSFS%22%2C%0D%0A%22style%22%3A%22esriSFSSolid%22%2C%0D%0A%22color%22%3A%5B0%2C0%2C0%2C0%5D%2C%0D%0A%22outline%22%3A%7B%0D%0A%22type%22%3A%22esriSLS%22%2C%0D%0A%22style%22%3A%22esriSLSolid%22%2C%0D%0A%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%0D%0A%22width%22%3A1%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%5D"
+  },
+  "LPI_NSW_StrataHub_StrataPlan": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/server/rest/services/StrataHub/MapServer/export?layers=show%3A0&imageSR=3857&bbox={bbox-epsg-3857}&bboxSR=3857&format=png32&size=256,256&transparent=true&f=image&dynamicLayers=%5B%0D%0A%7B%0D%0A%22id%22%3A0%2C%0D%0A%22source%22%3A%7B%0D%0A%22type%22%3A%22mapLayer%22%2C%0D%0A%22mapLayerId%22%3A0%0D%0A%7D%2C%0D%0A%22drawingInfo%22%3A%7B%0D%0A%22renderer%22%3A%7B%0D%0A%22type%22%3A%22simple%22%2C%0D%0A%22symbol%22%3A%7B%0D%0A%22type%22%3A%22esriSFS%22%2C%0D%0A%22style%22%3A%22esriSFSSolid%22%2C%0D%0A%22color%22%3A%5B201%2C242%2C252%2C128%5D%2C%0D%0A%22outline%22%3A%7B%0D%0A%22type%22%3A%22esriSLS%22%2C%0D%0A%22style%22%3A%22esriSLSolid%22%2C%0D%0A%22color%22%3A%5B110%2C110%2C110%2C255%5D%2C%0D%0A%22width%22%3A1%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%5D%0D%0A"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/server/rest/services/StrataHub/MapServer/export?layers=show%3A0&imageSR={wkid}&bbox={bbox}&bboxSR={wkid}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%0D%0A%7B%0D%0A%22id%22%3A0%2C%0D%0A%22source%22%3A%7B%0D%0A%22type%22%3A%22mapLayer%22%2C%0D%0A%22mapLayerId%22%3A0%0D%0A%7D%2C%0D%0A%22drawingInfo%22%3A%7B%0D%0A%22renderer%22%3A%7B%0D%0A%22type%22%3A%22simple%22%2C%0D%0A%22symbol%22%3A%7B%0D%0A%22type%22%3A%22esriSFS%22%2C%0D%0A%22style%22%3A%22esriSFSSolid%22%2C%0D%0A%22color%22%3A%5B201%2C242%2C252%2C128%5D%2C%0D%0A%22outline%22%3A%7B%0D%0A%22type%22%3A%22esriSLS%22%2C%0D%0A%22style%22%3A%22esriSLSolid%22%2C%0D%0A%22color%22%3A%5B110%2C110%2C110%2C255%5D%2C%0D%0A%22width%22%3A1%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%5D%0D%0A"
+  },
+  "MainRoadsWA_Road_Hierarchy": {
+    "attributionHtml": "<a href=\"https://portal-mainroads.opendata.arcgis.com/datasets/mainroads::road-hierarchy/about\" target=\"_blank\" rel=\"noopener\">Main Roads Western Australia</a>",
+    "attributionText": "Main Roads Western Australia",
+    "attributionUrl": "https://portal-mainroads.opendata.arcgis.com/datasets/mainroads::road-hierarchy/about",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:4326",
+      "EPSG:4283"
+    ],
+    "icon": "https://www.mainroads.wa.gov.au//static/favicons/favicon-32x32.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Contributors#Main_Roads_.28state_government_agency.29",
+    "tiles": [
+      "https://gisservices.mainroads.wa.gov.au/arcgis/services/OpenData/RoadAssets_DataPortal/MapServer/WMSServer?request=GetMap&service=WMS&format=image/png32&transparent=TRUE&version=1.3.0&layers=15&styles=&crs=EPSG:3857&width=256&height=256&bbox={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://gisservices.mainroads.wa.gov.au/arcgis/services/OpenData/RoadAssets_DataPortal/MapServer/WMSServer?request=GetMap&service=WMS&format=image/png32&transparent=TRUE&version=1.3.0&layers=15&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}"
+  },
+  "Maxar_19-20_Australian_Bushfires_PreEvent": {
+    "attributionHtml": "<a href=\"https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires\" target=\"_blank\" rel=\"noopener\">©2020 DigitalGlobe</a>",
+    "attributionText": "©2020 DigitalGlobe",
+    "attributionUrl": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
+    "endDate": "2019-10-18",
+    "licenseUrl": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
+    "startDate": "2018-01-20",
+    "tiles": [
+      "https://cogeoxyz.b-cdn.net/6b6f479fbacd9a42e9e38bc5c0c6889f009beae13b07742ec4a1648f/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://cogeoxyz.b-cdn.net/6b6f479fbacd9a42e9e38bc5c0c6889f009beae13b07742ec4a1648f/{zoom}/{x}/{y}.jpg"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1943": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1943",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1943",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1943/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1943/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1944": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1944",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1944",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1944/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1944/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1947": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1947",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1947",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1947/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1947/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1951": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1951",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1951",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1951/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1951/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1955": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1955",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1955",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1955/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1955/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1965": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1965",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1965",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1965/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1965/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1966": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1966",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1966",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1966/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1966/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1969": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1969",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1969",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1969/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1969/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1970": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1970",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1970",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1970/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1970/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1971": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1971",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1971",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1971/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1971/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1972": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1972",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1972",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1972/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1972/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1975": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1975",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1975",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1975/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1975/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1976": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1976",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1976",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1976/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1976/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1978": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1978",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1978",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1978/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1978/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1980": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1980",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1980",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1980/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1980/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1982": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1982",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1982",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1982/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1982/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1983": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1983",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1983",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1983/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1983/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1984": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1984",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1984",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1984/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1984/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1986": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1986",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1986",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1986/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1986/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1989": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1989",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1989",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1989/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1989/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1990": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1990",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1990",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1990/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1990/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1991": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1991",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1991",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1991/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1991/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1993": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1993",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1993",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1993/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1993/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1994": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1994",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1994",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1994/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1994/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1996": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1996",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1996",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1996/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1996/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_1998": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "1998",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "1998",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1998/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1998/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_2001": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "2001",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "2001",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2001/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2001/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_2004": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "2004",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "2004",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2004/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2004/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_2005": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "2005",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "2005",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2005/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2005/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_2006": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "2006",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "2006",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2006/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2006/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DCS_SS_HAPE_Imagery_2013": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/",
+    "endDate": "2013",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://www.spatial.nsw.gov.au/copyright",
+    "startDate": "2013",
+    "tiles": [
+      "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2013/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2013/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_DPHI_LandZoning": {
+    "attributionHtml": "<a href=\"https://www.planningportal.nsw.gov.au/opendata/dataset/environment-planning-instrument-local-environmental-plan-land-zoning\" target=\"_blank\" rel=\"noopener\">© State Government of NSW and NSW Department of Planning, Housing and Infrastructure 2018</a>",
+    "attributionText": "© State Government of NSW and NSW Department of Planning, Housing and Infrastructure 2018",
+    "attributionUrl": "https://www.planningportal.nsw.gov.au/opendata/dataset/environment-planning-instrument-local-environmental-plan-land-zoning",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://www.planningportal.nsw.gov.au/sites/default/files/NSWGov_Logo_RGB_Primary_FullColour_6.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:PlanningPortal_NSW_DPIE_OSM_EmailWaiverComplete.pdf",
+    "tiles": [
+      "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Primary_Planning_Layers/MapServer/export?layers=show:2&bbox={bbox-epsg-3857}&f=image&bboxSR=3857&imageSR=3857&size=256%2C256&format=png32"
+    ],
+    "urlTemplate": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Primary_Planning_Layers/MapServer/export?layers=show:2&bbox={bbox}&f=image&bboxSR={wkid}&imageSR={wkid}&size={width}%2C{height}&format=png32"
+  },
+  "NSW_LPI_BaseMap": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_LPI_Imagery": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "NSW_LPI_Imagery_Dates": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery_Dates/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&size=256,256&layers=show:0"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery_Dates/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0"
+  },
+  "NSW_LPI_TopographicMap": {
+    "attributionHtml": "<a href=\"https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services\" target=\"_blank\" rel=\"noopener\">© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.</a>",
+    "attributionText": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "attributionUrl": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+    "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+    "tiles": [
+      "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "osmim-imagicode-EO1A1350972013086110KF": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2013-03-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2013-03-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=EO1A1350972013086110KF&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=EO1A1350972013086110KF&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80910682014358LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2014-12-24",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2014-12-24",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC80940622015159LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015-06-08",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015-06-08",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC80940622015159LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC80940622015159LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R047_S54_20160411T044330": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-04-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-04-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={zoom}&x={x}&y={-y}"
+  },
+  "QLD_Addresses": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/cadastral-data-queensland-series\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/cadastral-data-queensland-series",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+    "tiles": [
+      "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/export?layers=show%3A0&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&format=png32&size=256,256&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A0%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A0%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSMS%22%2C%22style%22%3A%22esriSMSCircle%22%2C%22color%22%3A%5B50%2C147%2C77%2C255%5D%2C%22size%22%3A4%2C%22outline%22%3A%7B%22color%22%3A%5B0%2C0%2C0%2C255%5D%2C%22width%22%3A1.5%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22marker%22%3Anull%7D%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3A%22%5Bstreet_number%5D%22%2C%22useCodedValues%22%3Afalse%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPointLabelPlacementAboveCenter%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriTS%22%2C%22horizontalAlignment%22%3A%22left%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22haloColor%22%3A%5B0%2C0%2C0%2C255%5D%2C%22haloSize%22%3A1%2C%22font%22%3A%7B%22size%22%3A12%2C%22style%22%3A%22normal%22%2C%22variant%22%3A%22normal%22%2C%22decoration%22%3A%22normal%22%2C%22weight%22%3A%22bold%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%7D%5D"
+    ],
+    "urlTemplate": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/export?layers=show%3A0&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A0%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A0%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSMS%22%2C%22style%22%3A%22esriSMSCircle%22%2C%22color%22%3A%5B50%2C147%2C77%2C255%5D%2C%22size%22%3A4%2C%22outline%22%3A%7B%22color%22%3A%5B0%2C0%2C0%2C255%5D%2C%22width%22%3A1.5%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22marker%22%3Anull%7D%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3A%22%5Bstreet_number%5D%22%2C%22useCodedValues%22%3Afalse%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPointLabelPlacementAboveCenter%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriTS%22%2C%22horizontalAlignment%22%3A%22left%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22haloColor%22%3A%5B0%2C0%2C0%2C255%5D%2C%22haloSize%22%3A1%2C%22font%22%3A%7B%22size%22%3A12%2C%22style%22%3A%22normal%22%2C%22variant%22%3A%22normal%22%2C%22decoration%22%3A%22normal%22%2C%22weight%22%3A%22bold%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%7D%5D"
+  },
+  "QLD_LandParcels": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/cadastral-data-queensland-series\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/cadastral-data-queensland-series",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+    "tiles": [
+      "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/export?layers=show%3A4&imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&format=png32&size=256,256&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A4%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A4%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22uniqueValue%22%2C%22field1%22%3A%22COVER_TYP%22%2C%22field2%22%3A%22PARCEL_TYP%22%2C%22fieldDelimiter%22%3A%22%2C%22%2C%22uniqueValueInfos%22%3A%5B%7B%22value%22%3A%22Base%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B0%2C0%2C0%2C0%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Easement%2CEasement%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C255%2C115%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Strata%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C127%2C127%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%5D%7D%7D%7D%5D"
+    ],
+    "urlTemplate": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/export?layers=show%3A4&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A4%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A4%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22uniqueValue%22%2C%22field1%22%3A%22COVER_TYP%22%2C%22field2%22%3A%22PARCEL_TYP%22%2C%22fieldDelimiter%22%3A%22%2C%22%2C%22uniqueValueInfos%22%3A%5B%7B%22value%22%3A%22Base%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B0%2C0%2C0%2C0%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Easement%2CEasement%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C255%2C115%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Strata%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C127%2C127%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%5D%7D%7D%7D%5D"
+  },
+  "QLD_LatestStateProgram": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/queensland-imagery-latest-state-program-public-basemap-service\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/queensland-imagery-latest-state-program-public-basemap-service",
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Australian_Data_Sources/Queensland/NRMMRRD",
+    "tiles": [
+      "https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestStateProgram_AllUsers/ImageServer/WMTS/tile/1.0.0/Basemaps_LatestStateProgram_AllUsers/default/GoogleMapsCompatible/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://spatial-img.information.qld.gov.au/arcgis/rest/services/Basemaps/LatestStateProgram_AllUsers/ImageServer/WMTS/tile/1.0.0/Basemaps_LatestStateProgram_AllUsers/default/GoogleMapsCompatible/{zoom}/{y}/{x}"
+  },
+  "QLD_Lite": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/queensland-map-lite-web-service-json\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/queensland-map-lite-web-service-json",
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+    "tiles": [
+      "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Basemaps/QldMap_Lite/MapServer/WMTS/tile/1.0.0/Basemaps_QldMap_Lite/default/GoogleMapsCompatible/{z}/{y}/{x}.png"
+    ],
+    "urlTemplate": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Basemaps/QldMap_Lite/MapServer/WMTS/tile/1.0.0/Basemaps_QldMap_Lite/default/GoogleMapsCompatible/{zoom}/{y}/{x}.png"
+  },
+  "QLD_RoadsAndTracks": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/queensland-roads-and-tracks\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/queensland-roads-and-tracks",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+    "tiles": [
+      "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Transportation/RoadsAndTracks/MapServer/export?imageSR=3857&bboxSR=3857&bbox={bbox-epsg-3857}&format=png32&size=256,256&transparent=true&f=image"
+    ],
+    "urlTemplate": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Transportation/RoadsAndTracks/MapServer/export?imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image"
+  },
+  "QLD_Topo": {
+    "attributionHtml": "<a href=\"https://www.data.qld.gov.au/dataset/queensland-basemap-web-services\" target=\"_blank\" rel=\"noopener\">© State of Queensland (Department of Resources) 2024</a>",
+    "attributionText": "© State of Queensland (Department of Resources) 2024",
+    "attributionUrl": "https://www.data.qld.gov.au/dataset/queensland-basemap-web-services",
+    "icon": "https://www.qld.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+    "tiles": [
+      "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Basemaps/QldMap_Topo/MapServer/WMTS/tile/1.0.0/Basemaps_QldMap_Lite/default/GoogleMapsCompatible/{z}/{y}/{x}.png"
+    ],
+    "urlTemplate": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Basemaps/QldMap_Topo/MapServer/WMTS/tile/1.0.0/Basemaps_QldMap_Lite/default/GoogleMapsCompatible/{zoom}/{y}/{x}.png"
+  },
+  "USDA_Marshall_Islands_2023": {
+    "attributionHtml": "<a href=\"https://datagateway.nrcs.usda.gov/\" target=\"_blank\" rel=\"noopener\">U.S. Department of Agriculture</a>",
+    "attributionText": "U.S. Department of Agriculture",
+    "attributionUrl": "https://datagateway.nrcs.usda.gov/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
+    "endDate": "2023-08-08",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+    "licenseUrl": "https://www.usda.gov/policies-and-links/",
+    "startDate": "2018-04-11",
+    "tiles": [
+      "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/marshall_islands_vivid_2023_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=marshall_islands_vivid_2023_30cm:Natural Color No Stretch&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/marshall_islands_vivid_2023_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=marshall_islands_vivid_2023_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "USDA_Micronesia_2023": {
+    "attributionHtml": "<a href=\"https://datagateway.nrcs.usda.gov/\" target=\"_blank\" rel=\"noopener\">U.S. Department of Agriculture</a>",
+    "attributionText": "U.S. Department of Agriculture",
+    "attributionUrl": "https://datagateway.nrcs.usda.gov/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
+    "endDate": "2023-08-03",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+    "licenseUrl": "https://www.usda.gov/policies-and-links/",
+    "startDate": "2016-11-11",
+    "tiles": [
+      "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/micronesia_vivid_2023_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=micronesia_vivid_2023_30cm:Natural Color No Stretch&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/micronesia_vivid_2023_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=micronesia_vivid_2023_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "USDA_Palau_2022": {
+    "attributionHtml": "<a href=\"https://datagateway.nrcs.usda.gov/\" target=\"_blank\" rel=\"noopener\">U.S. Department of Agriculture</a>",
+    "attributionText": "U.S. Department of Agriculture",
+    "attributionUrl": "https://datagateway.nrcs.usda.gov/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
+    "endDate": "2022-06-18",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+    "licenseUrl": "https://www.usda.gov/policies-and-links/",
+    "startDate": "2019-03-06",
+    "tiles": [
+      "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/rest/services/ortho_imagery/palau_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox-epsg-3857}&imageSR=3857&bboxSR=3857&size=256,256"
+    ],
+    "urlTemplate": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/rest/services/ortho_imagery/palau_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}"
+  },
+  "Vicmap-address_no": {
+    "attributionHtml": "<a href=\"https://discover.data.vic.gov.au/dataset/vicmap-address-address-point\" target=\"_blank\" rel=\"noopener\">The State of Victoria Department of Energy, Environment and Climate Action 2026</a>",
+    "attributionText": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
+    "attributionUrl": "https://discover.data.vic.gov.au/dataset/vicmap-address-address-point",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://discover.data.vic.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+    "tiles": [
+      "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width=256&height=256&crs=EPSG:3857&bbox={bbox-epsg-3857}&layers=open-data-platform:address&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aaddress%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3CTextSymbolizer%3E%3CLabel%3E%3Cogc%3APropertyName%3Enum_address%3C%2Fogc%3APropertyName%3E%3C%2FLabel%3E%3CFont%3E%3CCssParameter%20name%3D%22font-family%22%3EArial%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-size%22%3E12%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-style%22%3Enormal%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-weight%22%3Ebold%3C%2FCssParameter%3E%3C%2FFont%3E%3CLabelPlacement%3E%3CPointPlacement%3E%3CAnchorPoint%3E%3CAnchorPointX%3E0.5%3C%2FAnchorPointX%3E%3CAnchorPointY%3E0.5%3C%2FAnchorPointY%3E%3C%2FAnchorPoint%3E%3C%2FPointPlacement%3E%3C%2FLabelPlacement%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23FFFFFF%3C%2FCssParameter%3E%3C%2FFill%3E%3CHalo%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23000000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FHalo%3E%3C%2FTextSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E"
+    ],
+    "urlTemplate": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:address&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aaddress%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3CTextSymbolizer%3E%3CLabel%3E%3Cogc%3APropertyName%3Enum_address%3C%2Fogc%3APropertyName%3E%3C%2FLabel%3E%3CFont%3E%3CCssParameter%20name%3D%22font-family%22%3EArial%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-size%22%3E12%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-style%22%3Enormal%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-weight%22%3Ebold%3C%2FCssParameter%3E%3C%2FFont%3E%3CLabelPlacement%3E%3CPointPlacement%3E%3CAnchorPoint%3E%3CAnchorPointX%3E0.5%3C%2FAnchorPointX%3E%3CAnchorPointY%3E0.5%3C%2FAnchorPointY%3E%3C%2FAnchorPoint%3E%3C%2FPointPlacement%3E%3C%2FLabelPlacement%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23FFFFFF%3C%2FCssParameter%3E%3C%2FFill%3E%3CHalo%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23000000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FHalo%3E%3C%2FTextSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E"
+  },
+  "Vicmap-el_contour": {
+    "attributionHtml": "<a href=\"https://discover.data.vic.gov.au/dataset/vicmap-elevation-contour-line-10-and-20-metres\" target=\"_blank\" rel=\"noopener\">The State of Victoria Department of Energy, Environment and Climate Action 2026</a>",
+    "attributionText": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
+    "attributionUrl": "https://discover.data.vic.gov.au/dataset/vicmap-elevation-contour-line-10-and-20-metres",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://discover.data.vic.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+    "tiles": [
+      "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width=256&height=256&crs=EPSG:3857&bbox={bbox-epsg-3857}&layers=open-data-platform:el_contour&styles=open-data-platform:el_contour"
+    ],
+    "urlTemplate": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:el_contour&styles=open-data-platform:el_contour"
+  },
+  "Vicmap-hy_watercourse": {
+    "attributionHtml": "<a href=\"https://discover.data.vic.gov.au/dataset/vicmap-hydro-watercourse-line\" target=\"_blank\" rel=\"noopener\">The State of Victoria Department of Energy, Environment and Climate Action 2026</a>",
+    "attributionText": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
+    "attributionUrl": "https://discover.data.vic.gov.au/dataset/vicmap-hydro-watercourse-line",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3111",
+      "EPSG:3857",
+      "EPSG:4283",
+      "EPSG:4326",
+      "EPSG:7844",
+      "EPSG:7854",
+      "EPSG:7855",
+      "EPSG:7856",
+      "EPSG:7899",
+      "EPSG:28354",
+      "EPSG:28355",
+      "EPSG:28356"
+    ],
+    "icon": "https://discover.data.vic.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+    "tiles": [
+      "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width=256&height=256&crs=EPSG:3857&bbox={bbox-epsg-3857}&layers=open-data-platform:hy_watercourse&styles=line"
+    ],
+    "urlTemplate": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:hy_watercourse&styles=line"
+  },
+  "Vicmap-property_view": {
+    "attributionHtml": "<a href=\"https://discover.data.vic.gov.au/dataset/vicmap-property-property-polygon\" target=\"_blank\" rel=\"noopener\">The State of Victoria Department of Energy, Environment and Climate Action 2026</a>",
+    "attributionText": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
+    "attributionUrl": "https://discover.data.vic.gov.au/dataset/vicmap-property-property-polygon",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "CRS:84"
+    ],
+    "icon": "https://discover.data.vic.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+    "tiles": [
+      "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width=256&height=256&crs=EPSG:3857&bbox={bbox-epsg-3857}&layers=open-data-platform:property_view&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aproperty_view%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EA%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFFFF%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EP%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFF00%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E"
+    ],
+    "urlTemplate": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:property_view&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aproperty_view%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EA%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFFFF%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EP%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFF00%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E"
+  },
+  "Vicmap-tr_road": {
+    "attributionHtml": "<a href=\"https://discover.data.vic.gov.au/dataset/vicmap-transport-road-line\" target=\"_blank\" rel=\"noopener\">The State of Victoria Department of Energy, Environment and Climate Action 2026</a>",
+    "attributionText": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
+    "attributionUrl": "https://discover.data.vic.gov.au/dataset/vicmap-transport-road-line",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3111",
+      "EPSG:3857",
+      "EPSG:4283",
+      "EPSG:4326",
+      "EPSG:7844",
+      "EPSG:7854",
+      "EPSG:7855",
+      "EPSG:7856",
+      "EPSG:7899",
+      "EPSG:28354",
+      "EPSG:28355",
+      "EPSG:28356"
+    ],
+    "icon": "https://discover.data.vic.gov.au/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+    "tiles": [
+      "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width=256&height=256&crs=EPSG:3857&bbox={bbox-epsg-3857}&layers=open-data-platform:tr_road&styles=open-data-platform:tr_road_topo_labels"
+    ],
+    "urlTemplate": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:tr_road&styles=open-data-platform:tr_road_topo_labels"
+  }
+}

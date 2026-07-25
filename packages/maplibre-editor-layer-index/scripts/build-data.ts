@@ -1,7 +1,7 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, unlink, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import type { EliManifest } from '../src/core/types'
+import type { EliContinent, EliDetailsShard, EliGeometries, EliManifest } from '../src/core/types'
 import { fetchEli } from './fetch'
 import { transform } from './transform'
 
@@ -21,19 +21,42 @@ function replacer(_key: string, value: unknown): unknown {
   return value
 }
 
+function nonEmptyShards<T extends Record<string, unknown>>(
+  byContinent: Record<EliContinent, T>,
+): [EliContinent, T][] {
+  return (Object.entries(byContinent) as [EliContinent, T][]).filter(
+    ([, shard]) => Object.keys(shard).length > 0,
+  )
+}
+
 export async function buildData(): Promise<EliManifest> {
   console.log('Fetching Editor Layer Index…')
   const { raw, source, sourceVersion } = await fetchEli()
 
   console.log('Validating + transforming…')
-  const { layers, geometries, byCountry, apiKeys, counts } = transform(raw)
+  const {
+    locatorLayers,
+    detailsByContinent,
+    geometriesByContinent,
+    shardsMeta,
+    byCountry,
+    apiKeys,
+    counts,
+  } = transform(raw)
+
+  const detailShards = nonEmptyShards(detailsByContinent)
+  const geometryShards = nonEmptyShards(geometriesByContinent)
 
   const manifest: EliManifest = {
     source,
     sourceVersion,
     // `new Date()` is fine here — this script runs in Bun/Node, not in a workflow sandbox.
     generatedAt: new Date().toISOString(),
-    counts,
+    counts: {
+      ...counts,
+      detailShards: detailShards.length,
+      geometryShards: geometryShards.length,
+    },
   }
 
   // Generated TS so the set of API-key names is a typed union for consumers.
@@ -42,17 +65,42 @@ export async function buildData(): Promise<EliManifest> {
     `// API-key placeholder names found across ELI layer tile URLs.\n` +
     `export const ELI_API_KEYS = ${JSON.stringify(apiKeys)} as const\n`
 
-  await mkdir(DATA_DIR, { recursive: true })
-  await Promise.all([
-    writeFile(join(DATA_DIR, 'index.json'), stableStringify({ layers })),
-    writeFile(join(DATA_DIR, 'geometries.json'), stableStringify(geometries)),
+  const detailsDir = join(DATA_DIR, 'details')
+  const geometriesDir = join(DATA_DIR, 'geometries')
+
+  await mkdir(detailsDir, { recursive: true })
+  await mkdir(geometriesDir, { recursive: true })
+
+  const writes: Promise<void>[] = [
+    writeFile(join(DATA_DIR, 'locator.json'), stableStringify({ layers: locatorLayers })),
+    writeFile(join(DATA_DIR, 'shards.json'), stableStringify(shardsMeta)),
     writeFile(join(DATA_DIR, 'byCountry.json'), stableStringify(byCountry)),
     writeFile(join(DATA_DIR, 'manifest.json'), stableStringify(manifest)),
     writeFile(join(DATA_DIR, 'apiKeys.ts'), apiKeysModule),
-  ])
+    ...detailShards.map(([continent, shard]: [EliContinent, EliDetailsShard]) =>
+      writeFile(join(detailsDir, `${continent}.json`), stableStringify(shard)),
+    ),
+    ...geometryShards.map(([continent, shard]: [EliContinent, EliGeometries]) =>
+      writeFile(join(geometriesDir, `${continent}.json`), stableStringify(shard)),
+    ),
+  ]
+
+  await Promise.all(writes)
+
+  // Drop legacy monoliths once continent shards are written.
+  await Promise.all(
+    ['index.json', 'geometries.json'].map(async (file) => {
+      try {
+        await unlink(join(DATA_DIR, file))
+      } catch {
+        // Already absent — fine.
+      }
+    }),
+  )
 
   console.log(
-    `Wrote ${counts.published}/${counts.upstream} layers, ${counts.geometries} unique geometries.`,
+    `Wrote ${counts.published}/${counts.upstream} layers, ${counts.geometries} unique geometries, ` +
+      `${detailShards.length} detail shards, ${geometryShards.length} geometry shards.`,
   )
   if (Object.keys(counts.dropped).length) {
     console.log(`Dropped unsupported types: ${JSON.stringify(counts.dropped)}`)

@@ -1,0 +1,770 @@
+{
+  "BDGEx_ctm_multi": {
+    "attributionHtml": "<a href=\"https://bdgex.eb.mil.br/\" target=\"_blank\" rel=\"noopener\">BDGEx</a>",
+    "attributionText": "BDGEx",
+    "attributionUrl": "https://bdgex.eb.mil.br/",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Exercito.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
+    "tiles": [
+      "https://bdgex.eb.mil.br/mapcache?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ctmmultiescalas_mercator&STYLES=&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://bdgex.eb.mil.br/mapcache?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ctmmultiescalas_mercator&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "BH_Ortofoto_2015": {
+    "attributionHtml": "<a href=\"https://bhgeo.pbh.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura de Belo Horizonte</a>",
+    "attributionText": "Prefeitura de Belo Horizonte",
+    "attributionUrl": "https://bhgeo.pbh.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:31983",
+      "EPSG:4326"
+    ],
+    "endDate": "2015",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autorização_BHGeo.png",
+    "startDate": "2015",
+    "tiles": [
+      "https://geoservicos.pbh.gov.br:443/ortofoto/ORTOFOTO/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofoto2015&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.pbh.gov.br:443/ortofoto/ORTOFOTO/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofoto2015&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Curitiba_Ortofoto_2019": {
+    "attributionHtml": "<a href=\"https://geocuritiba.ippuc.org.br\" target=\"_blank\" rel=\"noopener\">Instituto de Pesquisa e Planejamento Urbano de Curitiba</a>",
+    "attributionText": "Instituto de Pesquisa e Planejamento Urbano de Curitiba",
+    "attributionUrl": "https://geocuritiba.ippuc.org.br",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2019",
+    "licenseUrl": "https://wiki.openstreetmap.org/w/index.php?title=File:Autorizacao_IPPUC.pdf",
+    "startDate": "2019",
+    "tiles": [
+      "https://geocuritiba.ippuc.org.br/server/rest/services/Hosted/Ortofotos2019/MapServer/tile/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://geocuritiba.ippuc.org.br/server/rest/services/Hosted/Ortofotos2019/MapServer/tile/{zoom}/{y}/{x}"
+  },
+  "der-es": {
+    "attributionHtml": "<a href=\"https://der.es.gov.br\" target=\"_blank\" rel=\"noopener\">Departamento de Estradas de Rodagem do Estado do Espírito Santo</a>",
+    "attributionText": "Departamento de Estradas de Rodagem do Estado do Espírito Santo",
+    "attributionUrl": "https://der.es.gov.br",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "licenseUrl": "http://www.acessoainformacao.es.gov.br/DER-ES",
+    "tiles": [
+      "http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=deres-ext:TRECHOINFO&STYLES=&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=deres-ext:TRECHOINFO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Dourados_Ortofotos": {
+    "attributionHtml": "<a href=\"https://geodourados.dourados.ms.gov.br\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Dourados - GeoDourados</a>",
+    "attributionText": "Prefeitura Municipal de Dourados - GeoDourados",
+    "attributionUrl": "https://geodourados.dourados.ms.gov.br",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31981"
+    ],
+    "endDate": "2018",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Opendata-dourados-ms.jpg",
+    "startDate": "2020",
+    "tiles": [
+      "https://geodourados.dourados.ms.gov.br/geoserver/dourados/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofoto_2018,ortofoto_2020_distritos&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geodourados.dourados.ms.gov.br/geoserver/dourados/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofoto_2018,ortofoto_2020_distritos&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Fortaleza_Base_Map": {
+    "attributionHtml": "<a href=\"https://ide.sefin.fortaleza.ce.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Fortaleza</a>",
+    "attributionText": "Prefeitura Municipal de Fortaleza",
+    "attributionUrl": "https://ide.sefin.fortaleza.ce.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31984"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Fortaleza.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_IDE_SEFIN_Fortaleza.png",
+    "tiles": [
+      "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/wms?LAYERS=CAMADA_BASE:mapa_fortaleza&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/wms?LAYERS=CAMADA_BASE:mapa_fortaleza&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "Fortaleza_Ortofoto_2016": {
+    "attributionHtml": "<a href=\"https://ide.sefin.fortaleza.ce.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Fortaleza</a>",
+    "attributionText": "Prefeitura Municipal de Fortaleza",
+    "attributionUrl": "https://ide.sefin.fortaleza.ce.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31984"
+    ],
+    "endDate": "2017-01-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Fortaleza.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_IDE_SEFIN_Fortaleza.png",
+    "startDate": "2016-12-20",
+    "tiles": [
+      "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2016&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2016&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "Fortaleza_Ortofoto_2023": {
+    "attributionHtml": "<a href=\"https://ide.sefin.fortaleza.ce.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Fortaleza</a>",
+    "attributionText": "Prefeitura Municipal de Fortaleza",
+    "attributionUrl": "https://ide.sefin.fortaleza.ce.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31984"
+    ],
+    "endDate": "2023-07",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Fortaleza.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_IDE_SEFIN_Fortaleza.png",
+    "startDate": "2023-07",
+    "tiles": [
+      "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2023_v1&STYLES=&FORMAT=image/png&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2023_v1&STYLES=&FORMAT=image/png&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Fortaleza_Street_Names": {
+    "attributionHtml": "<a href=\"https://ide.sefin.fortaleza.ce.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Fortaleza</a>",
+    "attributionText": "Prefeitura Municipal de Fortaleza",
+    "attributionUrl": "https://ide.sefin.fortaleza.ce.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31984"
+    ],
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_IDE_SEFIN_Fortaleza.png",
+    "startDate": "2019",
+    "tiles": [
+      "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/CARTOGRAFIA_BASE/logradouros/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=logradouros&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/CARTOGRAFIA_BASE/logradouros/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=logradouros&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "fr.orthohr.2021": {
+    "attributionHtml": "<a href=\"https://geoservices.ign.fr/documentation/donnees/ortho/bdortho\" target=\"_blank\" rel=\"noopener\">IGN</a>",
+    "attributionText": "IGN",
+    "attributionUrl": "https://geoservices.ign.fr/documentation/donnees/ortho/bdortho",
+    "endDate": "2021",
+    "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
+    "licenseUrl": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+    "startDate": "2021",
+    "tiles": [
+      "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS2021/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS2021/{zoom}/{x}/{y}.jpeg"
+  },
+  "gcba-ortofotos-2017": {
+    "attributionHtml": "<a href=\"https://data.buenosaires.gob.ar/dataset/tiles-fotografia-aerea\" target=\"_blank\" rel=\"noopener\">Gobierno de la Ciudad de Buenos Aires</a>",
+    "attributionText": "Gobierno de la Ciudad de Buenos Aires",
+    "attributionUrl": "https://data.buenosaires.gob.ar/dataset/tiles-fotografia-aerea",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2017",
+    "icon": "https://buenosaires.gob.ar/inicio/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Solicitud-de-permiso-para-usar-datos-de-BA-Data-en-OpenStreetMap.png",
+    "startDate": "2017",
+    "tiles": [
+      "https://servicios.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/fotografias_aereas_2017_caba_3857@GoogleMapsCompatible/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://servicios.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/fotografias_aereas_2017_caba_3857@GoogleMapsCompatible/{zoom}/{x}/{-y}.png"
+  },
+  "gcba-ortofotos-2021": {
+    "attributionHtml": "<a href=\"https://data.buenosaires.gob.ar/dataset/tiles-fotografia-aerea\" target=\"_blank\" rel=\"noopener\">Gobierno de la Ciudad de Buenos Aires</a>",
+    "attributionText": "Gobierno de la Ciudad de Buenos Aires",
+    "attributionUrl": "https://data.buenosaires.gob.ar/dataset/tiles-fotografia-aerea",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2021",
+    "icon": "https://buenosaires.gob.ar/inicio/favicon.ico",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Solicitud-de-permiso-para-usar-datos-de-BA-Data-en-OpenStreetMap.png",
+    "startDate": "2021",
+    "tiles": [
+      "https://servicios.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/fotografias_aereas_2021_caba_3857@GoogleMapsCompatible/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://servicios.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/fotografias_aereas_2021_caba_3857@GoogleMapsCompatible/{zoom}/{x}/{-y}.png"
+  },
+  "GeoPortal_DF_2015": {
+    "attributionHtml": "<a href=\"https://www.geoportal.seduh.df.gov.br/\" target=\"_blank\" rel=\"noopener\">GeoPortal DF</a>",
+    "attributionText": "GeoPortal DF",
+    "attributionUrl": "https://www.geoportal.seduh.df.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2015",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
+    "startDate": "2015",
+    "tiles": [
+      "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/FOTO_2015/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/FOTO_2015/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "GeoPortal_DF_2016": {
+    "attributionHtml": "<a href=\"https://www.geoportal.seduh.df.gov.br/\" target=\"_blank\" rel=\"noopener\">GeoPortal DF</a>",
+    "attributionText": "GeoPortal DF",
+    "attributionUrl": "https://www.geoportal.seduh.df.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2016",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
+    "startDate": "2016",
+    "tiles": [
+      "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/FOTO_2016/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/FOTO_2016/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "GeoPortal_DF_2019": {
+    "attributionHtml": "<a href=\"https://www.geoportal.seduh.df.gov.br/\" target=\"_blank\" rel=\"noopener\">GeoPortal DF</a>",
+    "attributionText": "GeoPortal DF",
+    "attributionUrl": "https://www.geoportal.seduh.df.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2019",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
+    "startDate": "2019",
+    "tiles": [
+      "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/SENTINEL_2019/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/SENTINEL_2019/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "GeoPortal_DF_2021_50cm": {
+    "attributionHtml": "<a href=\"https://www.geoportal.seduh.df.gov.br/\" target=\"_blank\" rel=\"noopener\">GeoPortal DF</a>",
+    "attributionText": "GeoPortal DF",
+    "attributionUrl": "https://www.geoportal.seduh.df.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2021",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
+    "startDate": "2021",
+    "tiles": [
+      "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/2021_50CM/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/jpeg&WIDTH=256&HEIGHT=256&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/2021_50CM/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "IBGE_BC250_Aglomerado_Rural": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Aglomerado_Rural_Isolado_P&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Aglomerado_Rural_Isolado_P&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Gerador_Eletrica": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_2021_Est_Gerad_Energia_Eletrica_P&STYLES=&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&FORMAT=image%2Fpng&TRANSPARENT=TRUE"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_2021_Est_Gerad_Energia_Eletrica_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE"
+  },
+  "IBGE_BC250_Municipio": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_2021_Municipio_A&STYLES=&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&FORMAT=image%2Fpng&TRANSPARENT=TRUE"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_2021_Municipio_A&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE"
+  },
+  "IBGE_BC250_Pista_Pouso": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Pista_Ponto_Pouso_L&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Pista_Ponto_Pouso_L&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Rios_Drenagem": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:4674"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Trecho_Drenagem_L&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Trecho_Drenagem_L&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Rodoviario": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Trecho_Rodoviario_L&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Trecho_Rodoviario_L&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Terra_Indegina": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2019",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2019",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2019_Terra_Indigena_A&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2019_Terra_Indigena_A&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Uso_Sustentavel": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2019",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2019",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2019_Unidade_Uso_Sustentavel_A&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2019_Unidade_Uso_Sustentavel_A&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "IBGE_BC250_Villa": {
+    "attributionHtml": "<a href=\"https://www.ibge.gov.br/\" target=\"_blank\" rel=\"noopener\">IBGE</a>",
+    "attributionText": "IBGE",
+    "attributionUrl": "https://www.ibge.gov.br/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:5396",
+      "EPSG:22525"
+    ],
+    "endDate": "2021",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+    "startDate": "2021",
+    "tiles": [
+      "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Vila_P&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Vila_P&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "ign-argenmap": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG:3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG:3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-argenmap-gray": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-atlas-argentina-500k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/atlas_argentina_500k%3Aatlas_argentina_500k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/atlas_argentina_500k%3Aatlas_argentina_500k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-atlas-tucuman-100k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/atlas_tucuman_100k%3Atucuman100k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/atlas_tucuman_100k%3Atucuman100k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-cartas-100k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_100k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_100k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-cartas-250k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_250k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_250k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-cartas-500k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_500k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_500k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-cartas-50k": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_50k@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/cartas_mosaicos%3Acartas_50k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-orthophotos-mosaic": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mosaicos_vuelos@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mosaicos_vuelos@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "ign-uav-mosaic": {
+    "attributionHtml": "<a href=\"https://www.ign.gob.ar/\" target=\"_blank\" rel=\"noopener\">Instituto Geográfico Nacional de la República Argentina</a>",
+    "attributionText": "Instituto Geográfico Nacional de la República Argentina",
+    "attributionUrl": "https://www.ign.gob.ar/",
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "licenseUrl": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "tiles": [
+      "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mosaicos_vuelos_vant@EPSG%3A3857@png/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mosaicos_vuelos_vant@EPSG%3A3857@png/{zoom}/{x}/{-y}.png"
+  },
+  "jaragua-do-sul-2020": {
+    "attributionHtml": "<a href=\"https://sistemas.jaraguadosul.sc.gov.br/index.php?class=GeoWelcomeView\" target=\"_blank\" rel=\"noopener\">Prefeitura de Jaraguá do Sul, SC</a>",
+    "attributionText": "Prefeitura de Jaraguá do Sul, SC",
+    "attributionUrl": "https://sistemas.jaraguadosul.sc.gov.br/index.php?class=GeoWelcomeView",
+    "endDate": "2020",
+    "licenseUrl": "https://www.jaraguadosul.sc.gov.br/mapas-e-fotos-aereas-de-jaragua-do-sul",
+    "startDate": "2020",
+    "tiles": [
+      "https://www.jaraguadosul.sc.gov.br/geo/ortomosaico2020/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://www.jaraguadosul.sc.gov.br/geo/ortomosaico2020/{zoom}/{x}/{y}.png"
+  },
+  "osmim-imagicode-AST_L1T_00302052007154424_20150518041444_91492": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2012-02-05",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2012-02-05",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-EO1A0040712016264110KF": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-09-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-09-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=EO1A0040712016264110KF&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=EO1A0040712016264110KF&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC82280982013259LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2013-09-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2013-09-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC82280982013259LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC82280982013259LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC82330892016031LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-01-31",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-01-31",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R039_S15_20160510T145731": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-05-10",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-05-10",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R039_S15_20160510T145731&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R039_S15_20160510T145731&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R040_N01_20160311T164128": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-03-11",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-03-11",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R040_N01_20160311T164128&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R040_N01_20160311T164128&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R067_S40_20170127T140051": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-01-27",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-01-27",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R067_S40_20170127T140051&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R067_S40_20170127T140051&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R067_S40_20170417T140051": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2017-04-17",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2017-04-17",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R067_S40_20170417T140051&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R067_S40_20170417T140051&z={zoom}&x={x}&y={-y}"
+  },
+  "rio2019": {
+    "attributionHtml": "<a href=\"https://www.rio.rj.gov.br/web/ipp\" target=\"_blank\" rel=\"noopener\">Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro</a>",
+    "attributionText": "Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro",
+    "attributionUrl": "https://www.rio.rj.gov.br/web/ipp",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2019",
+    "licenseUrl": "http://data.rio/",
+    "startDate": "2019",
+    "tiles": [
+      "https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2019/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2019/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "rio2022": {
+    "attributionHtml": "<a href=\"https://www.rio.rj.gov.br/web/ipp\" target=\"_blank\" rel=\"noopener\">Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro</a>",
+    "attributionText": "Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro",
+    "attributionUrl": "https://www.rio.rj.gov.br/web/ipp",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31983"
+    ],
+    "endDate": "2022",
+    "licenseUrl": "http://data.rio/",
+    "startDate": "2022",
+    "tiles": [
+      "https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2022/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2022/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "sc2012": {
+    "attributionHtml": "<a href=\"http://sigsc.sc.gov.br\" target=\"_blank\" rel=\"noopener\">Sistema de Informações Geográficas - Governo de Santa Catarina</a>",
+    "attributionText": "Sistema de Informações Geográficas - Governo de Santa Catarina",
+    "attributionUrl": "http://sigsc.sc.gov.br",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31982"
+    ],
+    "endDate": "2012",
+    "licenseUrl": "http://sigsc.sc.gov.br/1_Metadados_Matriciais_v1.pdf",
+    "startDate": "2012",
+    "tiles": [
+      "http://sigsc.sc.gov.br/sigserver/SIGSC/wms?LAYERS=OrtoRGB-Landsat-2012&STYLES=&FORMAT=image/jpeg&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "http://sigsc.sc.gov.br/sigserver/SIGSC/wms?LAYERS=OrtoRGB-Landsat-2012&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "Sobral_Ortophoto_2017": {
+    "attributionHtml": "<a href=\"http://seuma.sobral.ce.gov.br/\" target=\"_blank\" rel=\"noopener\">Prefeitura Municipal de Sobral</a>",
+    "attributionText": "Prefeitura Municipal de Sobral",
+    "attributionUrl": "http://seuma.sobral.ce.gov.br/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:31984"
+    ],
+    "endDate": "2017",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_Dados_Sobral.png",
+    "startDate": "2017",
+    "tiles": [
+      "http://geoserver.sobral.ce.gov.br:80/geoserver/Ceara/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=prdAracatiacu,prdJaibaras,prdSobral,prdTaperuaba&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "http://geoserver.sobral.ce.gov.br:80/geoserver/Ceara/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=prdAracatiacu,prdJaibaras,prdSobral,prdTaperuaba&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "SP_Itu_-_Eixos": {
+    "attributionHtml": "<a href=\"https://itu.sp.gov.br/planejamento/\" target=\"_blank\" rel=\"noopener\">Prefeitura da Estância Turística de Itu, SP</a>",
+    "attributionText": "Prefeitura da Estância Turística de Itu, SP",
+    "attributionUrl": "https://itu.sp.gov.br/planejamento/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326"
+    ],
+    "endDate": "2019",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Itu,_S%C3%A3o_Paulo/Fontes_de_Dados#Cadastro",
+    "startDate": "2019",
+    "tiles": [
+      "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1SERVICE=WMS&REQUEST=GETMAP&FORMAT=image/png8&VERSION=1.3.0&LAYERS=6139ca97-1bc9-4952-a441-b68957ab222c&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1SERVICE=WMS&REQUEST=GETMAP&FORMAT=image/png8&VERSION=1.3.0&LAYERS=6139ca97-1bc9-4952-a441-b68957ab222c&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "UY-2019-orthophotos": {
+    "attributionHtml": "<a href=\"https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/\" target=\"_blank\" rel=\"noopener\">AGESIC - Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento</a>",
+    "attributionText": "AGESIC - Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento",
+    "attributionUrl": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/",
+    "availableProjections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:4326"
+    ],
+    "endDate": "2019-06-17",
+    "icon": "https://www.gub.uy/infraestructura-datos-espaciales/sites/infraestructura-datos-espaciales/files/catalogo/IDE.jpg",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/File:AGESIC_confirmation_notice.png",
+    "startDate": "2019",
+    "tiles": [
+      "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?LAYERS=ORTOFOTOS_2019&STYLES=&CRS=EPSG:3857&BBOX={bbox-epsg-3857}&FORMAT=image/jpeg&WIDTH=256&HEIGHT=256&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?LAYERS=ORTOFOTOS_2019&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+  }
+}

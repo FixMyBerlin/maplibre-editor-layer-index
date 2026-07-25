@@ -1,5 +1,6 @@
 import type { Feature, Geometry } from 'geojson'
 import { describe, expect, it } from 'vitest'
+import { continentForLngLat } from '../scripts/continents'
 import { geometryBBox, geometryId } from '../scripts/geometry'
 import { transform } from '../scripts/transform'
 
@@ -65,8 +66,23 @@ describe('transform', () => {
   it('precomputes bbox and country codes for a Berlin polygon', () => {
     const result = transform(collection([feature('berlin')]))
     const layer = result.layers[0]!
+    const locator = result.locatorLayers[0]!
     expect(layer.bbox).toEqual([13.0, 52.3, 13.8, 52.7])
     expect(layer.countryCodes).toContain('DE')
+    expect(locator.continents).toEqual(['europe'])
+    expect(result.detailsByContinent.europe.berlin).toMatchObject({
+      urlTemplate: 'https://example.com/{zoom}/{x}/{y}.png',
+    })
+    expect(result.geometriesByContinent.europe[layer.geometryId]).toBeDefined()
+    expect(result.shardsMeta.countryToContinent.DE).toBe('europe')
+  })
+
+  it('files worldwide layers under the world shard only', () => {
+    const worldFeature = { ...feature('world-layer'), geometry: null }
+    const result = transform(collection([worldFeature]))
+    expect(result.locatorLayers[0]!.continents).toEqual(['world'])
+    expect(result.detailsByContinent.world['world-layer']).toBeDefined()
+    expect(Object.keys(result.geometriesByContinent.world)).toHaveLength(0)
   })
 
   it('records requiresKeys from leftover {apikey} placeholders', () => {
@@ -104,5 +120,11 @@ describe('geometry helpers', () => {
 
   it('computes a [w,s,e,n] bbox', () => {
     expect(geometryBBox(berlinPolygon)).toEqual([13.0, 52.3, 13.8, 52.7])
+  })
+})
+
+describe('continents', () => {
+  it('routes Berlin map center to europe', () => {
+    expect(continentForLngLat(13.4, 52.5)).toBe('europe')
   })
 })

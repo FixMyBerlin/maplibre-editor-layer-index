@@ -11,11 +11,11 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   splitting: true,
-  // No source maps in the published tarball — this is a data package, and the maps
-  // for the bundled ~11 MB geometries chunk would dwarf the code.
+  // No source maps in the published tarball — this is a data package, and maps for
+  // continent geometry shards would dwarf the code.
   sourcemap: false,
-  // Keep consumer-provided libs out of the bundle. The JSON data is intentionally
-  // bundled: the small index into the entry chunks, and geometries.json into its own
-  // chunk reached via dynamic import() (so it code-splits and loads lazily).
+  // Keep consumer-provided libs out of the bundle. The slim locator is bundled into
+  // the entry chunks; details/<continent>.json and geometries/<continent>.json are
+  // reached via dynamic import() so bundlers code-split and load by map region.
   external: ['react', 'react-map-gl', 'maplibre-gl'],
 })

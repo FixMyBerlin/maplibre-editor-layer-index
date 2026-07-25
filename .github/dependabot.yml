@@ -1,0 +1,117 @@
+# FMC tech-stack defaults — @see ../../FMC/skills/skills/tech-stack/references/dependabot.md
+version: 2
+updates:
+  - package-ecosystem: bun
+    directories:
+      - /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '07:00'
+      timezone: Europe/Berlin
+    cooldown:
+      default-days: 5
+    open-pull-requests-limit: 1
+    exclude-paths:
+      - .cursor/**
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      security-dev-tools:
+        applies-to: security-updates
+        patterns:
+          - 'oxlint*'
+          - 'oxfmt*'
+          - 'vitest*'
+          - '@playwright/*'
+          - '@testing-library/*'
+          - 'knip*'
+          - 'husky*'
+          - '@types/*'
+          - 'typescript'
+          - '@typescript/typescript-*'
+          - 'eslint*'
+
+      shared-monorepo-tools:
+        applies-to: version-updates
+        group-by: dependency-name
+        patterns:
+          - 'oxlint*'
+          - 'oxfmt*'
+          - '@types/bun'
+          - '@changesets/*'
+
+      app-dev-minor-patch:
+        applies-to: version-updates
+        patterns:
+          - '@arethetypeswrong/*'
+          - '@playwright/*'
+          - '@testing-library/*'
+          - '@vitejs/*'
+          - '@total-typescript/*'
+          - 'eslint-*'
+          - 'husky'
+          - 'jsdom'
+          - 'knip'
+          - 'oxfmt'
+          - 'oxlint*'
+          - 'sharp'
+          - 'vitest'
+          - 'vite'
+          - 'tsup'
+          - '@types/*'
+          - 'typescript'
+          - '@typescript/typescript-*'
+          - 'dotenv'
+        update-types:
+          - minor
+          - patch
+
+      app-framework-minor-patch:
+        applies-to: version-updates
+        patterns:
+          - '@tanstack/*'
+          - '@rapideditor/*'
+          - 'react'
+          - 'react-dom'
+          - '@types/react*'
+          - 'maplibre-gl'
+          - 'react-map-gl'
+          - 'zod'
+        update-types:
+          - minor
+          - patch
+
+      app-prod-misc-patch:
+        applies-to: version-updates
+        update-types:
+          - patch
+        patterns:
+          - '*'
+        exclude-patterns:
+          - '@tanstack/*'
+          - '@rapideditor/*'
+          - 'react'
+          - 'react-dom'
+          - 'maplibre-gl'
+          - 'react-map-gl'
+          - 'zod'
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '07:00'
+      timezone: Europe/Berlin
+    cooldown:
+      default-days: 5
+    open-pull-requests-limit: 1
+    groups:
+      actions-minor-patch:
+        update-types:
+          - minor
+          - patch
+        patterns:
+          - '*'

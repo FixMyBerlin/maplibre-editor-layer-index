@@ -5,8 +5,9 @@ background / imagery layers in **react-map-gl** and **maplibre-gl-js**. This pac
 **layer list** and **viewport filtering**; you keep full control of styling.
 
 - **ESM-only**, tree-shakeable, three entrypoints: `.`, `/react`, `/maplibre`.
-- Data is split into a small always-loaded **index** (metadata + bbox + country codes, no
-  coordinates) and a **lazy** geometry file you only load if you draw coverage outlines.
+- Data is split into an always-loaded **locator** (~820 KB: bbox + country codes + continents, no
+  tile URLs), **continent-sharded details** (lazy from map center), and **continent-sharded
+  geometries** (lazy, only for coverage outlines).
 - Viewport filtering is pure bbox math — **zero runtime geo dependencies**.
 
 ```bash
@@ -31,7 +32,11 @@ import {
 } from 'maplibre-editor-layer-index/react'
 
 function Layers() {
-  const { layers } = useEditorLayerIndex({ mapId: 'main', filter: { categories: ['photo'] } })
+  const { layers, status } = useEditorLayerIndex({
+    mapId: 'main',
+    filter: { categories: ['photo'] },
+  })
+  if (status === 'loading') return null
   return layers.map((l) => (
     <Fragment key={l.id}>
       <Source id={`eli-${l.id}`} {...getRasterSourceSpec(l)} />
@@ -56,24 +61,50 @@ function App() {
 ## Raw maplibre-gl
 
 ```ts
-import { layersInViewport } from 'maplibre-editor-layer-index'
+import { loadLayersInViewport } from 'maplibre-editor-layer-index'
 import { addEditorLayer, removeEditorLayer } from 'maplibre-editor-layer-index/maplibre'
 
-const layers = layersInViewport(map.getBounds())
+const layers = await loadLayersInViewport(map.getBounds())
 addEditorLayer(map, layers[0], { paint: { 'raster-opacity': 0.8 } })
 // later: removeEditorLayer(map, `eli-${layers[0].id}`)
 ```
 
+Sync bbox filtering still works without loading tile URLs:
+
+```ts
+import { layersInViewport } from 'maplibre-editor-layer-index'
+
+const locatorRows = layersInViewport(map.getBounds()) // EliLocatorLayer[] — no tiles yet
+```
+
 ## Core API (framework-agnostic)
 
-| Export                                                           | Purpose                                                                                                   |
-| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `getLayers()` / `getLayer(id)`                                   | All layers / one layer (metadata + bbox + countryCodes).                                                  |
-| `layersInViewport(bounds, options?)`                             | Layers overlapping a viewport (bbox math). Accepts `[w,s,e,n]`, `{west,…}`, or a maplibre `LngLatBounds`. |
-| `filterLayers(options)`                                          | Predicate-only filter (category, type, best, overlays, countryCodes).                                     |
-| `getRasterSourceSpec(layer)` / `getRasterLayerSpec(layer, opts)` | MapLibre style specs.                                                                                     |
-| `getGeometry(layer)` / `loadGeometries()`                        | Lazily load the coverage polygon(s) — only when you actually need them.                                   |
-| `getManifest()`                                                  | Build provenance (source, version, counts).                                                               |
+| Export                                                           | Purpose                                                                                          |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `getLayers()` / `getLayer(id)`                                   | Slim locator rows (metadata + bbox + countryCodes + continents). No tile URLs until hydrated.    |
+| `layersInViewport(bounds, options?)`                             | Sync locator rows overlapping a viewport (bbox math).                                            |
+| `loadLayersInViewport(bounds, options?)`                         | Async: ensure continent detail shards for the viewport, return hydrated `EliLayer[]` with tiles. |
+| `filterLayers(options)`                                          | Predicate-only filter on locator rows.                                                           |
+| `getRasterSourceSpec(layer)` / `getRasterLayerSpec(layer, opts)` | MapLibre style specs (needs a hydrated layer).                                                   |
+| `getGeometry(layer)` / `loadGeometries()`                        | Lazily load continent geometry shards — only when you draw coverage.                             |
+| `getManifest()`                                                  | Build provenance (source, version, counts).                                                      |
+
+## Other renderers (iD, Rapid, Leaflet)
+
+Same package, **root entry only** — do not import `/maplibre` or `/react`. Hydrate details, then use
+the raw ELI `urlTemplate` for your own tile substitution.
+
+```ts
+import { getLayers, getLayerHydrated, loadGeometries } from 'maplibre-editor-layer-index'
+
+const locators = getLayers()
+const layer = await getLayerHydrated(locators[0]!.id)
+// template: layer.urlTemplate  — not layer.tiles
+const geometries = await loadGeometries() // optional; keyed by layer.geometryId
+```
+
+Full iD/Rapid adapter sketch (field mapping, polygons, gaps):  
+[docs/iD-integration.md](../../docs/iD-integration.md).
 
 ## Filtering by country (and the bbox caveat)
 
@@ -104,8 +135,19 @@ and always pass the country filter. Use `includeWorldwide: false` to drop them.
 Generated at release time and committed: a weekly job fetches `imagery.geojson`, validates it with
 zod (refusing to publish on schema drift), rewrites tile URLs to MapLibre raster form
 (TMS `{zoom}`→`{z}`, `{-y}`→`scheme:"tms"`, WMS `{bbox}`→`{bbox-epsg-3857}`), deduplicates identical
-coverage polygons, and precomputes each layer's bbox and country codes. Unsupported source types
-(`bing`, `scanex`, `wms_endpoint`, `pmtiles`) are dropped.
+coverage polygons, precomputes bbox / country codes / continents, and writes:
+
+- `locator.json` — always-loaded slim index
+- `details/<continent>.json` — lazy tile/attribution shards
+- `geometries/<continent>.json` — lazy polygon shards
+- `shards.json` — ISO→continent router metadata
+- `byCountry.json` — ISO→layer id lookup
+
+Unsupported source types (`bing`, `scanex`, `wms_endpoint`, `pmtiles`) are dropped.
+
+**Publish note:** the npm tarball includes every shard (region-specific install packages are not
+used). Runtime code-splitting means a Berlin map session typically downloads locator + `world` +
+`europe` details — not the full ~11 MB of worldwide geometries.
 
 ## API keys
 

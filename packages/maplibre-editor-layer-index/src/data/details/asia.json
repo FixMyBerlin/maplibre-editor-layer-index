@@ -1,0 +1,525 @@
+{
+  "Arenda_OAM": {
+    "tiles": [
+      "https://tiles.openaerialmap.org/5d25d7bf161a790005c03e6e/0/5d25d7bf161a790005c03e6f/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.openaerialmap.org/5d25d7bf161a790005c03e6e/0/5d25d7bf161a790005c03e6f/{zoom}/{x}/{y}.png"
+  },
+  "bg-maf-orthophoto-latest": {
+    "licenseUrl": "https://inspireportal.egov.bg/geonetwork/srv/bul/catalog.search#/metadata/b13b693f-3702-49f4-897c-9021b84e83e3",
+    "tiles": [
+      "https://bg-imagery.openstreetmap.org/layer/maf-orthophoto-latest/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://bg-imagery.openstreetmap.org/layer/maf-orthophoto-latest/{zoom}/{x}/{y}.png"
+  },
+  "gsi.go.jp_airphoto": {
+    "attributionHtml": "<a href=\"https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html\" target=\"_blank\" rel=\"noopener\">GSI Japan</a>",
+    "attributionText": "GSI Japan",
+    "attributionUrl": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "licenseUrl": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/airphoto/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/airphoto/{zoom}/{x}/{y}.png"
+  },
+  "gsi.go.jp_airphoto_2019": {
+    "attributionHtml": "<a href=\"https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html\" target=\"_blank\" rel=\"noopener\">GSI Japan</a>",
+    "attributionText": "GSI Japan",
+    "attributionUrl": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "endDate": "2020-03-31",
+    "licenseUrl": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
+    "startDate": "2019-04-01",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2019/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2019/{zoom}/{x}/{y}.png"
+  },
+  "gsi.go.jp_airphoto_2020": {
+    "attributionHtml": "<a href=\"https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html\" target=\"_blank\" rel=\"noopener\">GSI Japan</a>",
+    "attributionText": "GSI Japan",
+    "attributionUrl": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "endDate": "2021-03-31",
+    "licenseUrl": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
+    "startDate": "2020-04-01",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2020/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2020/{zoom}/{x}/{y}.png"
+  },
+  "gsi.go.jp_airphoto_2021": {
+    "attributionHtml": "<a href=\"https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html\" target=\"_blank\" rel=\"noopener\">GSI Japan</a>",
+    "attributionText": "GSI Japan",
+    "attributionUrl": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "endDate": "2022-03-31",
+    "licenseUrl": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
+    "startDate": "2021-04-01",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2021/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/nendophoto2021/{zoom}/{x}/{y}.png"
+  },
+  "gsi.go.jp_seamlessphoto": {
+    "attributionHtml": "<a href=\"https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html\" target=\"_blank\" rel=\"noopener\">GSI Japan seamless photo</a>",
+    "attributionText": "GSI Japan seamless photo",
+    "attributionUrl": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "licenseUrl": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{zoom}/{x}/{y}.jpg"
+  },
+  "gsi.go.jp_std_map": {
+    "attributionHtml": "<a href=\"https://maps.gsi.go.jp/help/use.html\" target=\"_blank\" rel=\"noopener\">GSI Japan</a>",
+    "attributionText": "GSI Japan",
+    "attributionUrl": "https://maps.gsi.go.jp/help/use.html",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/GSImaps",
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://cyberjapandata.gsi.go.jp/xyz/std/{zoom}/{x}/{y}.png"
+  },
+  "India-PMGSY": {
+    "attributionHtml": "<a href='https://geosadak-pmgsy.nic.in/opendata/' target='_blank'>PMGSY Rural Connectivity Dataset, Government Open Data License</a> | <a href='https://www.mapbox.com/about/maps/' target='_blank' title='Mapbox' aria-label='Mapbox'>© Mapbox</a> | <a href='https://www.openstreetmap.org/about/' target='_blank' title='OpenStreetMap' aria-label='OpenStreetMap'>© OpenStreetMap</a> | <a href='https://www.maxar.com/' target='_blank' title='Maxar' aria-label='Maxar'>© Maxar</a>",
+    "attributionText": "PMGSY National GIS - Open Data",
+    "attributionUrl": "https://geosadak-pmgsy.nic.in/OpenData",
+    "availableProjections": [
+      "EPSG:3857"
+    ],
+    "endDate": "2022",
+    "licenseUrl": "https://geosadak-pmgsy.nic.in/MsFiles/TnC.html",
+    "startDate": "2022",
+    "tiles": [
+      "https://api.mapbox.com/styles/v1/planemad/cknj1leps0ywv17lrj8d16vnj/wmts?access_token=pk.eyJ1Ijoib3NtaW5kaWEiLCJhIjoiY2x4bm44YTVsMDR5bzJyczY5MjBoa2Q5aSJ9.r1MPugHw49L3kViEaWhBWA"
+    ],
+    "urlTemplate": "https://api.mapbox.com/styles/v1/planemad/cknj1leps0ywv17lrj8d16vnj/wmts?access_token=pk.eyJ1Ijoib3NtaW5kaWEiLCJhIjoiY2x4bm44YTVsMDR5bzJyczY5MjBoa2Q5aSJ9.r1MPugHw49L3kViEaWhBWA"
+  },
+  "NLSC-EMAP5": {
+    "attributionHtml": "<a href=\"https://maps.nlsc.gov.tw\" target=\"_blank\" rel=\"noopener\">© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</a>",
+    "attributionText": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+    "attributionUrl": "https://maps.nlsc.gov.tw",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+    "licenseUrl": "https://data.gov.tw/license",
+    "startDate": "2015",
+    "tiles": [
+      "https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/default/EPSG:3857/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/default/EPSG:3857/{zoom}/{y}/{x}"
+  },
+  "osm-cambodia_laos_thailand_vietnam-bilingual": {
+    "attributionHtml": "<a href=\"https://www.osm-tools.org\" target=\"_blank\" rel=\"noopener\">© osm-tools.org & OpenStreetMap contributors, CC-BY-SA</a>",
+    "attributionText": "© osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
+    "attributionUrl": "https://www.osm-tools.org",
+    "tiles": [
+      "https://a.tile.osm-tools.org/osm/{z}/{x}/{y}.png",
+      "https://b.tile.osm-tools.org/osm/{z}/{x}/{y}.png",
+      "https://c.tile.osm-tools.org/osm/{z}/{x}/{y}.png",
+      "https://d.tile.osm-tools.org/osm/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-handa-2020": {
+    "attributionHtml": "<a href=\"https://www.city.handa.lg.jp/kikaku/shise/johoseisaku/opendata/data_kokupict_2020.html\" target=\"_blank\" rel=\"noopener\">OSMFJ_Ortho</a>",
+    "attributionText": "OSMFJ_Ortho",
+    "attributionUrl": "https://www.city.handa.lg.jp/kikaku/shise/johoseisaku/opendata/data_kokupict_2020.html",
+    "endDate": "2020-05-07",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2020-05-07",
+    "tiles": [
+      "https://tiles.osmf.jp/handa-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/handa-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-inuyama-2023": {
+    "attributionHtml": "OSMFJ_Ortho",
+    "attributionText": "OSMFJ_Ortho",
+    "endDate": "2023-01-09",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2023-01-09",
+    "tiles": [
+      "https://tiles.osmf.jp/inuyama-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/inuyama-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-kagoshima-2021": {
+    "attributionHtml": "<a href=\"https://www.city.kagoshima.lg.jp/ict/opendata.html\" target=\"_blank\" rel=\"noopener\">OSMFJ_Ortho</a>",
+    "attributionText": "OSMFJ_Ortho",
+    "attributionUrl": "https://www.city.kagoshima.lg.jp/ict/opendata.html",
+    "endDate": "2022-01-19",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2021-12-05",
+    "tiles": [
+      "https://tiles.osmf.jp/kagoshima-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/kagoshima-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-kouchi-2020": {
+    "attributionHtml": "OSMFJ_Ortho",
+    "attributionText": "OSMFJ_Ortho",
+    "endDate": "2021-03-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2020-04-23",
+    "tiles": [
+      "https://tiles.osmf.jp/kouchi-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/kouchi-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-kyoto-2021": {
+    "attributionHtml": "OSMFJ_Ortho",
+    "attributionText": "OSMFJ_Ortho",
+    "endDate": "2021-03-19",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2020-07-03",
+    "tiles": [
+      "https://tiles.osmf.jp/kyoto-fu/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/kyoto-fu/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-muroran-2019": {
+    "attributionHtml": "<a href=\"http://www.city.muroran.lg.jp/main/org2260/odlib.php\" target=\"_blank\" rel=\"noopener\">OSMFJ_Ortho</a>",
+    "attributionText": "OSMFJ_Ortho",
+    "attributionUrl": "http://www.city.muroran.lg.jp/main/org2260/odlib.php",
+    "endDate": "2019-10-24",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2019-10-24",
+    "tiles": [
+      "https://tiles.osmf.jp/muroran-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/muroran-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-nagahama-2021": {
+    "attributionHtml": "OSMFJ_Ortho",
+    "attributionText": "OSMFJ_Ortho",
+    "endDate": "2022-01-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2021-09-01",
+    "tiles": [
+      "https://tiles.osmf.jp/nagahama-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/nagahama-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-nagaoka-2018": {
+    "attributionHtml": "<a href=\"https://www.city.nagaoka.niigata.jp/shisei/cate10/gis/27.html\" target=\"_blank\" rel=\"noopener\">OSMFJ_Ortho</a>",
+    "attributionText": "OSMFJ_Ortho",
+    "attributionUrl": "https://www.city.nagaoka.niigata.jp/shisei/cate10/gis/27.html",
+    "endDate": "2018-12-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2018-01-01",
+    "tiles": [
+      "https://tiles.osmf.jp/nagaoka-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/nagaoka-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmfj-osaka-2022": {
+    "attributionHtml": "<a href=\"https://www.geospatial.jp/ckan/dataset/r03-photo\" target=\"_blank\" rel=\"noopener\">OSMFJ_Ortho</a>",
+    "attributionText": "OSMFJ_Ortho",
+    "attributionUrl": "https://www.geospatial.jp/ckan/dataset/r03-photo",
+    "endDate": "2022-01-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "startDate": "2022-01-01",
+    "tiles": [
+      "https://tiles.osmf.jp/osaka-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://tiles.osmf.jp/osaka-shi/{zoom}/{x}/{y}.png"
+  },
+  "osmim-imagicode-aral1": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-09-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-09-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aral1&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aral1&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-aral2": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-03-03",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-03-03",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=aral2&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=aral2&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-caspian_2018": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2018-05-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2018-05-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=caspian_2018&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=caspian_2018&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81030632015286LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015-10-13",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015-10-13",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81030632015286LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81030632015286LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81130622013270LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2013-09-27",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2013-09-27",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81190582014075LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2014-03-16",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2014-03-16",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81190582014075LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81190582014075LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81250592016107LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2014",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81490352013282LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2013-10-09",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2013-10-09",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-LC81510432015030LGN00": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2015",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2015",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R088_S05_20160812T011732": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-08-12",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-08-12",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R088_S05_20160812T011732&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R088_S05_20160812T011732&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R089_N52_20160623T024048": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-06-23",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-06-23",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20160623T024048&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20160623T024048&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2A_R119_N09_20160327T050917": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2016-03-27",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2016-03-27",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2A_R119_N09_20160327T050917&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R119_N09_20160327T050917&z={zoom}&x={x}&y={-y}"
+  },
+  "osmim-imagicode-S2B_R032_S07_20200921T025549": {
+    "attributionHtml": "<a href=\"https://imagico.de/maps/#osmim\" target=\"_blank\" rel=\"noopener\">imagico.de OSM images for mapping</a>",
+    "attributionText": "imagico.de OSM images for mapping",
+    "attributionUrl": "https://imagico.de/maps/#osmim",
+    "endDate": "2020-09-21",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+    "licenseUrl": "https://imagico.de/map/osmim_tiles.php",
+    "startDate": "2020-09-21",
+    "tiles": [
+      "https://imagico.de/map/osmim_tiles.php?layer=S2B_R032_S07_20200921T025549&z={z}&x={x}&y={y}"
+    ],
+    "urlTemplate": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R032_S07_20200921T025549&z={zoom}&x={x}&y={-y}"
+  },
+  "Plateau_orthophoto_official": {
+    "attributionHtml": "<a href=\"https://github.com/Project-PLATEAU/plateau-streaming-tutorial/blob/main/ortho/plateau-ortho-streaming.md\" target=\"_blank\" rel=\"noopener\">MLIT_PLATEAU</a>",
+    "attributionText": "MLIT_PLATEAU",
+    "attributionUrl": "https://github.com/Project-PLATEAU/plateau-streaming-tutorial/blob/main/ortho/plateau-ortho-streaming.md",
+    "endDate": "2020-11-31",
+    "licenseUrl": "https://www.mlit.go.jp/plateau/site-policy/",
+    "startDate": "2014-10-01",
+    "tiles": [
+      "https://gic-plateau.s3.ap-northeast-1.amazonaws.com/2020/ortho/tiles/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://gic-plateau.s3.ap-northeast-1.amazonaws.com/2020/ortho/tiles/{zoom}/{x}/{y}.png"
+  },
+  "saitama_fukaya_orthophoto_2017": {
+    "attributionHtml": "<a href=\"http://www.city.fukaya.saitama.jp/shisei/tokei/open_date/1450169094962.html\" target=\"_blank\" rel=\"noopener\">FukayaOrtho</a>",
+    "attributionText": "FukayaOrtho",
+    "attributionUrl": "http://www.city.fukaya.saitama.jp/shisei/tokei/open_date/1450169094962.html",
+    "endDate": "2017-12-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Fukaya_ortho",
+    "startDate": "2017-01-01",
+    "tiles": [
+      "http://nyampire.conohawing.com/ortho-fukaya-shi/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "http://nyampire.conohawing.com/ortho-fukaya-shi/{zoom}/{x}/{-y}.png"
+  },
+  "Singapore-Landlot": {
+    "attributionHtml": "<a href=\"https://www.onemap.sg/legal/opendatalicence.html\" target=\"_blank\" rel=\"noopener\">©OneMap Singapore ODL v1.0</a>",
+    "attributionText": "©OneMap Singapore ODL v1.0",
+    "attributionUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "availableProjections": [
+      "EPSG:4326",
+      "EPSG:3414"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/sg/OM2_logo.png",
+    "licenseUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "tiles": [
+      "https://www.onemap.gov.sg/maps/service?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=LandLot&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://www.onemap.gov.sg/maps/service?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=LandLot&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Singapore-OneMap": {
+    "attributionHtml": "<a href=\"https://www.onemap.sg/legal/opendatalicence.html\" target=\"_blank\" rel=\"noopener\">©OneMap Singapore ODL v1.0</a>",
+    "attributionText": "©OneMap Singapore ODL v1.0",
+    "attributionUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "availableProjections": [
+      "EPSG:4326",
+      "EPSG:3414"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/sg/OM2_logo.png",
+    "licenseUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "tiles": [
+      "https://www.onemap.gov.sg/maps/service?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Default&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}"
+    ],
+    "urlTemplate": "https://www.onemap.gov.sg/maps/service?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Default&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "Singapore-Orthophoto": {
+    "attributionHtml": "<a href=\"https://www.onemap.sg/legal/opendatalicence.html\" target=\"_blank\" rel=\"noopener\">©OneMap Singapore ODL v1.0</a>",
+    "attributionText": "©OneMap Singapore ODL v1.0",
+    "attributionUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/sg/OM2_logo.png",
+    "licenseUrl": "https://www.onemap.sg/legal/opendatalicence.html",
+    "tiles": [
+      "https://www.onemap.gov.sg/maps/tiles/Satellite/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "https://www.onemap.gov.sg/maps/tiles/Satellite/{zoom}/{x}/{y}.png"
+  },
+  "susono_shizuoka_jp_orthophoto": {
+    "attributionHtml": "<a href=\"https://www.geospatial.jp/ckan/dataset/susono-photo-202006\" target=\"_blank\" rel=\"noopener\">Susono city orthophoto</a>",
+    "attributionText": "Susono city orthophoto",
+    "attributionUrl": "https://www.geospatial.jp/ckan/dataset/susono-photo-202006",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Susono_ortho",
+    "tiles": [
+      "http://tile.senmon.jpn.com/1.0.0/susono/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "http://tile.senmon.jpn.com/1.0.0/susono/{zoom}/{x}/{-y}.png"
+  },
+  "tokyo_nerima_orthophoto_2016": {
+    "attributionHtml": "<a href=\"https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/koku-shashin.html\" target=\"_blank\" rel=\"noopener\">NerimaOrtho</a>",
+    "attributionText": "NerimaOrtho",
+    "attributionUrl": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/koku-shashin.html",
+    "endDate": "2016-07-31",
+    "licenseUrl": "https://wiki.openstreetmap.org/wiki/Nerima_ortho",
+    "startDate": "2016-06-02",
+    "tiles": [
+      "http://nyampire.conohawing.com/ortho-nerima-ku/{z}/{x}/{y}.png"
+    ],
+    "urlTemplate": "http://nyampire.conohawing.com/ortho-nerima-ku/{zoom}/{x}/{y}.png"
+  },
+  "TW_NLSC_WMS_EMAP6": {
+    "attributionHtml": "<a href=\"https://maps.nlsc.gov.tw/\" target=\"_blank\" rel=\"noopener\">© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</a>",
+    "attributionText": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+    "attributionUrl": "https://maps.nlsc.gov.tw/",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+    "licenseUrl": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
+    "tiles": [
+      "https://wmts.nlsc.gov.tw/wmts/EMAP6_OPENDATA/default/GoogleMapsCompatible/{z}/{y}/{x}"
+    ],
+    "urlTemplate": "https://wmts.nlsc.gov.tw/wmts/EMAP6_OPENDATA/default/GoogleMapsCompatible/{zoom}/{y}/{x}"
+  },
+  "TW_NLSC_WMS_LANDSECT": {
+    "attributionHtml": "<a href=\"https://maps.nlsc.gov.tw/\" target=\"_blank\" rel=\"noopener\">© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</a>",
+    "attributionText": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+    "attributionUrl": "https://maps.nlsc.gov.tw/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:3826",
+      "EPSG:3825"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+    "licenseUrl": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
+    "tiles": [
+      "https://wms.nlsc.gov.tw/wms?LAYERS=LANDSECT&STYLES=&FORMAT=image/jpeg&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://wms.nlsc.gov.tw/wms?LAYERS=LANDSECT&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap"
+  },
+  "TW_NLSC_WMS_Village": {
+    "attributionHtml": "<a href=\"https://maps.nlsc.gov.tw/\" target=\"_blank\" rel=\"noopener\">© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</a>",
+    "attributionText": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+    "attributionUrl": "https://maps.nlsc.gov.tw/",
+    "availableProjections": [
+      "EPSG:3857",
+      "EPSG:4326",
+      "EPSG:3826",
+      "EPSG:3825"
+    ],
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+    "licenseUrl": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
+    "tiles": [
+      "https://wms.nlsc.gov.tw/wms?LAYERS=Village&STYLES=&FORMAT=image/jpeg&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap"
+    ],
+    "urlTemplate": "https://wms.nlsc.gov.tw/wms?LAYERS=Village&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap"
+  }
+}

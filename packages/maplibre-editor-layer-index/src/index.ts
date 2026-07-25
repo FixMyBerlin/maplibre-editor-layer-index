@@ -2,11 +2,17 @@ export type {
   BBox,
   EliByCountry,
   EliCategory,
+  EliContinent,
+  EliDetailsShard,
   EliGeometries,
   EliIndex,
   EliLayer,
+  EliLayerDetails,
   EliLayerType,
+  EliLocatorIndex,
+  EliLocatorLayer,
   EliManifest,
+  EliShardsMeta,
 } from './core/types'
 
 export {
@@ -17,11 +23,23 @@ export {
   type EliApiKeys,
 } from './core/apiKeys'
 
+export type { ViewportBounds } from './core/bounds'
+
+export { continentForLngLat } from './core/continents'
+
 export {
+  continentsForCenter,
+  continentsForViewport,
+  ensureDetailsForContinents,
+  ensureDetailsForViewport,
   getGeometry,
   getLayer,
+  getLayerHydrated,
   getLayers,
   getManifest,
+  getShardsMeta,
+  hydrateLayer,
+  hydrateLayers,
   loadByCountry,
   loadCoverageFeatures,
   loadGeometries,
@@ -32,8 +50,8 @@ export {
   filterLayers,
   layersForCountry,
   layersInViewport,
+  loadLayersInViewport,
   type FilterOptions,
-  type ViewportBounds,
 } from './core/filter'
 
 export {
