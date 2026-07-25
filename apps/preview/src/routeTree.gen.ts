@@ -9,13 +9,13 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ReactMapGlRouteImport } from './routes/react-map-gl'
-import { Route as MaplibreRouteImport } from './routes/maplibre'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MaplibreRouteImport } from './routes/maplibre'
+import { Route as ReactMapGlRouteImport } from './routes/react-map-gl'
 
-const ReactMapGlRoute = ReactMapGlRouteImport.update({
-  id: '/react-map-gl',
-  path: '/react-map-gl',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MaplibreRoute = MaplibreRouteImport.update({
@@ -23,9 +23,9 @@ const MaplibreRoute = MaplibreRouteImport.update({
   path: '/maplibre',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ReactMapGlRoute = ReactMapGlRouteImport.update({
+  id: '/react-map-gl',
+  path: '/react-map-gl',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -61,11 +61,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/react-map-gl': {
-      id: '/react-map-gl'
-      path: '/react-map-gl'
-      fullPath: '/react-map-gl'
-      preLoaderRoute: typeof ReactMapGlRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/maplibre': {
@@ -75,11 +75,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MaplibreRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/react-map-gl': {
+      id: '/react-map-gl'
+      path: '/react-map-gl'
+      fullPath: '/react-map-gl'
+      preLoaderRoute: typeof ReactMapGlRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
