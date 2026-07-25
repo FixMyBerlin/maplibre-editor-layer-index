@@ -11,7 +11,15 @@ import {
 } from 'maplibre-editor-layer-index/react'
 import type { ExpressionSpecification, FilterSpecification } from 'maplibre-gl'
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
-import { Layer, Map, MapProvider, Source, useMap } from 'react-map-gl/maplibre'
+import {
+  Layer,
+  Map,
+  MapProvider,
+  Source,
+  useMap,
+  type MapLayerMouseEvent,
+  type ViewStateChangeEvent,
+} from 'react-map-gl/maplibre'
 import { CATEGORY_GROUPS, mapSearchSchema, type MapSearch } from '../mapSearch'
 
 export const Route = createFileRoute('/react-map-gl')({
@@ -257,14 +265,14 @@ function ReactMapGlDemo() {
           mapStyle={BASE_STYLE}
           style={{ width: '100%', height: '100%' }}
           interactiveLayerIds={['eli-coverage-fill']}
-          onMouseMove={(e) => {
+          onMouseMove={(e: MapLayerMouseEvent) => {
             // Read properties.id, not feature.id: maplibre GeoJSON sources don't keep
             // non-numeric string feature ids, so feature.id would be undefined here.
             const id = e.features?.[0]?.properties?.id
             setHoveredId((cur) => (id != null ? String(id) : cur === null ? cur : null))
           }}
           onMouseLeave={() => setHoveredId(null)}
-          onMoveEnd={(e) =>
+          onMoveEnd={(e: ViewStateChangeEvent) =>
             persistView(
               round(e.viewState.latitude),
               round(e.viewState.longitude),
