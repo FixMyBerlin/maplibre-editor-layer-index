@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "review-dependabot": {
+      "source": "FixMyBerlin/fixmyskills",
+      "sourceType": "github",
+      "skillPath": "skills/review-dependabot/SKILL.md",
+      "computedHash": "54dc6601d6cfc270e36ea892bf56df8ad09f2f3365514241100ec9842313fb48"
+    }
+  }
+}
