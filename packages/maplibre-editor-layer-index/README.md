@@ -167,6 +167,18 @@ const source = getRasterSourceSpec(layer, { apiKeys: { apikey: 'pk.your-token' }
 useEditorLayerIndex({ filter: { apiKeys: { apikey: 'pk.your-token' } } })
 ```
 
+## High-DPI / retina (WMS)
+
+MapLibre's `{bbox-epsg-3857}` always covers a **logical** 256 CSS-pixel mercator tile. ELI WMS
+URLs bake `WIDTH=256&HEIGHT=256` for that bbox, which looks soft on retina screens.
+
+`getRasterSourceSpec` (and `addEditorLayer`) scales WMS `WIDTH`/`HEIGHT` by device pixel ratio
+(capped at 2×) while keeping `tileSize: 256`, so cadastral layers like ALKIS stay sharp.
+Override with `{ pixelRatio: 1 }` if you need the 1× request size.
+
+TMS/WMTS endpoints are unchanged — they only get sharper when the server offers `{ratio}` / `@2x`
+tiles (MapLibre substitutes `{ratio}` itself).
+
 ## Notes
 
 - **Attribution is upstream HTML.** `attributionHtml` is passed through from ELI and is intended for

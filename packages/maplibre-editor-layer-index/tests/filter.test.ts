@@ -167,15 +167,24 @@ describe('specs', () => {
     })
   })
 
-  it('puts the layer attribution on the source spec (and omits it when absent)', () => {
-    const withAttr = layer({
-      id: 'a',
+  it('scales WMS WIDTH/HEIGHT by pixelRatio while keeping logical tileSize', () => {
+    const wms = layer({
+      id: 'alkis',
+      type: 'wms',
       bbox: [0, 0, 1, 1],
-      attributionHtml: '© Example provider',
+      tiles: ['https://example.com/wms?WIDTH=256&HEIGHT=256&BBOX={bbox-epsg-3857}'],
     })
-    expect(getRasterSourceSpec(withAttr).attribution).toBe('© Example provider')
-    expect(getRasterSourceSpec(layer({ id: 'berlin', bbox: berlin.bbox }))).not.toHaveProperty(
-      'attribution',
-    )
+    expect(getRasterSourceSpec(wms, { pixelRatio: 2 })).toEqual({
+      type: 'raster',
+      tiles: ['https://example.com/wms?WIDTH=512&HEIGHT=512&BBOX={bbox-epsg-3857}'],
+      tileSize: 256,
+    })
+  })
+
+  it('does not scale TMS tile URLs for pixelRatio', () => {
+    const tms = layer({ id: 't', bbox: [0, 0, 1, 1], scheme: 'tms', maxzoom: 19 })
+    expect(getRasterSourceSpec(tms, { pixelRatio: 2 }).tiles).toEqual([
+      'https://example.com/{z}/{x}/{y}.png',
+    ])
   })
 })

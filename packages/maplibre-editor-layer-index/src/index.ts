@@ -55,6 +55,7 @@ export {
 } from './core/filter'
 
 export {
+  applyWmsPixelRatio,
   eliSourceId,
   getRasterLayerSpec,
   getRasterSourceSpec,

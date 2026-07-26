@@ -28,6 +28,8 @@ export type AddEditorLayerOptions = RasterLayerOptions & {
   beforeId?: string
   /** API keys to substitute into the tile URLs (e.g. `{ apikey: '…' }`). */
   apiKeys?: EliApiKeys
+  /** See {@link getRasterSourceSpec} — scales WMS WIDTH/HEIGHT for retina. */
+  pixelRatio?: number
 }
 
 /**
@@ -46,7 +48,10 @@ export function addEditorLayer(
   const layerId = options.id ?? eliSourceId(layer)
 
   removeEditorLayer(map, layerId, sourceId)
-  map.addSource(sourceId, getRasterSourceSpec(layer, { apiKeys: options.apiKeys }))
+  map.addSource(
+    sourceId,
+    getRasterSourceSpec(layer, { apiKeys: options.apiKeys, pixelRatio: options.pixelRatio }),
+  )
   map.addLayer(
     getRasterLayerSpec(layer, { ...options, id: layerId, source: sourceId }),
     options.beforeId,

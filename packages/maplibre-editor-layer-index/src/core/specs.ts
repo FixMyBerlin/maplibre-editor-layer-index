@@ -34,6 +34,37 @@ export function eliSourceId(layer: EliLayer | string): string {
 export type RasterSourceOptions = {
   /** API keys to substitute into the tile URL templates (e.g. `{ apikey: '…' }`). */
   apiKeys?: EliApiKeys
+  /**
+   * Device pixel ratio for WMS GetMap WIDTH/HEIGHT. MapLibre's `{bbox-epsg-3857}`
+   * always covers a logical `tileSize` CSS-pixel mercator tile; requesting a
+   * larger image (e.g. 512 on a 2× display) keeps cadastral/WMS layers sharp.
+   * Defaults to `min(devicePixelRatio, 2)` in the browser, else `1`.
+   */
+  pixelRatio?: number
+}
+
+/** Cap used when reading `window.devicePixelRatio` — matches MapLibre's `{ratio}` @2x. */
+const MAX_AUTO_PIXEL_RATIO = 2
+
+function defaultPixelRatio(): number {
+  if (typeof window === 'undefined') return 1
+  const dpr = window.devicePixelRatio || 1
+  return Math.min(Math.max(1, dpr), MAX_AUTO_PIXEL_RATIO)
+}
+
+/**
+ * Scale hardcoded WMS `WIDTH`/`HEIGHT` from the logical tile size to a denser
+ * image size. TMS/WMTS URLs are returned unchanged (no server-side size knobs).
+ */
+export function applyWmsPixelRatio(
+  tiles: string[],
+  tileSize: number,
+  pixelRatio: number,
+): string[] {
+  const imageSize = Math.max(1, Math.round(tileSize * pixelRatio))
+  if (imageSize === tileSize) return tiles
+  const re = new RegExp(`\\b(WIDTH|HEIGHT)=${tileSize}\\b`, 'gi')
+  return tiles.map((url) => url.replace(re, `$1=${imageSize}`))
 }
 
 /** Build a MapLibre `RasterSourceSpecification` for an ELI layer. */
@@ -41,9 +72,17 @@ export function getRasterSourceSpec(
   layer: EliLayer,
   options: RasterSourceOptions = {},
 ): RasterSourceSpec {
+  const pixelRatio = options.pixelRatio ?? defaultPixelRatio()
+  let tiles = applyApiKeys(layer.tiles, options.apiKeys)
+  if (layer.type === 'wms') {
+    tiles = applyWmsPixelRatio(tiles, layer.tileSize, pixelRatio)
+  }
+
   return {
     type: 'raster',
-    tiles: applyApiKeys(layer.tiles, options.apiKeys),
+    tiles,
+    // Logical CSS tile size must stay at ELI's value: MapLibre's WMS bbox token
+    // is always a 256-style mercator tile; bumping tileSize would mis-align.
     tileSize: layer.tileSize,
     ...(layer.scheme ? { scheme: layer.scheme } : {}),
     ...(layer.minzoom !== undefined ? { minzoom: layer.minzoom } : {}),

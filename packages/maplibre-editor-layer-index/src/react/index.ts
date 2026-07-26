@@ -112,6 +112,7 @@ export function useEditorLayerIndex(
 }
 
 export {
+  applyWmsPixelRatio,
   eliSourceId,
   getRasterLayerSpec,
   getRasterSourceSpec,
