@@ -167,6 +167,14 @@ describe('specs', () => {
     })
   })
 
+  it('keeps maxzoom on the source only so MapLibre overzooms past native tiles', () => {
+    const tms = layer({ id: 't', bbox: [0, 0, 1, 1], maxzoom: 18, minzoom: 10 })
+    expect(getRasterSourceSpec(tms).maxzoom).toBe(18)
+    expect(getRasterLayerSpec(tms)).not.toHaveProperty('maxzoom')
+    expect(getRasterLayerSpec(tms).minzoom).toBe(10)
+    expect(getRasterLayerSpec(tms, { clampMaxzoom: true }).maxzoom).toBe(18)
+  })
+
   it('scales WMS WIDTH/HEIGHT by pixelRatio while keeping logical tileSize', () => {
     const wms = layer({
       id: 'alkis',

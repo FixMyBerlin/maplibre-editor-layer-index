@@ -179,6 +179,13 @@ Override with `{ pixelRatio: 1 }` if you need the 1× request size.
 TMS/WMTS endpoints are unchanged — they only get sharper when the server offers `{ratio}` / `@2x`
 tiles (MapLibre substitutes `{ratio}` itself).
 
+## Overzoom
+
+ELI `maxzoom` goes on the **source** (`getRasterSourceSpec`) so MapLibre reuses the last tile
+level when you zoom further in. It is **not** copied onto the style layer by default — layer
+`maxzoom` would hide the imagery instead of overzooming. Pass `{ clampMaxzoom: true }` to
+`getRasterLayerSpec` / `addEditorLayer` if you want the old hide-past-max behaviour.
+
 ## Notes
 
 - **Attribution is upstream HTML.** `attributionHtml` is passed through from ELI and is intended for

@@ -98,6 +98,12 @@ export type RasterLayerOptions = {
   source?: string
   /** Raster paint overrides — styling is the app's job; this is just a default. */
   paint?: Record<string, unknown>
+  /**
+   * When true, copy ELI `maxzoom` onto the style layer (hides the layer past that
+   * zoom). Default false — source `maxzoom` alone makes MapLibre **overzoom**
+   * the last available tiles instead of disappearing.
+   */
+  clampMaxzoom?: boolean
 }
 
 /** Build a MapLibre `RasterLayerSpecification` referencing an ELI raster source. */
@@ -110,7 +116,9 @@ export function getRasterLayerSpec(
     type: 'raster',
     source: options.source ?? eliSourceId(layer),
     ...(layer.minzoom !== undefined ? { minzoom: layer.minzoom } : {}),
-    ...(layer.maxzoom !== undefined ? { maxzoom: layer.maxzoom } : {}),
+    // Do not set layer maxzoom by default: that hides the layer. Source maxzoom
+    // (from getRasterSourceSpec) is what enables overzoom past native tile zooms.
+    ...(options.clampMaxzoom && layer.maxzoom !== undefined ? { maxzoom: layer.maxzoom } : {}),
     ...(options.paint ? { paint: options.paint } : {}),
   }
 }
