@@ -28,12 +28,15 @@ permissions:
   contents: write
   issues: write
   id-token: write # npm trusted publishing / provenance
+  pages: write # preview app → GitHub Pages
 
 jobs:
   release:
     # Skip bot commits from this workflow (version bumps, ELI data) to avoid loops.
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]') }}
     runs-on: ubuntu-latest
+    outputs:
+      released: ${{ steps.plan.outputs.release }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -153,13 +156,31 @@ jobs:
           npm install -g npm@latest
           bun run release
 
+      # Secondary artifact: rebuild the demo against the just-published package version
+      # and ship it to GitHub Pages (deploy job below).
+      - name: Build preview app
+        if: steps.plan.outputs.release == 'true'
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
+        run: |
+          export VITE_BUILT_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          bun run --filter preview build
+          # GitHub Pages has no SPA fallback — serve the app for deep links too.
+          cp apps/preview/dist/index.html apps/preview/dist/404.html
+
+      - name: Upload Pages artifact
+        if: steps.plan.outputs.release == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: apps/preview/dist
+
       - name: Open issue on failure
         if: failure()
         uses: actions/github-script@v9
         with:
           script: |
             const title = 'Release workflow failed'
-            const body = `The \`release\` workflow failed — likely upstream ELI schema drift, CI, or npm publish.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            const body = `The \`release\` workflow failed — likely upstream ELI schema drift, CI, npm publish, or preview Pages build.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -175,3 +196,15 @@ jobs:
                 labels: ['release-failure'],
               })
             }
+
+  deploy-preview:
+    name: Deploy preview (GitHub Pages)
+    needs: release
+    if: needs.release.outputs.released == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

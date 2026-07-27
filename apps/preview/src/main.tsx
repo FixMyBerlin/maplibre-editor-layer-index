@@ -6,8 +6,12 @@ import './styles.css'
 import { routeTree } from './routeTree.gen'
 import { parseSearch, stringifySearch } from './searchParams'
 
+// Vite `base` (e.g. `/maplibre-editor-layer-index/` on GitHub Pages) → router basepath.
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
 const router = createRouter({
   routeTree,
+  basepath,
   defaultPreload: 'intent',
   // Flat, shareable URLs (see ./searchParams).
   parseSearch,

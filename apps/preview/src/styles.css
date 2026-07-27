@@ -100,9 +100,20 @@ body,
   font-weight: 600;
 }
 
+.build-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
 .header nav {
   display: flex;
   gap: 8px;
+  margin-left: auto;
   font-size: 14px;
 }
 

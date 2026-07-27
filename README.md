@@ -16,6 +16,9 @@ This is a Bun-workspaces monorepo:
 | [`packages/maplibre-editor-layer-index`](packages/maplibre-editor-layer-index) | The published npm package (ESM-only).                                                  |
 | [`apps/preview`](apps/preview)                                                 | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
 
+**Live preview:** [osm-editor-kit.github.io/maplibre-editor-layer-index](https://osm-editor-kit.github.io/maplibre-editor-layer-index/)
+(redeployed on every npm release; header shows package version + build time).
+
 ## Why it's small (at runtime)
 
 Data is generated at release time into three tiers:
@@ -64,4 +67,10 @@ Versioning via [changesets](https://github.com/changesets/changesets). One GitHu
 - **Manual** — Actions → Release → Run workflow (optional ELI refresh + forced patch/minor/major bump)
 
 Publishes via npm **trusted publishing** (OIDC) from `release.yml` — no long-lived `NPM_TOKEN`.
+After a successful publish, the same workflow builds `apps/preview` and deploys it to
+**GitHub Pages** as a secondary job (`deploy-preview`).
+
 See [`.github/workflows`](.github/workflows).
+
+**One-time Pages setup** (repo Settings → Pages): set Source to **GitHub Actions**. The first
+successful release after that publishes the preview site.
