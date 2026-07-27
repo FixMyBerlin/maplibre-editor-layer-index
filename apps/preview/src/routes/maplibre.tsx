@@ -1,6 +1,6 @@
+import { loadLayersInViewport, type EliLayer } from '@osm-editor-kit/osm-editor-layer-index'
+import { addEditorLayer, removeEditorLayer } from '@osm-editor-kit/osm-editor-layer-index/maplibre'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { loadLayersInViewport, type EliLayer } from 'maplibre-editor-layer-index'
-import { addEditorLayer, removeEditorLayer } from 'maplibre-editor-layer-index/maplibre'
 import maplibregl from 'maplibre-gl'
 import { useEffect, useRef, useState } from 'react'
 import { mapSearchSchema } from '../mapSearch'

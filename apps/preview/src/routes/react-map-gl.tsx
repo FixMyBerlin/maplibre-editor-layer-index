@@ -1,5 +1,3 @@
-import * as countryCoder from '@rapideditor/country-coder'
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import {
   getLayer,
   getLayerHydrated,
@@ -9,7 +7,9 @@ import {
   useEditorLayerIndex,
   type EliCategory,
   type EliLayer,
-} from 'maplibre-editor-layer-index/react'
+} from '@osm-editor-kit/osm-editor-layer-index/react'
+import * as countryCoder from '@rapideditor/country-coder'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import type { ExpressionSpecification, FilterSpecification } from 'maplibre-gl'
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import {

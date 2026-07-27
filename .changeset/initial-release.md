@@ -1,5 +1,5 @@
 ---
-'maplibre-editor-layer-index': minor
+'@osm-editor-kit/osm-editor-layer-index': minor
 ---
 
 Initial release: use the OSM Editor Layer Index as background/imagery layers in
