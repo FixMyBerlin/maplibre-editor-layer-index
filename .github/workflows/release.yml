@@ -17,6 +17,10 @@ on:
         type: choice
         options: [none, patch, minor, major]
         default: none
+      publish_only:
+        description: Publish the current version to npm without bumping (retry after a failed publish)
+        type: boolean
+        default: false
 
 concurrency: release
 
@@ -74,9 +78,14 @@ jobs:
           ELI_CHANGED: ${{ steps.eli.outputs.changed }}
           HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
           VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
+          PUBLISH_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_only || 'false' }}
         run: |
-          if [ "$HAS_CHANGESETS" = true ] || [ "$ELI_CHANGED" = true ] || [ "$VERSION_BUMP" != none ]; then
+          if [ "$PUBLISH_ONLY" = true ]; then
             echo "release=true" >> "$GITHUB_OUTPUT"
+            echo "publish_only=true" >> "$GITHUB_OUTPUT"
+          elif [ "$HAS_CHANGESETS" = true ] || [ "$ELI_CHANGED" = true ] || [ "$VERSION_BUMP" != none ]; then
+            echo "release=true" >> "$GITHUB_OUTPUT"
+            echo "publish_only=false" >> "$GITHUB_OUTPUT"
           else
             echo "release=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to version or publish."
@@ -92,14 +101,12 @@ jobs:
           bun run test
           bun run check-exports
 
-      - name: Version, commit, and publish
-        if: steps.plan.outputs.release == 'true'
+      - name: Version and commit
+        if: steps.plan.outputs.release == 'true' && steps.plan.outputs.publish_only != 'true'
         env:
           ELI_CHANGED: ${{ steps.eli.outputs.changed }}
           HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
           VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -126,10 +133,19 @@ jobs:
 
           bun run version-packages
           git add -A
-          git commit -m "chore: release [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "No version changes to commit."
+          else
+            git commit -m "chore: release [skip ci]"
+            git push
+          fi
 
-          bun run release
+      - name: Publish to npm
+        if: steps.plan.outputs.release == 'true'
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: bun run release
 
       - name: Open issue on failure
         if: failure()

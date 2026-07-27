@@ -14,15 +14,15 @@
     "raster",
     "react-map-gl"
   ],
-  "homepage": "https://github.com/FixMyBerlin/maplibre-editor-layer-index#readme",
+  "homepage": "https://github.com/osmberlin/maplibre-editor-layer-index#readme",
   "bugs": {
-    "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index/issues"
+    "url": "https://github.com/osmberlin/maplibre-editor-layer-index/issues"
   },
   "license": "MIT",
   "author": "Tobias Jordans",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FixMyBerlin/maplibre-editor-layer-index"
+    "url": "https://github.com/osmberlin/maplibre-editor-layer-index"
   },
   "files": [
     "dist"
