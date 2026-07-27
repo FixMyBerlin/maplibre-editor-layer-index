@@ -144,8 +144,14 @@ jobs:
         if: steps.plan.outputs.release == 'true'
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: bun run release
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "NPM_TOKEN secret is missing or empty."
+            exit 1
+          fi
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          bun run release
 
       - name: Open issue on failure
         if: failure()
