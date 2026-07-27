@@ -63,5 +63,5 @@ Versioning via [changesets](https://github.com/changesets/changesets). One GitHu
 - **Push to `main`** — if your merge includes a `.changeset/*.md`, versions and publishes directly
 - **Manual** — Actions → Release → Run workflow (optional ELI refresh + forced patch/minor/major bump)
 
-Configure npm **trusted publishing** on `release.yml` to avoid rotating `NPM_TOKEN` every 90 days.
+Publishes via npm **trusted publishing** (OIDC) from `release.yml` — no long-lived `NPM_TOKEN`.
 See [`.github/workflows`](.github/workflows).

@@ -140,17 +140,17 @@ jobs:
             git push
           fi
 
+      - name: Setup Node for npm OIDC publishing
+        if: steps.plan.outputs.release == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
       - name: Publish to npm
         if: steps.plan.outputs.release == 'true'
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          if [ -z "$NPM_TOKEN" ]; then
-            echo "NPM_TOKEN secret is missing or empty."
-            exit 1
-          fi
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm install -g npm@latest
           bun run release
 
       - name: Open issue on failure
