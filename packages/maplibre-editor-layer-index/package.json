@@ -1,6 +1,6 @@
 {
   "name": "@osm-editor-kit/maplibre-editor-layer-index",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Use the OSM Editor Layer Index as background/imagery layers in react-map-gl and maplibre-gl-js, with viewport filtering.",
   "keywords": [
     "basemap",
