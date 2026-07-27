@@ -18,6 +18,9 @@ updates:
       # plugin-react 6+ targets Vite 8; preview app is still on Vite 6.
       - dependency-name: '@vitejs/plugin-react'
         update-types: ['version-update:semver-major']
+      # TypeScript 7 is a separate migration; stay on TS 5 for now.
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
     commit-message:
       prefix: chore
       include: scope
