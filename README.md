@@ -5,7 +5,8 @@ imagery layers in **[react-map-gl](https://visgl.github.io/react-map-gl/)** (pri
 **[maplibre-gl-js](https://maplibre.org/)** (raw JS). The package gives you the **layer list** and
 **viewport filtering**; you keep full control of styling.
 
-Part of the [`@osm-editor-kit`](https://www.npmjs.com/org/osm-editor-kit) npm org (same family as
+Part of the [`osm-editor-kit`](https://github.com/osm-editor-kit) GitHub org /
+[`@osm-editor-kit`](https://www.npmjs.com/org/osm-editor-kit) npm org (same family as
 [Street Space Editor](https://github.com/osmberlin/street-space-editor)).
 
 This is a Bun-workspaces monorepo:
