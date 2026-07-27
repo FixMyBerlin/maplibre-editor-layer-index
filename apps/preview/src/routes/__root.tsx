@@ -25,7 +25,14 @@ function RootLayout() {
     <div className="app">
       <LocationBanner />
       <header className="header">
-        <h1>@osm-editor-kit/maplibre-editor-layer-index</h1>
+        <h1>
+          <a
+            className="package-link"
+            href="https://npmx.dev/package/@osm-editor-kit/maplibre-editor-layer-index"
+          >
+            @osm-editor-kit/maplibre-editor-layer-index
+          </a>
+        </h1>
         <p className="build-meta" title={`Built at ${__BUILT_AT__}`}>
           <span>v{__PACKAGE_VERSION__}</span>
           <span aria-hidden="true">·</span>

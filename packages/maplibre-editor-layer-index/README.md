@@ -1,9 +1,11 @@
-# @osm-editor-kit/maplibre-editor-layer-index
+# [@osm-editor-kit/maplibre-editor-layer-index](https://npmx.dev/package/@osm-editor-kit/maplibre-editor-layer-index)
 
 Use the OSM [Editor Layer Index](https://github.com/osmlab/editor-layer-index) (ELI) as
 background / imagery layers in **react-map-gl** and **maplibre-gl-js**. This package gives you the
 **layer list** and **viewport filtering**; you keep full control of styling.
 
+- **Package page:** [npmx.dev/package/@osm-editor-kit/maplibre-editor-layer-index](https://npmx.dev/package/@osm-editor-kit/maplibre-editor-layer-index)
+- **Live preview:** [osm-editor-kit.github.io/maplibre-editor-layer-index](https://osm-editor-kit.github.io/maplibre-editor-layer-index/)
 - **ESM-only**, tree-shakeable, three entrypoints: `.`, `/react`, `/maplibre`.
 - Data is split into an always-loaded **locator** (~820 KB: bbox + country codes + continents, no
   tile URLs), **continent-sharded details** (lazy from map center), and **continent-sharded

@@ -14,7 +14,7 @@
     "raster",
     "react-map-gl"
   ],
-  "homepage": "https://github.com/osm-editor-kit/maplibre-editor-layer-index#readme",
+  "homepage": "https://osm-editor-kit.github.io/maplibre-editor-layer-index/",
   "bugs": {
     "url": "https://github.com/osm-editor-kit/maplibre-editor-layer-index/issues"
   },
