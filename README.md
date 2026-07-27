@@ -55,6 +55,12 @@ bun run dev            # preview app
 
 ## Release
 
-Versioning via [changesets](https://github.com/changesets/changesets). A weekly GitHub Action
-regenerates the ELI data and, if it changed, commits a `patch` changeset; a release workflow then
-publishes to npm. See [`.github/workflows`](.github/workflows).
+Versioning via [changesets](https://github.com/changesets/changesets). One GitHub Actions workflow
+(`.github/workflows/release.yml`) handles everything — no release PR:
+
+- **Weekly cron** — refreshes ELI data; patch-bumps and publishes when upstream data changed
+- **Push to `main`** — if your merge includes a `.changeset/*.md`, versions and publishes directly
+- **Manual** — Actions → Release → Run workflow (optional ELI refresh + forced patch/minor/major bump)
+
+Configure npm **trusted publishing** on `release.yml` to avoid rotating `NPM_TOKEN` every 90 days.
+See [`.github/workflows`](.github/workflows).

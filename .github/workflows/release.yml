@@ -3,19 +3,38 @@ name: Release
 on:
   push:
     branches: [main]
+  schedule:
+    # Weekly, Monday 06:17 UTC (off the :00 mark to avoid the cron stampede).
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      refresh_eli:
+        description: Regenerate ELI data from upstream
+        type: boolean
+        default: true
+      version_bump:
+        description: Force a version bump (none = only if ELI data or pending changesets changed)
+        type: choice
+        options: [none, patch, minor, major]
+        default: none
 
-concurrency: release-${{ github.ref }}
+concurrency: release
 
 permissions:
   contents: write
-  pull-requests: write
-  id-token: write # npm provenance
+  issues: write
+  id-token: write # npm trusted publishing / provenance
 
 jobs:
   release:
+    # Skip bot commits from this workflow (version bumps, ELI data) to avoid loops.
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Pending .changeset/*.md files on main are consumed on push-triggered runs.
+          fetch-depth: 0
 
       - uses: oven-sh/setup-bun@v2
         with:
@@ -24,16 +43,113 @@ jobs:
       - name: Install
         run: bun install --frozen-lockfile
 
-      # Opens/updates a "Version Packages" PR when changesets are present, and
-      # publishes to npm once that PR is merged (i.e. when no changesets remain).
-      - name: Create release PR or publish
-        uses: changesets/action@v1
-        with:
-          version: bun run version-packages
-          publish: bun run release
-          commit: 'chore: release'
-          title: 'chore: release'
+      - name: Regenerate ELI data
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_eli)
+        run: bun run eli:build
+
+      - name: Detect ELI data changes
+        id: eli
+        run: |
+          if git diff --quiet -- packages/maplibre-editor-layer-index/src/data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Detect pending changesets
+        id: pending
+        run: |
+          shopt -s nullglob
+          files=(.changeset/*.md)
+          for f in "${files[@]}"; do
+            case "$(basename "$f")" in README.md) continue ;; esac
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          done
+          echo "found=false" >> "$GITHUB_OUTPUT"
+
+      - name: Plan release
+        id: plan
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ELI_CHANGED: ${{ steps.eli.outputs.changed }}
+          HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
+          VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
+        run: |
+          if [ "$HAS_CHANGESETS" = true ] || [ "$ELI_CHANGED" = true ] || [ "$VERSION_BUMP" != none ]; then
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "release=false" >> "$GITHUB_OUTPUT"
+            echo "Nothing to version or publish."
+          fi
+
+      - name: Lint, build, test, check exports
+        if: steps.plan.outputs.release == 'true'
+        run: |
+          bun run lint
+          bun run build
+          bun run --filter @osm-editor-kit/maplibre-editor-layer-index typecheck
+          bun run --filter preview typecheck
+          bun run test
+          bun run check-exports
+
+      - name: Version, commit, and publish
+        if: steps.plan.outputs.release == 'true'
+        env:
+          ELI_CHANGED: ${{ steps.eli.outputs.changed }}
+          HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
+          VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [ "$HAS_CHANGESETS" != true ]; then
+            if [ "$ELI_CHANGED" = true ]; then
+              cat > ".changeset/eli-auto-${{ github.run_id }}.md" <<'EOF'
+          ---
+          "@osm-editor-kit/maplibre-editor-layer-index": patch
+          ---
+
+          Update Editor Layer Index data (automated refresh).
+          EOF
+            elif [ "$VERSION_BUMP" != none ]; then
+              cat > ".changeset/manual-${{ github.run_id }}.md" <<EOF
+          ---
+          "@osm-editor-kit/maplibre-editor-layer-index": $VERSION_BUMP
+          ---
+
+          Release ($VERSION_BUMP).
+          EOF
+            fi
+          fi
+
+          bun run version-packages
+          git add -A
+          git commit -m "chore: release [skip ci]"
+          git push
+
+          bun run release
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Release workflow failed'
+            const body = `The \`release\` workflow failed — likely upstream ELI schema drift, CI, or npm publish.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'release-failure',
+            })
+            if (existing.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['release-failure'],
+              })
+            }
