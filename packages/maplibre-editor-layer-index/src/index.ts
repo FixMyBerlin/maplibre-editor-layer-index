@@ -15,6 +15,8 @@ export type {
   EliShardsMeta,
 } from './core/types'
 
+export { getImageryUsedValue, sanitizeImageryUrlTemplate } from './core/imagery-used'
+
 export {
   applyApiKeys,
   eliApiKeyNames,

@@ -155,6 +155,7 @@ export {
   type EliApiKey,
   type EliApiKeys,
 } from '../core/apiKeys'
+export { getImageryUsedValue, sanitizeImageryUrlTemplate } from '../core/imagery-used'
 export type {
   EliCategory,
   EliContinent,
