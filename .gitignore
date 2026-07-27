@@ -8,5 +8,5 @@ dist/
 .DS_Store
 
 # data pipeline scratch
-packages/osm-editor-layer-index/.cache/
+packages/maplibre-editor-layer-index/.cache/
 coverage/

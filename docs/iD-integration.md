@@ -2,7 +2,7 @@
 
 > Status: proposal / integration guide. Nothing here is required to use the package; it documents
 > how the OSM editor [iD](https://github.com/openstreetmap/iD) (and the related Rapid editor) could
-> adopt `@osm-editor-kit/osm-editor-layer-index` to solve a governance problem and trim its imagery data.
+> adopt `@osm-editor-kit/maplibre-editor-layer-index` to solve a governance problem and trim its imagery data.
 
 ## The problem this solves for iD
 
@@ -19,7 +19,7 @@ and `scripts/update_imagery.js` reads `node_modules/@openstreetmap/editor-layer-
 at build time, transforms it, and commits a **7.6 MB `data/imagery.json`** (5.2 MB minified) that is
 fetched at runtime. Every refresh is a manual bump of the pinned commit.
 
-`@osm-editor-kit/osm-editor-layer-index` is a **real, versioned npm package** built from ELI on a **weekly
+`@osm-editor-kit/maplibre-editor-layer-index` is a **real, versioned npm package** built from ELI on a **weekly
 schedule** with validation (zod), npm **provenance**, and changesets. Pointing iD at it replaces the
 pinned-commit + bespoke-fetch step with a normal, governed dependency — and, as a bonus, gives iD
 **deduplicated coverage geometries** and a **precomputed area↔layer map**.
@@ -113,7 +113,7 @@ import {
   ensureDetailsForContinents,
   hydrateLayers,
   loadGeometries,
-} from '@osm-editor-kit/osm-editor-layer-index'
+} from '@osm-editor-kit/maplibre-editor-layer-index'
 
 // Build script needs every layer fully hydrated — load all detail shards once.
 const locatorRows = getLayers()
@@ -182,7 +182,7 @@ import {
   layersForCountry,
   ensureDetailsForContinents,
   hydrateLayers,
-} from '@osm-editor-kit/osm-editor-layer-index'
+} from '@osm-editor-kit/maplibre-editor-layer-index'
 
 // Locator rows covering Germany + always-on worldwide layers (no tile URLs yet).
 const locatorRows = await layersForCountry('DE')

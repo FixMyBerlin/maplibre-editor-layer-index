@@ -1,4 +1,4 @@
-import type { EliCategory } from '@osm-editor-kit/osm-editor-layer-index'
+import type { EliCategory } from '@osm-editor-kit/maplibre-editor-layer-index'
 import { parseList } from './searchParams'
 
 /** Category groups shown in the sidebar, in display order, with friendly labels. */

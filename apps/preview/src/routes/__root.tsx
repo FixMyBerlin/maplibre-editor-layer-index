@@ -11,7 +11,7 @@ function RootLayout() {
     <div className="app">
       <LocationBanner />
       <header className="header">
-        <h1>@osm-editor-kit/osm-editor-layer-index</h1>
+        <h1>@osm-editor-kit/maplibre-editor-layer-index</h1>
         <nav>
           <Link
             to="/react-map-gl"

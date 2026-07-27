@@ -16,7 +16,7 @@
       "name": "preview",
       "version": "0.0.0",
       "dependencies": {
-        "@osm-editor-kit/osm-editor-layer-index": "workspace:*",
+        "@osm-editor-kit/maplibre-editor-layer-index": "workspace:*",
         "@rapideditor/country-coder": "^5.6.1",
         "@tanstack/react-router": "^1.170.18",
         "maplibre-gl": "^5.24.0",
@@ -33,8 +33,8 @@
         "vite": "^6.0.0",
       },
     },
-    "packages/osm-editor-layer-index": {
-      "name": "@osm-editor-kit/osm-editor-layer-index",
+    "packages/maplibre-editor-layer-index": {
+      "name": "@osm-editor-kit/maplibre-editor-layer-index",
       "version": "0.0.0",
       "dependencies": {
         "@types/geojson": "^7946.0.16",
@@ -253,7 +253,7 @@
 
     "@nodelib/fs.walk": ["@nodelib/fs.walk@1.2.8", "", { "dependencies": { "@nodelib/fs.scandir": "2.1.5", "fastq": "^1.6.0" } }, "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg=="],
 
-    "@osm-editor-kit/osm-editor-layer-index": ["@osm-editor-kit/osm-editor-layer-index@workspace:packages/osm-editor-layer-index"],
+    "@osm-editor-kit/maplibre-editor-layer-index": ["@osm-editor-kit/maplibre-editor-layer-index@workspace:packages/maplibre-editor-layer-index"],
 
     "@oxc-project/types": ["@oxc-project/types@0.137.0", "", {}, "sha512-WT+Gb24i8hmvo85AIv2oEYouEXkRlKAlT9WaCa3TfLgNCN+GhrJOGZuIlMouAh38Qe4QOx26eUOVsq70qXrywA=="],
 

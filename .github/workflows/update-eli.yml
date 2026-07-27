@@ -31,7 +31,7 @@ jobs:
       - name: Detect changes
         id: diff
         run: |
-          if git diff --quiet -- packages/osm-editor-layer-index/src/data; then
+          if git diff --quiet -- packages/maplibre-editor-layer-index/src/data; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "ELI data unchanged — nothing to release."
           else
@@ -44,7 +44,7 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         run: |
           bun run lint
-          bun run --filter @osm-editor-kit/osm-editor-layer-index typecheck
+          bun run --filter @osm-editor-kit/maplibre-editor-layer-index typecheck
           bun run test
           bun run build
           bun run check-exports
@@ -61,7 +61,7 @@ jobs:
 
           cat > ".changeset/eli-auto-${{ github.run_id }}.md" <<'EOF'
           ---
-          "@osm-editor-kit/osm-editor-layer-index": patch
+          "@osm-editor-kit/maplibre-editor-layer-index": patch
           ---
 
           Update Editor Layer Index data (automated weekly refresh).

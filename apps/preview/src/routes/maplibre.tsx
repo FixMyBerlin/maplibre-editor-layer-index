@@ -1,5 +1,8 @@
-import { loadLayersInViewport, type EliLayer } from '@osm-editor-kit/osm-editor-layer-index'
-import { addEditorLayer, removeEditorLayer } from '@osm-editor-kit/osm-editor-layer-index/maplibre'
+import { loadLayersInViewport, type EliLayer } from '@osm-editor-kit/maplibre-editor-layer-index'
+import {
+  addEditorLayer,
+  removeEditorLayer,
+} from '@osm-editor-kit/maplibre-editor-layer-index/maplibre'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import maplibregl from 'maplibre-gl'
 import { useEffect, useRef, useState } from 'react'

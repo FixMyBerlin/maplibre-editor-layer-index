@@ -26,11 +26,11 @@ jobs:
 
       - name: Typecheck
         run: |
-          bun run --filter @osm-editor-kit/osm-editor-layer-index typecheck
+          bun run --filter @osm-editor-kit/maplibre-editor-layer-index typecheck
           bun run --filter preview typecheck
 
       - name: Size budget
-        run: bun run --filter @osm-editor-kit/osm-editor-layer-index check-size
+        run: bun run --filter @osm-editor-kit/maplibre-editor-layer-index check-size
 
       - name: Test
         run: bun run test

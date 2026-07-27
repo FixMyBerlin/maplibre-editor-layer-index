@@ -1,4 +1,4 @@
-# @osm-editor-kit/osm-editor-layer-index
+# @osm-editor-kit/maplibre-editor-layer-index
 
 Use the OSM [Editor Layer Index](https://github.com/osmlab/editor-layer-index) (ELI) as background /
 imagery layers in **[react-map-gl](https://visgl.github.io/react-map-gl/)** (primary) and
@@ -10,10 +10,10 @@ Part of the [`@osm-editor-kit`](https://www.npmjs.com/org/osm-editor-kit) npm or
 
 This is a Bun-workspaces monorepo:
 
-| Path                                                                 | What                                                                                   |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [`packages/osm-editor-layer-index`](packages/osm-editor-layer-index) | The published npm package (ESM-only).                                                  |
-| [`apps/preview`](apps/preview)                                       | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
+| Path                                                                           | What                                                                                   |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| [`packages/maplibre-editor-layer-index`](packages/maplibre-editor-layer-index) | The published npm package (ESM-only).                                                  |
+| [`apps/preview`](apps/preview)                                                 | A TanStack Router + Vite SPA demo showcasing both react-map-gl and raw maplibre usage. |
 
 ## Why it's small (at runtime)
 
@@ -37,7 +37,7 @@ Filtering is pure-arithmetic **bbox overlap** — zero runtime geo dependencies.
 
 ELI has no npm release, so editors like [iD](https://github.com/openstreetmap/iD) vendor it as a
 pinned `gh-pages` commit. This package is still the MapLibre-branded npm release, but non-MapLibre
-renderers use the **root entry** (`@osm-editor-kit/osm-editor-layer-index`, not `/maplibre` or
+renderers use the **root entry** (`@osm-editor-kit/maplibre-editor-layer-index`, not `/maplibre` or
 `/react`) and
 each layer's raw **`urlTemplate`** (not MapLibre `tiles`) after hydrating details. See
 [docs/iD-integration.md](docs/iD-integration.md) for the iD adapter sketch.
@@ -46,7 +46,7 @@ each layer's raw **`urlTemplate`** (not MapLibre `tiles`) after hydrating detail
 
 ```bash
 bun install
-bun run eli:build      # fetch + validate + transform ELI → packages/osm-editor-layer-index/src/data
+bun run eli:build      # fetch + validate + transform ELI → packages/maplibre-editor-layer-index/src/data
 bun run build          # build the package (tsup, ESM + d.ts)
 bun run test           # vitest
 bun run check-exports  # attw (ESM resolution validation)

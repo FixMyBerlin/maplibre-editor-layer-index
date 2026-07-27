@@ -1,4 +1,4 @@
-# @osm-editor-kit/osm-editor-layer-index
+# @osm-editor-kit/maplibre-editor-layer-index
 
 Use the OSM [Editor Layer Index](https://github.com/osmlab/editor-layer-index) (ELI) as
 background / imagery layers in **react-map-gl** and **maplibre-gl-js**. This package gives you the
@@ -11,7 +11,7 @@ background / imagery layers in **react-map-gl** and **maplibre-gl-js**. This pac
 - Viewport filtering is pure bbox math — **zero runtime geo dependencies**.
 
 ```bash
-npm i @osm-editor-kit/osm-editor-layer-index
+npm i @osm-editor-kit/maplibre-editor-layer-index
 ```
 
 ## react-map-gl
@@ -29,7 +29,7 @@ import {
   getRasterLayerSpec,
   getRasterSourceSpec,
   useEditorLayerIndex,
-} from '@osm-editor-kit/osm-editor-layer-index/react'
+} from '@osm-editor-kit/maplibre-editor-layer-index/react'
 
 function Layers() {
   const { layers, status } = useEditorLayerIndex({
@@ -61,8 +61,11 @@ function App() {
 ## Raw maplibre-gl
 
 ```ts
-import { loadLayersInViewport } from '@osm-editor-kit/osm-editor-layer-index'
-import { addEditorLayer, removeEditorLayer } from '@osm-editor-kit/osm-editor-layer-index/maplibre'
+import { loadLayersInViewport } from '@osm-editor-kit/maplibre-editor-layer-index'
+import {
+  addEditorLayer,
+  removeEditorLayer,
+} from '@osm-editor-kit/maplibre-editor-layer-index/maplibre'
 
 const layers = await loadLayersInViewport(map.getBounds())
 addEditorLayer(map, layers[0], { paint: { 'raster-opacity': 0.8 } })
@@ -72,7 +75,7 @@ addEditorLayer(map, layers[0], { paint: { 'raster-opacity': 0.8 } })
 Sync bbox filtering still works without loading tile URLs:
 
 ```ts
-import { layersInViewport } from '@osm-editor-kit/osm-editor-layer-index'
+import { layersInViewport } from '@osm-editor-kit/maplibre-editor-layer-index'
 
 const locatorRows = layersInViewport(map.getBounds()) // EliLocatorLayer[] — no tiles yet
 ```
@@ -95,7 +98,11 @@ Same package, **root entry only** — do not import `/maplibre` or `/react`. Hyd
 the raw ELI `urlTemplate` for your own tile substitution.
 
 ```ts
-import { getLayers, getLayerHydrated, loadGeometries } from '@osm-editor-kit/osm-editor-layer-index'
+import {
+  getLayers,
+  getLayerHydrated,
+  loadGeometries,
+} from '@osm-editor-kit/maplibre-editor-layer-index'
 
 const locators = getLayers()
 const layer = await getLayerHydrated(locators[0]!.id)
