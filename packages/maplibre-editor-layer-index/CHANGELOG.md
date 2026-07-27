@@ -1,5 +1,11 @@
 # @osm-editor-kit/maplibre-editor-layer-index
 
+## 0.1.1
+
+### Patch Changes
+
+- Release (patch).
+
 ## 0.1.0
 
 ### Minor Changes
