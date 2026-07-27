@@ -31,7 +31,7 @@ jobs:
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # Pending .changeset/*.md files on main are consumed on push-triggered runs.
           fetch-depth: 0
