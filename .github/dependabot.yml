@@ -14,6 +14,10 @@ updates:
     open-pull-requests-limit: 1
     exclude-paths:
       - .cursor/**
+    ignore:
+      # plugin-react 6+ targets Vite 8; preview app is still on Vite 6.
+      - dependency-name: '@vitejs/plugin-react'
+        update-types: ['version-update:semver-major']
     commit-message:
       prefix: chore
       include: scope
