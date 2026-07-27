@@ -71,7 +71,7 @@
     "react": "^19.0.0",
     "react-map-gl": "^8.1.1",
     "tsup": "^8.5.1",
-    "typescript": "^5.7.2",
+    "typescript": "^7.0.2",
     "vitest": "^4.1.10",
     "zod": "^4.4.3"
   },
