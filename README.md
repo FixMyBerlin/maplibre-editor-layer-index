@@ -62,7 +62,9 @@ bun run dev            # preview app
 Versioning via [changesets](https://github.com/changesets/changesets). One GitHub Actions workflow
 (`.github/workflows/release.yml`) handles everything — no release PR:
 
-- **Weekly cron** — refreshes ELI data; patch-bumps and publishes when upstream data changed
+- **Weekly cron** — refreshes ELI data; when layers (or upstream commit) changed, writes a
+  changeset that lists added/updated/removed layers with links to ELI commits/PRs/source files,
+  then patch-bumps, commits, and publishes
 - **Push to `main`** — if your merge includes a `.changeset/*.md`, versions and publishes directly
 - **Manual** — Actions → Release → Run workflow (optional ELI refresh + forced patch/minor/major bump)
 

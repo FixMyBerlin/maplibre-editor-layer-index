@@ -1,7 +1,8 @@
-import { mkdir, unlink, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { EliContinent, EliDetailsShard, EliGeometries, EliManifest } from '../src/core/types'
+import { fetchEliSourceCommit } from './eli-github'
 import { fetchEli } from './fetch'
 import { transform } from './transform'
 
@@ -29,9 +30,31 @@ function nonEmptyShards<T extends Record<string, unknown>>(
   )
 }
 
+async function readExisting(path: string): Promise<string | null> {
+  try {
+    return await readFile(path, 'utf8')
+  } catch {
+    return null
+  }
+}
+
+/** True when payload differs from the file on disk (missing file → changed). */
+async function needsWrite(path: string, contents: string): Promise<boolean> {
+  const existing = await readExisting(path)
+  return existing !== contents
+}
+
 export async function buildData(): Promise<EliManifest> {
   console.log('Fetching Editor Layer Index…')
   const { raw, source, sourceVersion } = await fetchEli()
+
+  console.log('Resolving upstream commit…')
+  let sourceCommit: string | null = null
+  try {
+    sourceCommit = await fetchEliSourceCommit()
+  } catch (error) {
+    console.warn('Could not resolve ELI sourceCommit (continuing):', error)
+  }
 
   console.log('Validating + transforming…')
   const {
@@ -47,11 +70,19 @@ export async function buildData(): Promise<EliManifest> {
   const detailShards = nonEmptyShards(detailsByContinent)
   const geometryShards = nonEmptyShards(geometriesByContinent)
 
-  const manifest: EliManifest = {
+  const previousManifest = await readExisting(join(DATA_DIR, 'manifest.json')).then((rawJson) => {
+    if (!rawJson) return null
+    try {
+      return JSON.parse(rawJson) as EliManifest
+    } catch {
+      return null
+    }
+  })
+
+  const manifestBase = {
     source,
     sourceVersion,
-    // `new Date()` is fine here — this script runs in Bun/Node, not in a workflow sandbox.
-    generatedAt: new Date().toISOString(),
+    sourceCommit,
     counts: {
       ...counts,
       detailShards: detailShards.length,
@@ -71,21 +102,49 @@ export async function buildData(): Promise<EliManifest> {
   await mkdir(detailsDir, { recursive: true })
   await mkdir(geometriesDir, { recursive: true })
 
-  const writes: Promise<void>[] = [
-    writeFile(join(DATA_DIR, 'locator.json'), stableStringify({ layers: locatorLayers })),
-    writeFile(join(DATA_DIR, 'shards.json'), stableStringify(shardsMeta)),
-    writeFile(join(DATA_DIR, 'byCountry.json'), stableStringify(byCountry)),
-    writeFile(join(DATA_DIR, 'manifest.json'), stableStringify(manifest)),
-    writeFile(join(DATA_DIR, 'apiKeys.ts'), apiKeysModule),
-    ...detailShards.map(([continent, shard]: [EliContinent, EliDetailsShard]) =>
-      writeFile(join(detailsDir, `${continent}.json`), stableStringify(shard)),
-    ),
-    ...geometryShards.map(([continent, shard]: [EliContinent, EliGeometries]) =>
-      writeFile(join(geometriesDir, `${continent}.json`), stableStringify(shard)),
-    ),
+  const planned: { path: string; contents: string }[] = [
+    { path: join(DATA_DIR, 'locator.json'), contents: stableStringify({ layers: locatorLayers }) },
+    { path: join(DATA_DIR, 'shards.json'), contents: stableStringify(shardsMeta) },
+    { path: join(DATA_DIR, 'byCountry.json'), contents: stableStringify(byCountry) },
+    { path: join(DATA_DIR, 'apiKeys.ts'), contents: apiKeysModule },
+    ...detailShards.map(([continent, shard]: [EliContinent, EliDetailsShard]) => ({
+      path: join(detailsDir, `${continent}.json`),
+      contents: stableStringify(shard),
+    })),
+    ...geometryShards.map(([continent, shard]: [EliContinent, EliGeometries]) => ({
+      path: join(geometriesDir, `${continent}.json`),
+      contents: stableStringify(shard),
+    })),
   ]
 
-  await Promise.all(writes)
+  const contentChanged = (
+    await Promise.all(planned.map(async (file) => needsWrite(file.path, file.contents)))
+  ).some(Boolean)
+
+  const provenanceChanged =
+    previousManifest?.source !== source ||
+    previousManifest?.sourceVersion !== sourceVersion ||
+    previousManifest?.sourceCommit !== sourceCommit ||
+    JSON.stringify(previousManifest?.counts) !== JSON.stringify(manifestBase.counts)
+
+  // Avoid weekly no-op releases from `generatedAt` churn alone.
+  if (!contentChanged && !provenanceChanged && previousManifest) {
+    console.log(
+      `No ELI data changes (${counts.published}/${counts.upstream} layers); leaving files untouched.`,
+    )
+    return previousManifest
+  }
+
+  const manifest: EliManifest = {
+    ...manifestBase,
+    // `new Date()` is fine here — this script runs in Bun/Node, not in a workflow sandbox.
+    generatedAt: new Date().toISOString(),
+  }
+
+  await Promise.all([
+    ...planned.map((file) => writeFile(file.path, file.contents)),
+    writeFile(join(DATA_DIR, 'manifest.json'), stableStringify(manifest)),
+  ])
 
   // Drop legacy monoliths once continent shards are written.
   await Promise.all(
@@ -100,7 +159,9 @@ export async function buildData(): Promise<EliManifest> {
 
   console.log(
     `Wrote ${counts.published}/${counts.upstream} layers, ${counts.geometries} unique geometries, ` +
-      `${detailShards.length} detail shards, ${geometryShards.length} geometry shards.`,
+      `${detailShards.length} detail shards, ${geometryShards.length} geometry shards` +
+      (sourceCommit ? ` @ ${sourceCommit.slice(0, 7)}` : '') +
+      '.',
   )
   if (Object.keys(counts.dropped).length) {
     console.log(`Dropped unsupported types: ${JSON.stringify(counts.dropped)}`)

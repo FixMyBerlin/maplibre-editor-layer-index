@@ -63,6 +63,23 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Write ELI changeset
+        id: eli_changeset
+        if: steps.eli.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          output="$(bun run packages/maplibre-editor-layer-index/scripts/write-eli-changeset.ts)"
+          echo "$output"
+          if echo "$output" | grep -q '^written=true$'; then
+            echo "written=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "written=false" >> "$GITHUB_OUTPUT"
+            # Safety net if build left only noise: don't release an empty bump.
+            git checkout -- packages/maplibre-editor-layer-index/src/data
+          fi
       - name: Detect pending changesets
         id: pending
         run: |
@@ -78,7 +95,7 @@ jobs:
       - name: Plan release
         id: plan
         env:
-          ELI_CHANGED: ${{ steps.eli.outputs.changed }}
+          ELI_CHANGESET: ${{ steps.eli_changeset.outputs.written }}
           HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
           VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
           PUBLISH_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_only || 'false' }}
@@ -86,7 +103,7 @@ jobs:
           if [ "$PUBLISH_ONLY" = true ]; then
             echo "release=true" >> "$GITHUB_OUTPUT"
             echo "publish_only=true" >> "$GITHUB_OUTPUT"
-          elif [ "$HAS_CHANGESETS" = true ] || [ "$ELI_CHANGED" = true ] || [ "$VERSION_BUMP" != none ]; then
+          elif [ "$HAS_CHANGESETS" = true ] || [ "$ELI_CHANGESET" = true ] || [ "$VERSION_BUMP" != none ]; then
             echo "release=true" >> "$GITHUB_OUTPUT"
             echo "publish_only=false" >> "$GITHUB_OUTPUT"
           else
@@ -107,31 +124,22 @@ jobs:
       - name: Version and commit
         if: steps.plan.outputs.release == 'true' && steps.plan.outputs.publish_only != 'true'
         env:
-          ELI_CHANGED: ${{ steps.eli.outputs.changed }}
           HAS_CHANGESETS: ${{ steps.pending.outputs.found }}
           VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.version_bump || 'none' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if [ "$HAS_CHANGESETS" != true ]; then
-            if [ "$ELI_CHANGED" = true ]; then
-              cat > ".changeset/eli-auto-${{ github.run_id }}.md" <<'EOF'
-          ---
-          "@osm-editor-kit/maplibre-editor-layer-index": patch
-          ---
-
-          Update Editor Layer Index data (automated refresh).
-          EOF
-            elif [ "$VERSION_BUMP" != none ]; then
-              cat > ".changeset/manual-${{ github.run_id }}.md" <<EOF
+          # ELI refreshes already wrote `.changeset/eli-auto-*.md` above.
+          # Forced manual bumps still need a synthetic changeset when none exist.
+          if [ "$HAS_CHANGESETS" != true ] && [ "$VERSION_BUMP" != none ]; then
+            cat > ".changeset/manual-${{ github.run_id }}.md" <<EOF
           ---
           "@osm-editor-kit/maplibre-editor-layer-index": $VERSION_BUMP
           ---
 
           Release ($VERSION_BUMP).
           EOF
-            fi
           fi
 
           bun run version-packages

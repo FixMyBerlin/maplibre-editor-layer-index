@@ -105,8 +105,13 @@ export type EliByCountry = Record<string, string[]>
 export type EliManifest = {
   /** URL the imagery index was fetched from. */
   source: string
-  /** Upstream commit SHA or Last-Modified, when available. */
+  /** HTTP ETag / Last-Modified from the imagery.geojson response, when available. */
   sourceVersion: string | null
+  /**
+   * Content commit SHA on `osmlab/editor-layer-index` (gh-pages), resolved from
+   * the tip commit or its “Deploying to gh-pages from @…@SHA” message.
+   */
+  sourceCommit?: string | null
   /** ISO timestamp the data was generated. */
   generatedAt: string
   counts: {
