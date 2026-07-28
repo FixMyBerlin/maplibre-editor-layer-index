@@ -1,5 +1,11 @@
 # @osm-editor-kit/maplibre-editor-layer-index
 
+## 0.1.4
+
+### Patch Changes
+
+- a13083e: Point homepage at the live GitHub Pages preview and document the npmx package page.
+
 ## 0.1.3
 
 ### Patch Changes
