@@ -143,12 +143,17 @@ jobs:
           fi
 
           bun run version-packages
+          # changesets writes CHANGELOG.md with long unwrapped lines; oxfmt (husky
+          # pre-push) rejects them unless we format before commit.
+          bun run format
           git add -A
           if git diff --staged --quiet; then
             echo "No version changes to commit."
           else
             git commit -m "chore: release [skip ci]"
-            git push
+            # CI already ran lint/build/test; skip husky so a formatter drift on
+            # generated files cannot block the bot push (see #9 / run 30803989429).
+            HUSKY=0 git push
           fi
 
       - name: Setup Node for npm OIDC publishing
