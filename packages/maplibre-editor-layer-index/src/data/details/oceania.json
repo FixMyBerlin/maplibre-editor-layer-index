@@ -93,6 +93,32 @@
     ],
     "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202505/{zoom}/{x}/{y}.jpeg"
   },
+  "ACT202512": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTmapi © ACT Government and Aerometrex</a>",
+    "attributionText": "Aerial Imagery from ACTmapi © ACT Government and Aerometrex",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2025-12",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2025-12",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202512/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202512/{zoom}/{x}/{y}.jpeg"
+  },
+  "ACT202603": {
+    "attributionHtml": "<a href=\"https://www.actmapi.act.gov.au/home\" target=\"_blank\" rel=\"noopener\">Aerial Imagery from ACTmapi © ACT Government and Aerometrex</a>",
+    "attributionText": "Aerial Imagery from ACTmapi © ACT Government and Aerometrex",
+    "attributionUrl": "https://www.actmapi.act.gov.au/home",
+    "endDate": "2026-03",
+    "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
+    "licenseUrl": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
+    "startDate": "2026-03",
+    "tiles": [
+      "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202603/{z}/{x}/{y}.jpeg"
+    ],
+    "urlTemplate": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202603/{zoom}/{x}/{y}.jpeg"
+  },
   "AGRI-black_and_white-2.5m": {
     "attributionHtml": "<a href=\"https://knowledge.dea.ga.gov.au/data/product/australian-geographic-reference-image/\" target=\"_blank\" rel=\"noopener\">© Commonwealth of Australia (Geoscience Australia)</a>",
     "attributionText": "© Commonwealth of Australia (Geoscience Australia)",

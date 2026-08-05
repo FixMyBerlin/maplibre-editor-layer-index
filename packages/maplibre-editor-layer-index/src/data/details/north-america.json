@@ -1748,6 +1748,7 @@
     "attributionUrl": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3214",
     "availableProjections": [
       "CRS:84",
+      "EPSG:3857",
       "EPSG:4326",
       "EPSG:6347"
     ],
@@ -1765,6 +1766,7 @@
     "attributionUrl": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3214",
     "availableProjections": [
       "CRS:84",
+      "EPSG:3857",
       "EPSG:4326",
       "EPSG:6347"
     ],
@@ -1917,7 +1919,6 @@
     "attributionUrl": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3224",
     "availableProjections": [
       "CRS:84",
-      "EPSG:3857",
       "EPSG:4326"
     ],
     "endDate": "2025",
@@ -6461,7 +6462,6 @@
     "attributionUrl": "https://www.sangis.org/",
     "availableProjections": [
       "CRS:84",
-      "EPSG:2230",
       "EPSG:3857",
       "EPSG:4326"
     ],

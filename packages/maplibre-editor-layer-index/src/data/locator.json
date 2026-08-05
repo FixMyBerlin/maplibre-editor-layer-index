@@ -467,7 +467,7 @@
         149.42076,
         -35.11508
       ],
-      "best": true,
+      "best": false,
       "category": "photo",
       "continents": [
         "oceania"
@@ -480,6 +480,56 @@
       "maxzoom": 22,
       "minzoom": 10,
       "name": "ACTmapi Imagery May 2025",
+      "overlay": false,
+      "requiresKeys": [],
+      "tileSize": 256,
+      "type": "tms"
+    },
+    {
+      "bbox": [
+        148.74069,
+        -35.92847,
+        149.42093,
+        -35.11543
+      ],
+      "best": false,
+      "category": "photo",
+      "continents": [
+        "oceania"
+      ],
+      "countryCodes": [
+        "AU"
+      ],
+      "geometryId": "b2b0eafea977c502",
+      "id": "ACT202512",
+      "maxzoom": 22,
+      "minzoom": 10,
+      "name": "ACTmapi Imagery Dec 2025",
+      "overlay": false,
+      "requiresKeys": [],
+      "tileSize": 256,
+      "type": "tms"
+    },
+    {
+      "bbox": [
+        148.95441,
+        -35.51481,
+        149.42076,
+        -35.11508
+      ],
+      "best": true,
+      "category": "photo",
+      "continents": [
+        "oceania"
+      ],
+      "countryCodes": [
+        "AU"
+      ],
+      "geometryId": "f6e63aa43097a60b",
+      "id": "ACT202603",
+      "maxzoom": 22,
+      "minzoom": 10,
+      "name": "ACTmapi Imagery Mar 2026",
       "overlay": false,
       "requiresKeys": [],
       "tileSize": 256,
